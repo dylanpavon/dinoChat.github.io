@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DinoWeb</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      body {
+        background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cpolygon fill='%23AE9' points='120 120 60 120 90 90 120 60 120 0 120 0 60 60 0 0 0 60 30 90 60 120 120 120 '/%3E%3C/svg%3E");
+        background-color: #ddffaa;
+        background-size: 10%;
+      }
+      .filtro {
+        display: none;
+      }
+      .anton-regular {
+        font-family: "Anton", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      /* Carousel base class */
+      .carousel {
+        margin-bottom: 4rem;
+        margin-top: 1rem;
+      }
+      /* Since positioning the image, we need to help out the caption */
+      .carousel-caption {
+        bottom: 3rem;
+        z-index: 10;
+      }
+
+      /* Declare heights because of positioning of img element */
+      .carousel-item {
+        height: 30rem;
+      }
+      .marketing .col-lg-4 {
+        margin-bottom: 1.5rem;
+        text-align: center;
+      }
+      /* rtl:begin:ignore */
+      .marketing .col-lg-4 p {
+        margin-right: 0.75rem;
+        margin-left: 0.75rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container mt-3">
+      <header>
+        <h1 class="text-center mb-3">
+          <a href="/"
+            ><img src="../static/Imagenes/LogoOK.png" alt="DinoChat"
+          /></a>
+        </h1>
+<div class="mt-5">
+  <h4 class="text-center anton-regular">
+    🦖 ¡BIENVENIDO A NUESTRO EMOCIONANTE MUNDO DE DINOSAURIOS! 🦕
+  </h4>
+  <h6 class="text-center">
+    Aquí podrás conversar con estos gigantes prehistóricos! Pregúntales y
+    verás que descubres información fascinante!
+  </h6>
+</div>
+      </header>
+      <main class="px-5">
+        <!--Buscador ↓↓↓-->
+        <form role="search" action="/" method="post">
+          <input
+            class="form-control"
+            type="text"
+            placeholder="¿Qué dino buscas?"
+            list="datalistOptions"
+            name="nombreDino"
+            id="buscador"
+          />
+          <div class="d-grid gap-2 col-2 mx-auto">
+            <button class="btn btn-success px-5" type="submit" value="Buscar">
+              Buscar
+            </button>
+          </div>
+          <datalist id="datalistOptions">
+            {% for d in dinos %}
+            <option class="dino" value="{{ d.1 }}"></option>
+            {% endfor %}
+          </datalist>
+        </form>
+        <!--Mensajes de Alerta ↓↓↓-->
+        {% with messages = get_flashed_messages()%} {% if messages %} {% for m
+        in messages %}
+        <div
+          class="alert alert-warning alert-dismissible fade show"
+          role="alert"
+        >
+          {{ m }}
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="alert"
+            aria-label="Close"
+          ></button>
+        </div>
+        {% endfor %} {% endif %} {% endwith %}
+        <div class="container marketing mt-3">
+          <!--Carrusel ↓↓↓-->
+          <div
+            id="myCarousel"
+            class="carousel slide mb-1"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#myCarousel"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#myCarousel"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#myCarousel"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div
+                class="carousel-item active"
+                style="
+                  background-image: url('../static/Imagenes/Tyrannosaurus Rex.jpg');
+                  background-size: cover;
+                  background-position: center;
+                "
+              >
+                <svg
+                  class="bd-placeholder-img"
+                  width="100%"
+                  height="100%"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                  preserveAspectRatio="xMidYMid slice"
+                  focusable="false"
+                >
+                  <rect
+                    width="100%"
+                    height="100%"
+                    fill="var(--bs-secondary-color)"
+                  />
+                </svg>
+                <div class="container">
+                  <div class="carousel-caption text-start">
+                    <h1>Tyrannosaurus Rex</h1>
+                    <p class="opacity-75">
+                      El antiguo y siempre rey de los dinosaurios.
+                    </p>
+                    <p>
+                      <a class="btn btn-lg btn-success" href="/dinochat/258"
+                        >Conversar &raquo;</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="carousel-item"
+                style="
+                  background-image: url('../static/Imagenes/Velociraptor.jpg');
+                  background-size: cover;
+                  background-position: center;
+                "
+              >
+                <svg
+                  class="bd-placeholder-img"
+                  width="100%"
+                  height="100%"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                  preserveAspectRatio="xMidYMid slice"
+                  focusable="false"
+                >
+                  <rect
+                    width="100%"
+                    height="100%"
+                    fill="var(--bs-secondary-color)"
+                  />
+                </svg>
+                <div class="container">
+                  <div class="carousel-caption">
+                    <h1>Velociraptor</h1>
+                    <p>
+                      Este dinosaurio era feroz pero mucho más pequeño de lo que
+                      pensabas.
+                    </p>
+                    <p>
+                      <a class="btn btn-lg btn-success" href="/dinochat/275"
+                        >Conversar &raquo;</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="carousel-item"
+                style="
+                  background-image: url('../static/Imagenes/Spinosaurus.jpg');
+                  background-size: cover;
+                  background-position: center;
+                "
+              >
+                <svg
+                  class="bd-placeholder-img"
+                  width="100%"
+                  height="100%"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                  preserveAspectRatio="xMidYMid slice"
+                  focusable="false"
+                >
+                  <rect
+                    width="100%"
+                    height="100%"
+                    fill="var(--bs-secondary-color)"
+                  />
+                </svg>
+                <div class="container">
+                  <div class="carousel-caption text-end">
+                    <h1>Spinosaurus</h1>
+                    <p>
+                      Este dinosaurio se distinguía por la estructura en forma
+                      de vela en su espalda.
+                    </p>
+                    <p>
+                      <a class="btn btn-lg btn-success" href="/dinochat/191"
+                        >Conversar &raquo;</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#myCarousel"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#myCarousel"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <hr />
+          <!-- Campeones del mundo -->
+          <h4 class="text-center anton-regular">🧉 Acá te dejamos con tres campeones del mundo! ⭐⭐⭐</h4>
+          <div class="row mt-5">       
+            <!-- Argentinosaurus -->
+            <div class="col-lg-4">
+              <img
+                class="bd-placeholder-img rounded-circle"
+                style="object-fit: cover; background-position: center"
+                width="140"
+                height="140"
+                src="../static/Imagenes/ArgentinosaurusLogo.jpg"
+                alt="Argentinosaurus"
+              />
+              <h4 class="fw-normal anton-regular">Argentinosaurus</h4>
+              <h6>Posiblemente el dinosaurio más grande que haya existido.</h6>
+              <p>
+                <a class="btn btn-outline-success" href="/dinochat/450"
+                  >Conversar &raquo;</a
+                >
+              </p>
+            </div>
+            <!-- Carnotaurus -->
+            <div class="col-lg-4">
+              <img
+                class="bd-placeholder-img rounded-circle"
+                style="object-fit: cover; background-position: right"
+                width="140"
+                height="140"
+                src="../static/Imagenes/Carnotaurus.jpg"
+                alt="Carnotaurus"
+              />
+              <h4 class="fw-normal anton-regular">Carnotaurus</h4>
+              <h6>
+                Los brazos más cortos de cualquier dinosaurio carnívoro con
+                cuernos.
+              </h6>
+              <p>
+                <a class="btn btn-outline-success" href="/dinochat/54"
+                  >Conversar &raquo;</a
+                >
+              </p>
+            </div>
+            <!-- Abelisaurus -->
+            <div class="col-lg-4">
+              <img
+                class="bd-placeholder-img rounded-circle"
+                style="object-fit: cover; background-position: center"
+                width="140"
+                height="140"
+                src="../static/Imagenes/AbelisaurusLogo.jpg"
+                alt="Abelisaurus"
+              />
+              <h4 class="fw-normal anton-regular">Abelisaurus</h4>
+              <h6>
+                "El lagarto de Abel" ha sido reconstruido a partir de un solo
+                cráneo.
+              </h6>
+              <p>
+                <a class="btn btn-outline-success" href="/dinochat/328"
+                  >Conversar &raquo;</a
+                >
+              </p>
+            </div>
+            <!-- /.col-lg-4 -->
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.container -->
+      </main>
+
+      <hr />
+      <footer class="text-center">
+        <p class="text-center float-end">
+          <a
+            class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+            href="#"
+            alt="boton"
+            >Subir ⇧</a
+          >
+        </p>
+        <p>
+          DinoChat creado con
+          <a href="https://chat.openai.com/" class="text-body-secondary" target="_blank"
+            >ChatGPT</a
+          >, por
+          <a
+            href="https://www.linkedin.com/in/dylanpavon-/"
+            class="text-body-secondary"
+            target="_blank"
+            >Dylan Pavón</a
+          >.
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
