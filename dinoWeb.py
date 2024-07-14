@@ -3,6 +3,16 @@ import os
 from flask import Flask, render_template, request, redirect, url_for, flash, jsonify  
 #import mysql.connector
 import json
+from http.server import BaseHTTPRequestHandler
+ 
+class handler(BaseHTTPRequestHandler):
+ 
+    def do_GET(self):
+        self.send_response(200)
+        self.send_header('Content-type','text/plain')
+        self.end_headers()
+        self.wfile.write('Hello, world!'.encode('utf-8'))
+        return
 
 # Obtener la clave de API desde la variable de entorno
 api_key = os.getenv("OPENAI_API_KEY")
