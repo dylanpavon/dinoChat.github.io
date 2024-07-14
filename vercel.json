@@ -1,0 +1,13 @@
+{
+    "version": 2,
+    "builds": [{ "src": "dinoWeb.py", "use": "@vercel/python" }],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "dinoWeb.py"
+      }
+    ],
+    "env": {
+      "FLASK_ENV": "production"
+    }
+  }

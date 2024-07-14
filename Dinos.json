@@ -1,0 +1,4256 @@
+[
+	{
+		"id" : 327,
+		"Nombre" : "Aardonyx",
+		"Descripcion" : "Una etapa temprana en la evolución de los saurópodos.",
+		"imagen" : "../static/Imagenes/Aardonyx.jpg"
+	},
+	{
+		"id" : 328,
+		"Nombre" : "Abelisaurus",
+		"Descripcion" : "\"El lagarto de Abel\" ha sido reconstruido a partir de un solo cráneo.",
+		"imagen" : "../static/Imagenes/Abelisaurus.jpg"
+	},
+	{
+		"id" : 329,
+		"Nombre" : "Abrictosaurus",
+		"Descripcion" : "Un pariente temprano de Heterodontosaurus.",
+		"imagen" : "../static/Imagenes/Abrictosaurus.jpg"
+	},
+	{
+		"id" : 330,
+		"Nombre" : "Abrosaurus",
+		"Descripcion" : "Un pariente asiático cercano de Camarasaurus.",
+		"imagen" : "../static/Imagenes/Abrosaurus.jpg"
+	},
+	{
+		"id" : 331,
+		"Nombre" : "Abydosaurus",
+		"Descripcion" : "El cráneo intacto de este saurópodo fue descubierto en 2010.",
+		"imagen" : "../static/Imagenes/Abydosaurus.jpg"
+	},
+	{
+		"id" : 332,
+		"Nombre" : "Acanthopholis",
+		"Descripcion" : "No, no es una ciudad en Grecia.",
+		"imagen" : "../static/Imagenes/Acanthopholis.jpg"
+	},
+	{
+		"id" : 334,
+		"Nombre" : "Achelousaurus",
+		"Descripcion" : "¿Podría haber sido una etapa de crecimiento de Pachyrhinosaurus?",
+		"imagen" : "../static/Imagenes/Achelousaurus.jpg"
+	},
+	{
+		"id" : 335,
+		"Nombre" : "Achillobator",
+		"Descripcion" : "Este feroz raptor fue descubierto en Mongolia moderna.",
+		"imagen" : "../static/Imagenes/Achillobator.jpg"
+	},
+	{
+		"id" : 336,
+		"Nombre" : "Acristavus",
+		"Descripcion" : "Este hadrosaurio temprano carecía de cualquier ornamentación en su cráneo.",
+		"imagen" : "../static/Imagenes/Acristavus.jpg"
+	},
+	{
+		"id" : 337,
+		"Nombre" : "Acrocanthosaurus",
+		"Descripcion" : "El dinosaurio carnívoro más grande del período Cretácico temprano.",
+		"imagen" : "../static/Imagenes/Acrocanthosaurus.jpg"
+	},
+	{
+		"id" : 339,
+		"Nombre" : "Acrotholus",
+		"Descripcion" : "El dinosaurio de cabeza ósea más antiguo de América del Norte.",
+		"imagen" : "../static/Imagenes/Acrotholus.jpg"
+	},
+	{
+		"id" : 340,
+		"Nombre" : "Adamantisaurus",
+		"Descripcion" : "Este titanosaurio fue nombrado 50 años después de su descubrimiento.",
+		"imagen" : "../static/Imagenes/Adamantisaurus.jpg"
+	},
+	{
+		"id" : 341,
+		"Nombre" : "Adasaurus",
+		"Descripcion" : "Las garras traseras de este raptor eran inusualmente pequeñas.",
+		"imagen" : "../static/Imagenes/Adasaurus.jpg"
+	},
+	{
+		"id" : 343,
+		"Nombre" : "Adeopapposaurus",
+		"Descripcion" : "Un pariente cercano de Massospondylus.",
+		"imagen" : "../static/Imagenes/Adeopapposaurus.jpg"
+	},
+	{
+		"id" : 344,
+		"Nombre" : "Aegyptosaurus",
+		"Descripcion" : "Intenta adivinar en qué país se encontró este dinosaurio.",
+		"imagen" : "../static/Imagenes/Aegyptosaurus.jpg"
+	},
+	{
+		"id" : 345,
+		"Nombre" : "Aeolosaurus",
+		"Descripcion" : "¿Podría este titanosaurio haberse levantado en sus patas traseras?",
+		"imagen" : "../static/Imagenes/Aeolosaurus.jpg"
+	},
+	{
+		"id" : 346,
+		"Nombre" : "Aerosteon",
+		"Descripcion" : "Este dinosaurio con huesos de aire puede haber respirado como un ave.",
+		"imagen" : "../static/Imagenes/Aerosteon.jpg"
+	},
+	{
+		"id" : 347,
+		"Nombre" : "Afrovenator",
+		"Descripcion" : "Uno de los pocos carnívoros que se han excavado en el norte de África.",
+		"imagen" : "../static/Imagenes/Afrovenator.jpg"
+	},
+	{
+		"id" : 348,
+		"Nombre" : "Agathaumas",
+		"Descripcion" : "El primer dinosaurio ceratopsiano jamás descubierto.",
+		"imagen" : "../static/Imagenes/Agathaumas.jpg"
+	},
+	{
+		"id" : 349,
+		"Nombre" : "Agilisaurus",
+		"Descripcion" : "Este \"lagarto ágil\" fue uno de los primeros ornitópodos.",
+		"imagen" : "../static/Imagenes/Agilisaurus.jpg"
+	},
+	{
+		"id" : 350,
+		"Nombre" : "Agujaceratops",
+		"Descripcion" : "Una vez fue clasificado como una especie de Chasmosaurus.",
+		"imagen" : "../static/Imagenes/Agujaceratops.jpg"
+	},
+	{
+		"id" : 351,
+		"Nombre" : "Agustinia",
+		"Descripcion" : "Un gran saurópodo con espinas en la espalda.",
+		"imagen" : "../static/Imagenes/Agustinia.jpg"
+	},
+	{
+		"id" : 352,
+		"Nombre" : "Ajkaceratops",
+		"Descripcion" : "El primer ceratopsiano descubierto en Europa.",
+		"imagen" : "../static/Imagenes/Ajkaceratops.jpg"
+	},
+	{
+		"id" : 353,
+		"Nombre" : "Alamosaurus",
+		"Descripcion" : "No, no fue nombrado después del Álamo, pero debería haberlo sido.",
+		"imagen" : "../static/Imagenes/Alamosaurus.jpg"
+	},
+	{
+		"id" : 354,
+		"Nombre" : "Alaskacephale",
+		"Descripcion" : "¿Puedes adivinar en qué estado se encontró este paquicefalosaurio?",
+		"imagen" : "../static/Imagenes/Alaskacephale.jpg"
+	},
+	{
+		"id" : 367,
+		"Nombre" : "Albalophosaurus",
+		"Descripcion" : "Uno de los pocos dinosaurios jamás descubiertos en Japón.",
+		"imagen" : "../static/Imagenes/Albalophosaurus.jpg"
+	},
+	{
+		"id" : 368,
+		"Nombre" : "Albertaceratops",
+		"Descripcion" : "El \"centrosaurino\" más basal identificado hasta ahora.",
+		"imagen" : "../static/Imagenes/Albertaceratops.jpg"
+	},
+	{
+		"id" : 370,
+		"Nombre" : "Albertadromeus",
+		"Descripcion" : "Este pequeño ornitópodo fue descubierto recientemente en Canadá.",
+		"imagen" : "../static/Imagenes/Albertadromeus.jpg"
+	},
+	{
+		"id" : 371,
+		"Nombre" : "Albertonykus",
+		"Descripcion" : "Un pequeño dinosaurio similar a las aves de América del Norte.",
+		"imagen" : "../static/Imagenes/Albertonykus.jpg"
+	},
+	{
+		"id" : 372,
+		"Nombre" : "Albertosaurus",
+		"Descripcion" : "Este dinosaurio carnívoro fue un pariente cercano del T. Rex.",
+		"imagen" : "../static/Imagenes/Albertosaurus.jpg"
+	},
+	{
+		"id" : 389,
+		"Nombre" : "Alectrosaurus",
+		"Descripcion" : "Se han encontrado pocos especímenes de este \"lagarto soltero\".",
+		"imagen" : "../static/Imagenes/Alectrosaurus.jpg"
+	},
+	{
+		"id" : 390,
+		"Nombre" : "Aletopelta",
+		"Descripcion" : "El primer anquilosaurio conocido que vivió en México.",
+		"imagen" : "../static/Imagenes/Aletopelta.jpg"
+	},
+	{
+		"id" : 392,
+		"Nombre" : "Alioramus",
+		"Descripcion" : "Todo lo que sabemos sobre este tiranosaurio se basa en un solo cráneo.",
+		"imagen" : "../static/Imagenes/Alioramus.jpg"
+	},
+	{
+		"id" : 394,
+		"Nombre" : "Allosaurus",
+		"Descripcion" : "El depredador principal del América del Norte del Jurásico tardío.",
+		"imagen" : "../static/Imagenes/Allosaurus.jpg"
+	},
+	{
+		"id" : 395,
+		"Nombre" : "Altirhinus",
+		"Descripcion" : "Este herbívoro con un \"alto hocico\" se parecía a un hadrosaurio temprano.",
+		"imagen" : "../static/Imagenes/Altirhinus.jpg"
+	},
+	{
+		"id" : 396,
+		"Nombre" : "Alvarezsaurus",
+		"Descripcion" : "Un dinosaurio similar a las aves del Cretácico tardío.",
+		"imagen" : "../static/Imagenes/Alvarezsaurus.jpg"
+	},
+	{
+		"id" : 398,
+		"Nombre" : "Alwalkeria",
+		"Descripcion" : "Este dinosaurio indio fue uno de los primeros saurisquios.",
+		"imagen" : "../static/Imagenes/Alwalkeria.jpg"
+	},
+	{
+		"id" : 401,
+		"Nombre" : "Alxasaurus",
+		"Descripcion" : "Un pariente temprano del extraño Therizinosaurus.",
+		"imagen" : "../static/Imagenes/Alxasaurus.jpg"
+	},
+	{
+		"id" : 406,
+		"Nombre" : "Amargasaurus",
+		"Descripcion" : "Un saurópodo espinoso y extraño de América del Sur.",
+		"imagen" : "../static/Imagenes/Amargasaurus.jpg"
+	},
+	{
+		"id" : 408,
+		"Nombre" : "Amazonsaurus",
+		"Descripcion" : "Uno de los pocos dinosaurios que se han encontrado en la cuenca del Amazonas.",
+		"imagen" : "../static/Imagenes/Amazonsaurus.jpg"
+	},
+	{
+		"id" : 410,
+		"Nombre" : "Ammosaurus",
+		"Descripcion" : "Este podría (o no) haber sido el mismo dinosaurio que Anchisaurus.",
+		"imagen" : "../static/Imagenes/Ammosaurus.jpg"
+	},
+	{
+		"id" : 412,
+		"Nombre" : "Ampelosaurus",
+		"Descripcion" : "Uno de los titanosaurios acorazados más conocidos.",
+		"imagen" : "../static/Imagenes/Ampelosaurus.jpg"
+	},
+	{
+		"id" : 414,
+		"Nombre" : "Amphicoelias",
+		"Descripcion" : "¿Podría haber sido el dinosaurio más grande que jamás haya existido?",
+		"imagen" : "../static/Imagenes/Amphicoelias.jpg"
+	},
+	{
+		"id" : 416,
+		"Nombre" : "Amurosaurus",
+		"Descripcion" : "El hadrosaurio más completo que se ha descubierto en Rusia.",
+		"imagen" : "../static/Imagenes/Amurosaurus.jpg"
+	},
+	{
+		"id" : 417,
+		"Nombre" : "Anabisetia",
+		"Descripcion" : "El mejor documentado de los ornitópodos sudamericanos.",
+		"imagen" : "../static/Imagenes/Anabisetia.jpg"
+	},
+	{
+		"id" : 420,
+		"Nombre" : "Anatosaurus",
+		"Descripcion" : "Este dinosaurio ahora se conoce como Anatotitan o Edmontosaurus.",
+		"imagen" : "../static/Imagenes/Anatosaurus.jpg"
+	},
+	{
+		"id" : 421,
+		"Nombre" : "Anatotitan",
+		"Descripcion" : "El nombre de este hadrosaurio significa \"pato gigante\".",
+		"imagen" : "../static/Imagenes/Anatotitan.jpg"
+	},
+	{
+		"id" : 422,
+		"Nombre" : "Anchiceratops",
+		"Descripcion" : "Este dinosaurio tenía una cresta con una forma distintiva.",
+		"imagen" : "../static/Imagenes/Anchiceratops.jpg"
+	},
+	{
+		"id" : 423,
+		"Nombre" : "Anchiornis",
+		"Descripcion" : "Un dino-ave de cuatro alas que se parecía a Microraptor.",
+		"imagen" : "../static/Imagenes/Anchiornis.jpg"
+	},
+	{
+		"id" : 424,
+		"Nombre" : "Anchisaurus",
+		"Descripcion" : "Uno de los primeros dinosaurios jamás excavados en los Estados Unidos.",
+		"imagen" : "../static/Imagenes/Anchisaurus.jpg"
+	},
+	{
+		"id" : 425,
+		"Nombre" : "Andesaurus",
+		"Descripcion" : "Este titanosaurio rivalizaba en tamaño con Argentinosaurus.",
+		"imagen" : "../static/Imagenes/Andesaurus.jpg"
+	},
+	{
+		"id" : 426,
+		"Nombre" : "Angaturama",
+		"Descripcion" : "Un pariente brasileño de Spinosaurus.",
+		"imagen" : "../static/Imagenes/Angaturama.jpg"
+	},
+	{
+		"id" : 427,
+		"Nombre" : "Angolatitan",
+		"Descripcion" : "El primer dinosaurio jamás descubierto en Angola.",
+		"imagen" : "../static/Imagenes/Angolatitan.jpg"
+	},
+	{
+		"id" : 428,
+		"Nombre" : "Angulomastacator",
+		"Descripcion" : "Este dinosaurio tenía una mandíbula superior extrañamente formada.",
+		"imagen" : "../static/Imagenes/Angulomastacator.jpg"
+	},
+	{
+		"id" : 429,
+		"Nombre" : "Animantarx",
+		"Descripcion" : "Esta \"fortaleza viviente\" fue descubierta de una manera inusual.",
+		"imagen" : "../static/Imagenes/Animantarx.jpg"
+	},
+	{
+		"id" : 430,
+		"Nombre" : "Ankylosaurus",
+		"Descripcion" : "Este dinosaurio fue el equivalente del Cretácico a un tanque Sherman.",
+		"imagen" : "../static/Imagenes/Ankylosaurus.jpg"
+	},
+	{
+		"id" : 431,
+		"Nombre" : "Anodontosaurus",
+		"Descripcion" : "Este \"lagarto sin dientes\" en realidad tenía un conjunto completo de dientes.",
+		"imagen" : "../static/Imagenes/Anodontosaurus.jpg"
+	},
+	{
+		"id" : 432,
+		"Nombre" : "Anserimimus",
+		"Descripcion" : "Este \"imitador de ganso\" no se parecía mucho a un ganso.",
+		"imagen" : "../static/Imagenes/Anserimimus.jpg"
+	},
+	{
+		"id" : 433,
+		"Nombre" : "Antarctopelta",
+		"Descripcion" : "El primer fósil de dinosaurio jamás descubierto en la Antártida.",
+		"imagen" : "../static/Imagenes/Antarctopelta.jpg"
+	},
+	{
+		"id" : 434,
+		"Nombre" : "Antarctosaurus",
+		"Descripcion" : "Este titanosaurio puede o no haber vivido en la Antártida.",
+		"imagen" : "../static/Imagenes/Antarctosaurus.jpg"
+	},
+	{
+		"id" : 435,
+		"Nombre" : "Antetonitrus",
+		"Descripcion" : "O bien un prosaurópodo muy tardío o un sauropodo muy temprano.",
+		"imagen" : "../static/Imagenes/Antetonitrus.jpg"
+	},
+	{
+		"id" : 436,
+		"Nombre" : "Anzu",
+		"Descripcion" : "Este pariente de Oviraptor fue descubierto recientemente en América del Norte.",
+		"imagen" : "../static/Imagenes/Anzu.jpg"
+	},
+	{
+		"id" : 438,
+		"Nombre" : "Aorun",
+		"Descripcion" : "Un pequeño terópodo del Jurásico tardío de Asia.",
+		"imagen" : "../static/Imagenes/Aorun.jpg"
+	},
+	{
+		"id" : 439,
+		"Nombre" : "Apatosaurus",
+		"Descripcion" : "El dinosaurio anteriormente conocido como Brontosaurus.",
+		"imagen" : "../static/Imagenes/Apatosaurus.jpg"
+	},
+	{
+		"id" : 441,
+		"Nombre" : "Appalachiosaurus",
+		"Descripcion" : "Uno de los pocos dinosaurios que se han encontrado en Alabama.",
+		"imagen" : "../static/Imagenes/Appalachiosaurus.jpg"
+	},
+	{
+		"id" : 442,
+		"Nombre" : "Aquilops",
+		"Descripcion" : "El ceratopsiano más temprano jamás descubierto en América del Norte.",
+		"imagen" : "../static/Imagenes/Aquilops.jpg"
+	},
+	{
+		"id" : 443,
+		"Nombre" : "Aragosaurus",
+		"Descripcion" : "Nombrado después de la región de Aragón en España.",
+		"imagen" : "../static/Imagenes/Aragosaurus.jpg"
+	},
+	{
+		"id" : 444,
+		"Nombre" : "Aralosaurus",
+		"Descripcion" : "No se sabe mucho sobre este dinosaurio de pico de pato de Asia central.",
+		"imagen" : "../static/Imagenes/Aralosaurus.jpg"
+	},
+	{
+		"id" : 445,
+		"Nombre" : "Archaeoceratops",
+		"Descripcion" : "Posiblemente el ceratopsiano más pequeño que haya vivido.",
+		"imagen" : "../static/Imagenes/Archaeoceratops.jpg"
+	},
+	{
+		"id" : 446,
+		"Nombre" : "Archaeopteryx",
+		"Descripcion" : "Este antiguo dino-ave tenía aproximadamente el tamaño de una paloma moderna.",
+		"imagen" : "../static/Imagenes/Archaeopteryx.jpg"
+	},
+	{
+		"id" : 447,
+		"Nombre" : "Archaeornithomimus",
+		"Descripcion" : "Un posible ancestro de Ornithomimus.",
+		"imagen" : "../static/Imagenes/Archaeornithomimus.jpg"
+	},
+	{
+		"id" : 448,
+		"Nombre" : "Arcovenator",
+		"Descripcion" : "Este feroz abelisaurio fue descubierto recientemente en Francia.",
+		"imagen" : "../static/Imagenes/Arcovenator.jpg"
+	},
+	{
+		"id" : 449,
+		"Nombre" : "Arcusaurus",
+		"Descripcion" : "Este prosaurópodo fue descubierto recientemente en Sudáfrica.",
+		"imagen" : "../static/Imagenes/Arcusaurus.jpg"
+	},
+	{
+		"id" : 450,
+		"Nombre" : "Argentinosaurus",
+		"Descripcion" : "Posiblemente el dinosaurio más grande que haya existido.",
+		"imagen" : "../static/Imagenes/Argentinosaurus.jpg"
+	},
+	{
+		"id" : 451,
+		"Nombre" : "Argyrosaurus",
+		"Descripcion" : "Un titanosaurio de gran tamaño de América del Sur.",
+		"imagen" : "../static/Imagenes/Argyrosaurus.jpg"
+	},
+	{
+		"id" : 452,
+		"Nombre" : "Aristosuchus",
+		"Descripcion" : "Este \"noble cocodrilo\" era en realidad un dinosaurio.",
+		"imagen" : "../static/Imagenes/Aristosuchus.jpg"
+	},
+	{
+		"id" : 1,
+		"Nombre" : "Arrhinoceratops",
+		"Descripcion" : "Este ceratopsiano fue nombrado por su cuerno nasal \"faltante\".",
+		"imagen" : "../static/Imagenes/Arrhinoceratops.jpg"
+	},
+	{
+		"id" : 2,
+		"Nombre" : "Astrodon",
+		"Descripcion" : "El dinosaurio oficial del estado de Maryland.",
+		"imagen" : "../static/Imagenes/Astrodon.jpg"
+	},
+	{
+		"id" : 3,
+		"Nombre" : "Asylosaurus",
+		"Descripcion" : "Este \"lagarto indemne\" escapó de la destrucción en la Segunda Guerra Mundial",
+		"imagen" : "../static/Imagenes/Asylosaurus.jpg"
+	},
+	{
+		"id" : 4,
+		"Nombre" : "Atlasaurus",
+		"Descripcion" : "Este sauropodo tenía patas inusualmente largas.",
+		"imagen" : "../static/Imagenes/Atlasaurus.jpg"
+	},
+	{
+		"id" : 5,
+		"Nombre" : "Atlascopcosaurus",
+		"Descripcion" : "Nombrado después de un fabricante de equipos de excavación.",
+		"imagen" : "../static/Imagenes/Atlascopcosaurus.jpg"
+	},
+	{
+		"id" : 6,
+		"Nombre" : "Atrociraptor",
+		"Descripcion" : "Este \"ladrón cruel\" no fue tan atroz como su nombre sugiere.",
+		"imagen" : "../static/Imagenes/Atrociraptor.jpg"
+	},
+	{
+		"id" : 7,
+		"Nombre" : "Aublysodon",
+		"Descripcion" : "Este tiranosaurio fue nombrado después de un solo diente.",
+		"imagen" : "../static/Imagenes/Aublysodon.jpg"
+	},
+	{
+		"id" : 8,
+		"Nombre" : "Aucasaurus",
+		"Descripcion" : "Este depredador fue un pariente cercano de Carnotaurus.",
+		"imagen" : "../static/Imagenes/Aucasaurus.jpg"
+	},
+	{
+		"id" : 9,
+		"Nombre" : "Auroraceratops",
+		"Descripcion" : "Un pariente cercano de Archaeoceratops.",
+		"imagen" : "../static/Imagenes/Auroraceratops.jpg"
+	},
+	{
+		"id" : 10,
+		"Nombre" : "Australodocus",
+		"Descripcion" : "Este sauropodo fue encontrado en la Tanzania moderna.",
+		"imagen" : "../static/Imagenes/Australodocus.jpg"
+	},
+	{
+		"id" : 11,
+		"Nombre" : "Australovenator",
+		"Descripcion" : "Un carnívoro descubierto recientemente en Australia.",
+		"imagen" : "../static/Imagenes/Australovenator.jpg"
+	},
+	{
+		"id" : 12,
+		"Nombre" : "Austroraptor",
+		"Descripcion" : "El raptor más grande de Sudamérica.",
+		"imagen" : "../static/Imagenes/Austroraptor.jpg"
+	},
+	{
+		"id" : 13,
+		"Nombre" : "Austrosaurus",
+		"Descripcion" : "Este titanosaurio fue descubierto cerca de una estación de tren.",
+		"imagen" : "../static/Imagenes/Austrosaurus.jpg"
+	},
+	{
+		"id" : 14,
+		"Nombre" : "Avaceratops",
+		"Descripcion" : "Este ceratopsiano está representado por un solo ejemplar juvenil.",
+		"imagen" : "../static/Imagenes/Avaceratops.jpg"
+	},
+	{
+		"id" : 15,
+		"Nombre" : "Aviatyrannis",
+		"Descripcion" : "Este \"abuelo tirano\" fue uno de los primeros tiranosaurios.",
+		"imagen" : "../static/Imagenes/Aviatyrannis.jpg"
+	},
+	{
+		"id" : 16,
+		"Nombre" : "Avimimus",
+		"Descripcion" : "Un primo especialmente parecido a las aves de Oviraptor.",
+		"imagen" : "../static/Imagenes/Avimimus.jpg"
+	},
+	{
+		"id" : 17,
+		"Nombre" : "Bactrosaurus",
+		"Descripcion" : "Uno de los primeros dinosaurios de pico de pato.",
+		"imagen" : "../static/Imagenes/Bactrosaurus.jpg"
+	},
+	{
+		"id" : 18,
+		"Nombre" : "Bagaceratops",
+		"Descripcion" : "Un pequeño ceratopsiano de Asia central.",
+		"imagen" : "../static/Imagenes/Bagaceratops.jpg"
+	},
+	{
+		"id" : 19,
+		"Nombre" : "Bagaraatan",
+		"Descripcion" : "Nadie está muy seguro de cómo clasificar a este terópodo.",
+		"imagen" : "../static/Imagenes/Bagaraatan.jpg"
+	},
+	{
+		"id" : 20,
+		"Nombre" : "Bahariasaurus",
+		"Descripcion" : "Este carnívoro oscuro podría haber tenido el tamaño de un T. Rex.",
+		"imagen" : "../static/Imagenes/Bahariasaurus.jpg"
+	},
+	{
+		"id" : 21,
+		"Nombre" : "Balaur",
+		"Descripcion" : "Este \"dragón corpulento\" fue descubierto recientemente en Rumania.",
+		"imagen" : "../static/Imagenes/Balaur.jpg"
+	},
+	{
+		"id" : 22,
+		"Nombre" : "Bambiraptor",
+		"Descripcion" : "Sí, este pequeño raptor fue nombrado como ya sabes quién.",
+		"imagen" : "../static/Imagenes/Bambiraptor.jpg"
+	},
+	{
+		"id" : 23,
+		"Nombre" : "Barapasaurus",
+		"Descripcion" : "Probablemente el primero de los gigantescos saurópodos.",
+		"imagen" : "../static/Imagenes/Barapasaurus.jpg"
+	},
+	{
+		"id" : 24,
+		"Nombre" : "Barilium",
+		"Descripcion" : "Otro iguanodontido ornitópodo poco conocido de las Islas Británicas.",
+		"imagen" : "../static/Imagenes/Barilium.jpg"
+	},
+	{
+		"id" : 25,
+		"Nombre" : "Barosaurus",
+		"Descripcion" : "Un gigante herbívoro de cuello largo con una cabeza diminuta.",
+		"imagen" : "../static/Imagenes/Barosaurus.jpg"
+	},
+	{
+		"id" : 26,
+		"Nombre" : "Barsboldia",
+		"Descripcion" : "Este hadrosaurio fue nombrado en honor a Rinchen Barsbold.",
+		"imagen" : "../static/Imagenes/Barsboldia.jpg"
+	},
+	{
+		"id" : 27,
+		"Nombre" : "Baryonyx",
+		"Descripcion" : "No querrías recortar las garras de este dinosaurio.",
+		"imagen" : "../static/Imagenes/Baryonyx.jpg"
+	},
+	{
+		"id" : 28,
+		"Nombre" : "Batyrosaurus",
+		"Descripcion" : "Uno de los hadrosaurios más basales identificados hasta ahora.",
+		"imagen" : "../static/Imagenes/Batyrosaurus.jpg"
+	},
+	{
+		"id" : 29,
+		"Nombre" : "Becklespinax",
+		"Descripcion" : "Un extrañamente nombrado terópodo del Cretácico temprano.",
+		"imagen" : "../static/Imagenes/Becklespinax.jpg"
+	},
+	{
+		"id" : 30,
+		"Nombre" : "Beipiaosaurus",
+		"Descripcion" : "El único tericinosaurio con plumas conocido.",
+		"imagen" : "../static/Imagenes/Beipiaosaurus.jpg"
+	},
+	{
+		"id" : 31,
+		"Nombre" : "Beishanlong",
+		"Descripcion" : "Este imitador de aves pesaba más de media tonelada.",
+		"imagen" : "../static/Imagenes/Beishanlong.jpg"
+	},
+	{
+		"id" : 32,
+		"Nombre" : "Bellusaurus",
+		"Descripcion" : "Una manada de este sauropodo se ahogó en una inundación repentina.",
+		"imagen" : "../static/Imagenes/Bellusaurus.jpg"
+	},
+	{
+		"id" : 33,
+		"Nombre" : "Berberosaurus",
+		"Descripcion" : "Este \"lagarto bereber\" ha resultado difícil de clasificar.",
+		"imagen" : "../static/Imagenes/Berberosaurus.jpg"
+	},
+	{
+		"id" : 34,
+		"Nombre" : "Bicentenaria",
+		"Descripcion" : "Este dinosaurio fue nombrado en honor al 200 aniversario de Argentina.",
+		"imagen" : "../static/Imagenes/Bicentenaria.jpg"
+	},
+	{
+		"id" : 35,
+		"Nombre" : "Bistahieversor",
+		"Descripcion" : "Este tiranosaurio tenía más dientes que el T. Rex.",
+		"imagen" : "../static/Imagenes/Bistahieversor.jpg"
+	},
+	{
+		"id" : 36,
+		"Nombre" : "Bonapartenykus",
+		"Descripcion" : "Este dinosaurio emplumado fue encontrado cerca de sus huevos.",
+		"imagen" : "../static/Imagenes/Bonapartenykus.jpg"
+	},
+	{
+		"id" : 37,
+		"Nombre" : "Bonitasaura",
+		"Descripcion" : "Este titanosaurio no fue tan hermoso como su nombre sugiere.",
+		"imagen" : "../static/Imagenes/Bonitasaura.jpg"
+	},
+	{
+		"id" : 38,
+		"Nombre" : "Borogovia",
+		"Descripcion" : "Este terópodo fue nombrado según un poema de Lewis Carroll.",
+		"imagen" : "../static/Imagenes/Borogovia.jpg"
+	},
+	{
+		"id" : 39,
+		"Nombre" : "Bothriospondylus",
+		"Descripcion" : "Un estudio de caso en la confusión de los dinosaurios.",
+		"imagen" : "../static/Imagenes/Bothriospondylus.jpg"
+	},
+	{
+		"id" : 40,
+		"Nombre" : "Brachiosaurus",
+		"Descripcion" : "Este dinosaurio fue un gigante, un herbívoro de cuello largo y apacible.",
+		"imagen" : "../static/Imagenes/Brachiosaurus.jpg"
+	},
+	{
+		"id" : 41,
+		"Nombre" : "Brachyceratops",
+		"Descripcion" : "Un ceratopsiano poco conocido de América del Norte.",
+		"imagen" : "../static/Imagenes/Brachyceratops.jpg"
+	},
+	{
+		"id" : 42,
+		"Nombre" : "Brachylophosaurus",
+		"Descripcion" : "El pico de este dinosaurio de pato parecía más el de un loro.",
+		"imagen" : "../static/Imagenes/Brachylophosaurus.jpg"
+	},
+	{
+		"id" : 43,
+		"Nombre" : "Brachytrachelopan",
+		"Descripcion" : "Este sauropodo tenía un cuello inusualmente corto.",
+		"imagen" : "../static/Imagenes/Brachytrachelopan.jpg"
+	},
+	{
+		"id" : 44,
+		"Nombre" : "Bravoceratops",
+		"Descripcion" : "Este ceratopsiano fue descubierto recientemente en Texas.",
+		"imagen" : "../static/Imagenes/Bravoceratops.jpg"
+	},
+	{
+		"id" : 45,
+		"Nombre" : "Brontomerus",
+		"Descripcion" : "Su nombre en griego significa \"muslos de trueno\".",
+		"imagen" : "../static/Imagenes/Brontomerus.jpg"
+	},
+	{
+		"id" : 46,
+		"Nombre" : "Bruhathkayosaurus",
+		"Descripcion" : "¿Era este titanosaurio más grande que el Argentinosaurus?",
+		"imagen" : "../static/Imagenes/Bruhathkayosaurus.jpg"
+	},
+	{
+		"id" : 47,
+		"Nombre" : "Buitreraptor",
+		"Descripcion" : "El raptor más antiguo jamás descubierto en América del Sur.",
+		"imagen" : "../static/Imagenes/Buitreraptor.jpg"
+	},
+	{
+		"id" : 48,
+		"Nombre" : "Byronosaurus",
+		"Descripcion" : "Este terópodo fue un pariente cercano de Troodon.",
+		"imagen" : "../static/Imagenes/Byronosaurus.jpg"
+	},
+	{
+		"id" : 49,
+		"Nombre" : "Camarasaurus",
+		"Descripcion" : "El saurópodo más común de América del Norte en el Jurásico.",
+		"imagen" : "../static/Imagenes/Camarasaurus.jpg"
+	},
+	{
+		"id" : 50,
+		"Nombre" : "Camarillasaurus",
+		"Descripcion" : "Un ceratósauro de Europa occidental del Cretácico temprano.",
+		"imagen" : "../static/Imagenes/Camarillasaurus.jpg"
+	},
+	{
+		"id" : 51,
+		"Nombre" : "Camelotia",
+		"Descripcion" : "Un miembro temprano de la línea evolutiva que dio origen a los saurópodos.",
+		"imagen" : "../static/Imagenes/Camelotia.jpg"
+	},
+	{
+		"id" : 52,
+		"Nombre" : "Camptosaurus",
+		"Descripcion" : "Un pariente cercano de Iguanodon.",
+		"imagen" : "../static/Imagenes/Camptosaurus.jpg"
+	},
+	{
+		"id" : 53,
+		"Nombre" : "Carcharodontosaurus",
+		"Descripcion" : "Su nombre significa \"lagarto tiburón blanco grande.\" ¿Impresionado?",
+		"imagen" : "../static/Imagenes/Carcharodontosaurus.jpg"
+	},
+	{
+		"id" : 54,
+		"Nombre" : "Carnotaurus",
+		"Descripcion" : "Los brazos más cortos de cualquier dinosaurio carnívoro con cuernos a juego.",
+		"imagen" : "../static/Imagenes/Carnotaurus.jpg"
+	},
+	{
+		"id" : 55,
+		"Nombre" : "Caudipteryx",
+		"Descripcion" : "Un dinosaurio de aspecto aviar que cambió las opiniones de los paleontólogos.",
+		"imagen" : "../static/Imagenes/Caudipteryx.jpg"
+	},
+	{
+		"id" : 56,
+		"Nombre" : "Centrosaurus",
+		"Descripcion" : "Como un unicornio, este ceratópsido solo tenía un cuerno.",
+		"imagen" : "../static/Imagenes/Centrosaurus.jpg"
+	},
+	{
+		"id" : 57,
+		"Nombre" : "Cerasinops",
+		"Descripcion" : "Un pequeño ceratópsido del Cretácico tardío.",
+		"imagen" : "../static/Imagenes/Cerasinops.jpg"
+	},
+	{
+		"id" : 58,
+		"Nombre" : "Ceratoniquus",
+		"Descripcion" : "Este dino-ave fue descubierto en Mongolia en 2009.",
+		"imagen" : "../static/Imagenes/Ceratoniquus.jpg"
+	},
+	{
+		"id" : 59,
+		"Nombre" : "Ceratosaurus",
+		"Descripcion" : "Este carnívoro primitivo es difícil de clasificar.",
+		"imagen" : "../static/Imagenes/Ceratosaurus.jpg"
+	},
+	{
+		"id" : 60,
+		"Nombre" : "Cetiosauriscus",
+		"Descripcion" : "No debe confundirse con el más famoso Cetiosaurus.",
+		"imagen" : "../static/Imagenes/Cetiosauriscus.jpg"
+	},
+	{
+		"id" : 61,
+		"Nombre" : "Cetiosaurus",
+		"Descripcion" : "Este \"lagarto ballena\" fue una vez confundido con el Monstruo del Lago Ness.",
+		"imagen" : "../static/Imagenes/Cetiosaurus.jpg"
+	},
+	{
+		"id" : 62,
+		"Nombre" : "Changyuraptor",
+		"Descripcion" : "¿Podría este dinosaurio emplumado ser capaz de volar?",
+		"imagen" : "../static/Imagenes/Changyuraptor.jpg"
+	},
+	{
+		"id" : 63,
+		"Nombre" : "Chaoyangsaurus",
+		"Descripcion" : "Un ceratópsido temprano del período Jurásico tardío.",
+		"imagen" : "../static/Imagenes/Chaoyangsaurus.jpg"
+	},
+	{
+		"id" : 64,
+		"Nombre" : "Charonosaurus",
+		"Descripcion" : "Este dinosaurio de pico de pato era mucho más grande que un elefante.",
+		"imagen" : "../static/Imagenes/Charonosaurus.jpg"
+	},
+	{
+		"id" : 65,
+		"Nombre" : "Chasmosaurus",
+		"Descripcion" : "El único dinosaurio que venía con su propia tienda de campaña.",
+		"imagen" : "../static/Imagenes/Chasmosaurus.jpg"
+	},
+	{
+		"id" : 66,
+		"Nombre" : "Chialingosaurus",
+		"Descripcion" : "Uno de los primeros estegosaurios asiáticos.",
+		"imagen" : "../static/Imagenes/Chialingosaurus.jpg"
+	},
+	{
+		"id" : 67,
+		"Nombre" : "Chilantaisaurus",
+		"Descripcion" : "Este gran terópodo podría haber sido ancestral de Spinosaurus.",
+		"imagen" : "../static/Imagenes/Chilantaisaurus.jpg"
+	},
+	{
+		"id" : 68,
+		"Nombre" : "Chilesaurus",
+		"Descripcion" : "Este terópodo herbívoro fue descubierto recientemente en Chile.",
+		"imagen" : "../static/Imagenes/Chilesaurus.jpg"
+	},
+	{
+		"id" : 69,
+		"Nombre" : "Chindesaurus",
+		"Descripcion" : "Este dinosaurio temprano era un pariente cercano de Herrerasaurus.",
+		"imagen" : "../static/Imagenes/Chindesaurus.jpg"
+	},
+	{
+		"id" : 70,
+		"Nombre" : "Chirostenotes",
+		"Descripcion" : "A este dinosaurio de aspecto aviar se le conoció por tres nombres diferentes.",
+		"imagen" : "../static/Imagenes/Chirostenotes.jpg"
+	},
+	{
+		"id" : 71,
+		"Nombre" : "Chubutisaurus",
+		"Descripcion" : "Este titanosaurio estaba en el menú del Tyrannotitan.",
+		"imagen" : "../static/Imagenes/Chubutisaurus.jpg"
+	},
+	{
+		"id" : 72,
+		"Nombre" : "Chungkingosaurus",
+		"Descripcion" : "Este estegosaurio temprano tenía algunas características primitivas.",
+		"imagen" : "../static/Imagenes/Chungkingosaurus.jpg"
+	},
+	{
+		"id" : 73,
+		"Nombre" : "Citipati",
+		"Descripcion" : "Este terópodo mongol fue un pariente cercano de Oviraptor.",
+		"imagen" : "../static/Imagenes/Citipati.jpg"
+	},
+	{
+		"id" : 74,
+		"Nombre" : "Claosaurus",
+		"Descripcion" : "Este lagarto quebrado era un hadrosaurio primitivo.",
+		"imagen" : "../static/Imagenes/Claosaurus.jpg"
+	},
+	{
+		"id" : 75,
+		"Nombre" : "Coahuilaceratops",
+		"Descripcion" : "Tenía los cuernos más largos de cualquier dinosaurio ceratópsido conocido.",
+		"imagen" : "../static/Imagenes/Coahuilaceratops.jpg"
+	},
+	{
+		"id" : 76,
+		"Nombre" : "Coelophysis",
+		"Descripcion" : "Uno de los dinosaurios más antiguos que jamás ha recorrido la tierra.",
+		"imagen" : "../static/Imagenes/Coelophysis.jpg"
+	},
+	{
+		"id" : 77,
+		"Nombre" : "Coelurus",
+		"Descripcion" : "Este dinosaurio pequeño era un pariente cercano de Compsognathus.",
+		"imagen" : "../static/Imagenes/Coelurus.jpg"
+	},
+	{
+		"id" : 78,
+		"Nombre" : "Colepiocephale",
+		"Descripcion" : "El nombre de este dinosaurio con cráneo grueso proviene del griego testarudo.",
+		"imagen" : "../static/Imagenes/Colepiocephale.jpg"
+	},
+	{
+		"id" : 79,
+		"Nombre" : "Compsognathus",
+		"Descripcion" : "Este dinosaurio tenía el tamaño de un pollo, pero era mucho más feroz.",
+		"imagen" : "../static/Imagenes/Compsognathus.jpg"
+	},
+	{
+		"id" : 80,
+		"Nombre" : "Concavenator",
+		"Descripcion" : "Este gran terópodo tenía una joroba extraña en su espalda.",
+		"imagen" : "../static/Imagenes/Concavenator.jpg"
+	},
+	{
+		"id" : 81,
+		"Nombre" : "Conchoraptor",
+		"Descripcion" : "Este ladrón de conchas podría haberse alimentado de moluscos.",
+		"imagen" : "../static/Imagenes/Conchoraptor.jpg"
+	},
+	{
+		"id" : 82,
+		"Nombre" : "Condorraptor",
+		"Descripcion" : "Un pequeño terópodo de mediados del Jurásico de América del Sur.",
+		"imagen" : "../static/Imagenes/Condorraptor.jpg"
+	},
+	{
+		"id" : 83,
+		"Nombre" : "Coronosaurus",
+		"Descripcion" : "Este lagarto coronado fue clasificado una vez como una especie de Centrosaurus.",
+		"imagen" : "../static/Imagenes/Coronosaurus.jpg"
+	},
+	{
+		"id" : 84,
+		"Nombre" : "Corythosaurus",
+		"Descripcion" : "Este dino con casco corintio tenía un canto distintivo.",
+		"imagen" : "../static/Imagenes/Corythosaurus.jpg"
+	},
+	{
+		"id" : 85,
+		"Nombre" : "Crichtonsaurus",
+		"Descripcion" : "Este dinosaurio fue nombrado en honor al autor de Jurassic Park.",
+		"imagen" : "../static/Imagenes/Crichtonsaurus.jpg"
+	},
+	{
+		"id" : 86,
+		"Nombre" : "Cruxicheiros",
+		"Descripcion" : "Este dinosaurio de manos cruzadas fue nombrado en 2010.",
+		"imagen" : "../static/Imagenes/Cruxicheiros.jpg"
+	},
+	{
+		"id" : 87,
+		"Nombre" : "Cryolophosaurus",
+		"Descripcion" : "Este dinosaurio con cresta fue conocido una vez como Elvisaurus.",
+		"imagen" : "../static/Imagenes/Cryolophosaurus.jpg"
+	},
+	{
+		"id" : 88,
+		"Nombre" : "Cryptovolans",
+		"Descripcion" : "¿Era este el mismo dinosaurio que Microraptor?",
+		"imagen" : "../static/Imagenes/Cryptovolans.jpg"
+	},
+	{
+		"id" : 89,
+		"Nombre" : "Cumnoria",
+		"Descripcion" : "Una vez se clasificó erróneamente como una especie de Iguanodon.",
+		"imagen" : "../static/Imagenes/Cumnoria.jpg"
+	},
+	{
+		"id" : 90,
+		"Nombre" : "Dacentrurus",
+		"Descripcion" : "El primer estegosaurio jamás descrito.",
+		"imagen" : "../static/Imagenes/Dacentrurus.jpg"
+	},
+	{
+		"id" : 91,
+		"Nombre" : "Daemonosaurus",
+		"Descripcion" : "Este \"lagarto malvado\" era un pariente cercano de Coelophysis.",
+		"imagen" : "../static/Imagenes/Daemonosaurus.jpg"
+	},
+	{
+		"id" : 92,
+		"Nombre" : "Dahalokely",
+		"Descripcion" : "Un raro terópodo de la isla de Madagascar.",
+		"imagen" : "../static/Imagenes/Dahalokely.jpg"
+	},
+	{
+		"id" : 93,
+		"Nombre" : "Dakotaraptor",
+		"Descripcion" : "Este gigantesco dromeosáurido fue descubierto recientemente en Dakota del Sur.",
+		"imagen" : "../static/Imagenes/Dakotaraptor.jpg"
+	},
+	{
+		"id" : 96,
+		"Nombre" : "Darwinsaurus",
+		"Descripcion" : "El lagarto de Darwin puede o no ser un género de dinosaurio válido.",
+		"imagen" : "../static/Imagenes/Darwinsaurus.jpg"
+	},
+	{
+		"id" : 94,
+		"Nombre" : "Daspletosaurus",
+		"Descripcion" : "Este \"lagarto aterrador\" era un pariente cercano de T. Rex.",
+		"imagen" : "../static/Imagenes/Daspletosaurus.jpg"
+	},
+	{
+		"id" : 95,
+		"Nombre" : "Datousaurus",
+		"Descripcion" : "Un saurópodo de tamaño mediano del Asia del Jurásico medio.",
+		"imagen" : "../static/Imagenes/Datousaurus.jpg"
+	},
+	{
+		"id" : 97,
+		"Nombre" : "Deinocheirus",
+		"Descripcion" : "Todo lo que sabemos con certeza sobre este dinosaurio es la forma de sus brazos.",
+		"imagen" : "../static/Imagenes/Deinocheirus.jpg"
+	},
+	{
+		"id" : 98,
+		"Nombre" : "Deinodon",
+		"Descripcion" : "Este terrible diente es importante desde una perspectiva histórica.",
+		"imagen" : "../static/Imagenes/Deinodon.jpg"
+	},
+	{
+		"id" : 99,
+		"Nombre" : "Deinonychus",
+		"Descripcion" : "Uno de los raptor más temibles del período Cretácico.",
+		"imagen" : "../static/Imagenes/Deinonychus.jpg"
+	},
+	{
+		"id" : 100,
+		"Nombre" : "Delapparentia",
+		"Descripcion" : "Este ornitópodo fue inicialmente clasificado como una especie de Iguanodon.",
+		"imagen" : "../static/Imagenes/Delapparentia.jpg"
+	},
+	{
+		"id" : 101,
+		"Nombre" : "Deltadromeus",
+		"Descripcion" : "Un terópodo inusualmente veloz del Cretácico medio.",
+		"imagen" : "../static/Imagenes/Deltadromeus.jpg"
+	},
+	{
+		"id" : 102,
+		"Nombre" : "Demandasaurus",
+		"Descripcion" : "Un saurópodo de Europa del Cretácico temprano mal entendido.",
+		"imagen" : "../static/Imagenes/Demandasaurus.jpg"
+	},
+	{
+		"id" : 103,
+		"Nombre" : "Diabloceratops",
+		"Descripcion" : "Parecía una mezcla entre un Triceratops y un Centrosaurus.",
+		"imagen" : "../static/Imagenes/Diabloceratops.jpg"
+	},
+	{
+		"id" : 104,
+		"Nombre" : "Diamantinasaurus",
+		"Descripcion" : "Este titanosaurio fue descubierto recientemente en Australia.",
+		"imagen" : "../static/Imagenes/Diamantinasaurus.jpg"
+	},
+	{
+		"id" : 105,
+		"Nombre" : "Diceratops",
+		"Descripcion" : "¿Fue este dinosaurio bíceps realmente un espécimen de Triceratops?",
+		"imagen" : "../static/Imagenes/Diceratops.jpg"
+	},
+	{
+		"id" : 106,
+		"Nombre" : "Dicraeosaurus",
+		"Descripcion" : "Un saurópodo de cuello espinoso de tamaño mediano.",
+		"imagen" : "../static/Imagenes/Dicraeosaurus.jpg"
+	},
+	{
+		"id" : 107,
+		"Nombre" : "Dilong",
+		"Descripcion" : "Este emperador dragón podría haber sido un antecesor de T. Rex.",
+		"imagen" : "../static/Imagenes/Dilong.jpg"
+	},
+	{
+		"id" : 108,
+		"Nombre" : "Dilophosaurus",
+		"Descripcion" : "Este dinosaurio se distinguía por las crestas óseas en su cabeza.",
+		"imagen" : "../static/Imagenes/Dilophosaurus.jpg"
+	},
+	{
+		"id" : 109,
+		"Nombre" : "Dimetrodon",
+		"Descripcion" : "Este antiguo sinápsido tenía una vela gigante en su espalda.",
+		"imagen" : "../static/Imagenes/Dimetrodon.jpg"
+	},
+	{
+		"id" : 110,
+		"Nombre" : "Diplodocus",
+		"Descripcion" : "Delgado en un extremo, mucho más grueso en el medio y delgado nuevamente en el extremo lejano.",
+		"imagen" : "../static/Imagenes/Diplodocus.jpg"
+	},
+	{
+		"id" : 111,
+		"Nombre" : "Dollodon",
+		"Descripcion" : "Nombrado en honor al paleontólogo belga Louis Dollo.",
+		"imagen" : "../static/Imagenes/Dollodon.jpg"
+	},
+	{
+		"id" : 112,
+		"Nombre" : "Draconyx",
+		"Descripcion" : "Este garra de dragón vivía en Portugal a finales del Jurásico.",
+		"imagen" : "../static/Imagenes/Draconyx.jpg"
+	},
+	{
+		"id" : 113,
+		"Nombre" : "Dracopelta",
+		"Descripcion" : "Este primer anquilosáurido fue descubierto en Portugal.",
+		"imagen" : "../static/Imagenes/Dracopelta.jpg"
+	},
+	{
+		"id" : 114,
+		"Nombre" : "Dracorex",
+		"Descripcion" : "El único dinosaurio nombrado en honor a los libros de Harry Potter.",
+		"imagen" : "../static/Imagenes/Dracorex.jpg"
+	},
+	{
+		"id" : 115,
+		"Nombre" : "Dracovenator",
+		"Descripcion" : "Este cazador de dragones era un pariente cercano de Dilophosaurus.",
+		"imagen" : "../static/Imagenes/Dracovenator.jpg"
+	},
+	{
+		"id" : 116,
+		"Nombre" : "Dravidosaurus",
+		"Descripcion" : "Este dinosaurio podría haber sido en realidad un reptil marino.",
+		"imagen" : "../static/Imagenes/Dravidosaurus.jpg"
+	},
+	{
+		"id" : 117,
+		"Nombre" : "Dreadnoughtus",
+		"Descripcion" : "Este enorme titanosaurio fue descubierto recientemente en Argentina.",
+		"imagen" : "../static/Imagenes/Dreadnoughtus.jpg"
+	},
+	{
+		"id" : 118,
+		"Nombre" : "Drinker",
+		"Descripcion" : "Nombrado en honor al famoso paleontólogo Edward Drinker Cope.",
+		"imagen" : "../static/Imagenes/Drinker.jpg"
+	},
+	{
+		"id" : 119,
+		"Nombre" : "Dromaeosauroides",
+		"Descripcion" : "El único dinosaurio descubierto en Dinamarca.",
+		"imagen" : "../static/Imagenes/Dromaeosauroides.jpg"
+	},
+	{
+		"id" : 120,
+		"Nombre" : "Dromaeosaurus",
+		"Descripcion" : "Este lagarto corredor probablemente estaba cubierto de plumas.",
+		"imagen" : "../static/Imagenes/Dromaeosaurus.jpg"
+	},
+	{
+		"id" : 121,
+		"Nombre" : "Dromiceiomimus",
+		"Descripcion" : "Posiblemente el dinosaurio más rápido que jamás haya vivido.",
+		"imagen" : "../static/Imagenes/Dromiceiomimus.jpg"
+	},
+	{
+		"id" : 122,
+		"Nombre" : "Dryosaurus",
+		"Descripcion" : "Un ornitópodo típico del Jurásico tardío.",
+		"imagen" : "../static/Imagenes/Dryosaurus.jpg"
+	},
+	{
+		"id" : 123,
+		"Nombre" : "Dryptosaurus",
+		"Descripcion" : "El primer tiranosaurio descubierto en los Estados Unidos.",
+		"imagen" : "../static/Imagenes/Dryptosaurus.jpg"
+	},
+	{
+		"id" : 124,
+		"Nombre" : "Dubreuillosaurus",
+		"Descripcion" : "Este megalosaurio tenía un morro largo y bajo.",
+		"imagen" : "../static/Imagenes/Dubreuillosaurus.jpg"
+	},
+	{
+		"id" : 125,
+		"Nombre" : "Duriavenator",
+		"Descripcion" : "Otro terópodo que una vez se clasificó como Megalosaurus.",
+		"imagen" : "../static/Imagenes/Duriavenator.jpg"
+	},
+	{
+		"id" : 126,
+		"Nombre" : "Dyoplosaurus",
+		"Descripcion" : "Este anquilosáurido fue confundido una vez con Euoplocephalus.",
+		"imagen" : "../static/Imagenes/Dyoplosaurus.jpg"
+	},
+	{
+		"id" : 127,
+		"Nombre" : "Dysalotosaurus",
+		"Descripcion" : "Sabemos mucho sobre las etapas de crecimiento de este dinosaurio.",
+		"imagen" : "../static/Imagenes/Dysalotosaurus.jpg"
+	},
+	{
+		"id" : 128,
+		"Nombre" : "Dyslocosaurus",
+		"Descripcion" : "Su nombre significa lagarto difícil de ubicar.",
+		"imagen" : "../static/Imagenes/Dyslocosaurus.jpg"
+	},
+	{
+		"id" : 129,
+		"Nombre" : "Dystrophaeus",
+		"Descripcion" : "Este saurópodo parecido a Diplodocus fue nombrado por Edward Cope.",
+		"imagen" : "../static/Imagenes/Dystrophaeus.jpg"
+	},
+	{
+		"id" : 130,
+		"Nombre" : "Echinodon",
+		"Descripcion" : "Uno de los pocos ornitópodos con un conjunto de caninos.",
+		"imagen" : "../static/Imagenes/Echinodon.jpg"
+	},
+	{
+		"id" : 131,
+		"Nombre" : "Edmarka",
+		"Descripcion" : "Esto podría haber sido una especie de Torvosaurus.",
+		"imagen" : "../static/Imagenes/Edmarka.jpg"
+	},
+	{
+		"id" : 132,
+		"Nombre" : "Edmontonia",
+		"Descripcion" : "Este dinosaurio acorazado en realidad nunca vivió en Edmonton.",
+		"imagen" : "../static/Imagenes/Edmontonia.jpg"
+	},
+	{
+		"id" : 133,
+		"Nombre" : "Edmontosaurus",
+		"Descripcion" : "Este gran herbívoro de pico de pato fue contemporáneo de T. Rex.",
+		"imagen" : "../static/Imagenes/Edmontosaurus.jpg"
+	},
+	{
+		"id" : 134,
+		"Nombre" : "Efraasia",
+		"Descripcion" : "Este herbívoro del Triásico podría haber sido ancestral de los saurópodos.",
+		"imagen" : "../static/Imagenes/Efraasia.jpg"
+	},
+	{
+		"id" : 135,
+		"Nombre" : "Einiosaurus",
+		"Descripcion" : "Este ceratopsiano era un pariente cercano de Centrosaurus.",
+		"imagen" : "../static/Imagenes/Einiosaurus.jpg"
+	},
+	{
+		"id" : 136,
+		"Nombre" : "Ekrixinatosaurus",
+		"Descripcion" : "Su nombre significa \"lagarto nacido de una explosión\".",
+		"imagen" : "../static/Imagenes/Ekrixinatosaurus.jpg"
+	},
+	{
+		"id" : 137,
+		"Nombre" : "Elaphrosaurus",
+		"Descripcion" : "Un terópodo ligero del Jurásico tardío.",
+		"imagen" : "../static/Imagenes/Elaphrosaurus.jpg"
+	},
+	{
+		"id" : 138,
+		"Nombre" : "Elmisaurus",
+		"Descripcion" : "Este lagarto del pie era un pariente cercano de Oviraptor.",
+		"imagen" : "../static/Imagenes/Elmisaurus.jpg"
+	},
+	{
+		"id" : 139,
+		"Nombre" : "Elopteryx",
+		"Descripcion" : "Este dinosaurio transilvano es casi tan controvertido como Drácula.",
+		"imagen" : "../static/Imagenes/Elopteryx.jpg"
+	},
+	{
+		"id" : 140,
+		"Nombre" : "Elrhazosaurus",
+		"Descripcion" : "Una vez clasificado como una especie de Valdosaurus.",
+		"imagen" : "../static/Imagenes/Elrhazosaurus.jpg"
+	},
+	{
+		"id" : 141,
+		"Nombre" : "Enigmosaurus",
+		"Descripcion" : "Este \"lagarto de rompecabezas\" estaba estrechamente relacionado con Therizinosaurus.",
+		"imagen" : "../static/Imagenes/Enigmosaurus.jpg"
+	},
+	{
+		"id" : 142,
+		"Nombre" : "Eoabelisaurus",
+		"Descripcion" : "El terópodo abelisáurido más temprano identificado hasta ahora.",
+		"imagen" : "../static/Imagenes/Eoabelisaurus.jpg"
+	},
+	{
+		"id" : 143,
+		"Nombre" : "Eobrontosaurus",
+		"Descripcion" : "Este \"Brontosaurus del amanecer\" no es aceptado por la mayoría de los expertos.",
+		"imagen" : "../static/Imagenes/Eobrontosaurus.jpg"
+	},
+	{
+		"id" : 144,
+		"Nombre" : "Eocarcharia",
+		"Descripcion" : "Este \"tiburón del amanecer\" merodeaba los bosques del norte de África.",
+		"imagen" : "../static/Imagenes/Eocarcharia.jpg"
+	},
+	{
+		"id" : 145,
+		"Nombre" : "Eocursor",
+		"Descripcion" : "Este reptil del Triásico tardío fue uno de los primeros dinosaurios verdaderos.",
+		"imagen" : "../static/Imagenes/Eocursor.jpg"
+	},
+	{
+		"id" : 146,
+		"Nombre" : "Eodromaeus",
+		"Descripcion" : "Otro antiguo terópodo de América del Sur.",
+		"imagen" : "../static/Imagenes/Eodromaeus.jpg"
+	},
+	{
+		"id" : 147,
+		"Nombre" : "Eolambia",
+		"Descripcion" : "Un hadrosaurio temprano de América del Norte.",
+		"imagen" : "../static/Imagenes/Eolambia.jpg"
+	},
+	{
+		"id" : 148,
+		"Nombre" : "Eoraptor",
+		"Descripcion" : "Este pequeño dinosaurio estaba entre los primeros de su tipo.",
+		"imagen" : "../static/Imagenes/Eoraptor.jpg"
+	},
+	{
+		"id" : 149,
+		"Nombre" : "Eosinopteryx",
+		"Descripcion" : "Un pequeño dinosaurio emplumado del Jurásico tardío.",
+		"imagen" : "../static/Imagenes/Eosinopteryx.jpg"
+	},
+	{
+		"id" : 150,
+		"Nombre" : "Eotriceratops",
+		"Descripcion" : "Este Triceratops del amanecer fue descubierto recientemente en Canadá.",
+		"imagen" : "../static/Imagenes/Eotriceratops.jpg"
+	},
+	{
+		"id" : 151,
+		"Nombre" : "Eotyrannus",
+		"Descripcion" : "Este tiranosaurio temprano se parecía más a un raptor.",
+		"imagen" : "../static/Imagenes/Eotyrannus.jpg"
+	},
+	{
+		"id" : 152,
+		"Nombre" : "Epachthosaurus",
+		"Descripcion" : "Este lagarto pesado era relativamente primitivo para su tiempo y lugar.",
+		"imagen" : "../static/Imagenes/Epachthosaurus.jpg"
+	},
+	{
+		"id" : 358,
+		"Nombre" : "Epidendrosaurus",
+		"Descripcion" : "¿Pasó toda su vida este pequeño dino-pájaro en un árbol?",
+		"imagen" : "../static/Imagenes/Epidendrosaurus.jpg"
+	},
+	{
+		"id" : 359,
+		"Nombre" : "Epidexipteryx",
+		"Descripcion" : "Este dinosaurio emplumado precedió a Archaeopteryx.",
+		"imagen" : "../static/Imagenes/Epidexipteryx.jpg"
+	},
+	{
+		"id" : 360,
+		"Nombre" : "Equijubus",
+		"Descripcion" : "Su nombre es griego para melena de caballo.",
+		"imagen" : "../static/Imagenes/Equijubus.jpg"
+	},
+	{
+		"id" : 361,
+		"Nombre" : "Erectopus",
+		"Descripcion" : "Este dinosaurio de pie derecho es un enigma del siglo XIX.",
+		"imagen" : "../static/Imagenes/Erectopus.jpg"
+	},
+	{
+		"id" : 364,
+		"Nombre" : "Erketu",
+		"Descripcion" : "Este titanosaurio tenía un cuello inusualmente largo.",
+		"imagen" : "../static/Imagenes/Erketu.jpg"
+	},
+	{
+		"id" : 366,
+		"Nombre" : "Erliansaurus",
+		"Descripcion" : "Un terizinosaurio basal de Asia central.",
+		"imagen" : "../static/Imagenes/Erliansaurus.jpg"
+	},
+	{
+		"id" : 373,
+		"Nombre" : "Erlikosaurus",
+		"Descripcion" : "Este terizinosaurio tardío vagaba por los bosques de Mongolia.",
+		"imagen" : "../static/Imagenes/Erlikosaurus.jpg"
+	},
+	{
+		"id" : 374,
+		"Nombre" : "Euhelopus",
+		"Descripcion" : "El primer saurópodo descubierto en China.",
+		"imagen" : "../static/Imagenes/Euhelopus.jpg"
+	},
+	{
+		"id" : 376,
+		"Nombre" : "Euoplocephalus",
+		"Descripcion" : "Incluso los párpados de este anquilosaurio estaban acorazados.",
+		"imagen" : "../static/Imagenes/Euoplocephalus.jpg"
+	},
+	{
+		"id" : 377,
+		"Nombre" : "Europasaurus",
+		"Descripcion" : "El saurópodo más pequeño jamás descubierto.",
+		"imagen" : "../static/Imagenes/Europasaurus.jpg"
+	},
+	{
+		"id" : 380,
+		"Nombre" : "Europelta",
+		"Descripcion" : "Este nodosáurido temprano fue descubierto recientemente en España.",
+		"imagen" : "../static/Imagenes/Europelta.jpg"
+	},
+	{
+		"id" : 382,
+		"Nombre" : "Euskelosaurus",
+		"Descripcion" : "El primer dinosaurio jamás descubierto en África.",
+		"imagen" : "../static/Imagenes/Euskelosaurus.jpg"
+	},
+	{
+		"id" : 384,
+		"Nombre" : "Eustreptospondylus",
+		"Descripcion" : "Un pariente cercano de Megalosaurus.",
+		"imagen" : "../static/Imagenes/Eustreptospondylus.jpg"
+	},
+	{
+		"id" : 393,
+		"Nombre" : "Fabrosaurus",
+		"Descripcion" : "Este ornitópodo temprano podría haber sido una especie de Lesothosaurus.",
+		"imagen" : "../static/Imagenes/Fabrosaurus.jpg"
+	},
+	{
+		"id" : 397,
+		"Nombre" : "Falcarius",
+		"Descripcion" : "Un terópodo emplumado bizarro de América del Norte.",
+		"imagen" : "../static/Imagenes/Falcarius.jpg"
+	},
+	{
+		"id" : 400,
+		"Nombre" : "Ferganasaurus",
+		"Descripcion" : "El primer dinosaurio descubierto en la URSS.",
+		"imagen" : "../static/Imagenes/Ferganasaurus.jpg"
+	},
+	{
+		"id" : 403,
+		"Nombre" : "Fruitadens",
+		"Descripcion" : "Uno de los dinosaurios más pequeños que jamás haya vivido en América del Norte.",
+		"imagen" : "../static/Imagenes/Fruitadens.jpg"
+	},
+	{
+		"id" : 404,
+		"Nombre" : "Fukuiraptor",
+		"Descripcion" : "Uno de los pocos dinosaurios carnívoros que se han excavado en Japón.",
+		"imagen" : "../static/Imagenes/Fukuiraptor.jpg"
+	},
+	{
+		"id" : 405,
+		"Nombre" : "Fukuisaurus",
+		"Descripcion" : "Este ornitópodo fue descubierto en Japón.",
+		"imagen" : "../static/Imagenes/Fukuisaurus.jpg"
+	},
+	{
+		"id" : 407,
+		"Nombre" : "Fulgurotherium",
+		"Descripcion" : "Sabemos muy poco sobre este bestia del rayo.",
+		"imagen" : "../static/Imagenes/Fulgurotherium.jpg"
+	},
+	{
+		"id" : 409,
+		"Nombre" : "Futalognkosaurus",
+		"Descripcion" : "Un titanosaurio muy grande y con un nombre extraño.",
+		"imagen" : "../static/Imagenes/Futalognkosaurus.jpg"
+	},
+	{
+		"id" : 411,
+		"Nombre" : "Hadrosaurus",
+		"Descripcion" : "El dinosaurio oficial del estado de Nueva Jersey.",
+		"imagen" : "../static/Imagenes/Hadrosaurus.jpg"
+	},
+	{
+		"id" : 413,
+		"Nombre" : "Hagryphus",
+		"Descripcion" : "El oviraptor más grande de América del Norte descubierto hasta ahora.",
+		"imagen" : "../static/Imagenes/Hagryphus.jpg"
+	},
+	{
+		"id" : 437,
+		"Nombre" : "Halticosaurus",
+		"Descripcion" : "Un terópodo \"nomen dubium\" del principio del siglo XX.",
+		"imagen" : "../static/Imagenes/Halticosaurus.jpg"
+	},
+	{
+		"id" : 440,
+		"Nombre" : "Haplocanthosaurus",
+		"Descripcion" : "Un típico saurópodo del período Jurásico tardío.",
+		"imagen" : "../static/Imagenes/Haplocanthosaurus.jpg"
+	},
+	{
+		"id" : 469,
+		"Nombre" : "Haplocheirus",
+		"Descripcion" : "Este dinosaurio con plumas precedió a Archaeopteryx por millones de años.",
+		"imagen" : "../static/Imagenes/Haplocheirus.jpg"
+	},
+	{
+		"id" : 472,
+		"Nombre" : "Harpymimus",
+		"Descripcion" : "Nombrado en honor a la criatura alada de la mitología griega.",
+		"imagen" : "../static/Imagenes/Harpymimus.jpg"
+	},
+	{
+		"id" : 475,
+		"Nombre" : "Haya",
+		"Descripcion" : "Este dinosaurio recibió su nombre en honor a un dios mongol con cabeza de caballo.",
+		"imagen" : "../static/Imagenes/Haya.jpg"
+	},
+	{
+		"id" : 479,
+		"Nombre" : "Herrerasaurus",
+		"Descripcion" : "Este carnívoro vagaba por lo que hoy es Sudamérica.",
+		"imagen" : "../static/Imagenes/Herrerasaurus.jpg"
+	},
+	{
+		"id" : 481,
+		"Nombre" : "Hesperonychus",
+		"Descripcion" : "Un pequeño dinosaurio de América del Norte.",
+		"imagen" : "../static/Imagenes/Hesperonychus.jpg"
+	},
+	{
+		"id" : 483,
+		"Nombre" : "Hesperosaurus",
+		"Descripcion" : "El estegosaurio más antiguo descubierto en América del Norte.",
+		"imagen" : "../static/Imagenes/Hesperosaurus.jpg"
+	},
+	{
+		"id" : 495,
+		"Nombre" : "Heterodontosaurus",
+		"Descripcion" : "Este dinosaurio \"diferentemente dentado\" sería una pesadilla para el dentista.",
+		"imagen" : "../static/Imagenes/Heterodontosaurus.jpg"
+	},
+	{
+		"id" : 496,
+		"Nombre" : "Hexing",
+		"Descripcion" : "Este temprano ornitomímido fue descubierto recientemente en China.",
+		"imagen" : "../static/Imagenes/Hexing.jpg"
+	},
+	{
+		"id" : 498,
+		"Nombre" : "Hexinlusaurus",
+		"Descripcion" : "Nombrado en honor al profesor chino He Xin-Lu.",
+		"imagen" : "../static/Imagenes/Hexinlusaurus.jpg"
+	},
+	{
+		"id" : 500,
+		"Nombre" : "Ichthyovenator",
+		"Descripcion" : "Este dinosaurio con espina dorsal fue descubierto recientemente en Laos.",
+		"imagen" : "../static/Imagenes/Ichthyovenator.jpg"
+	},
+	{
+		"id" : 502,
+		"Nombre" : "Ignavusaurus",
+		"Descripcion" : "Su nombre significa \"lagarto cobarde\".",
+		"imagen" : "../static/Imagenes/Ignavusaurus.jpg"
+	},
+	{
+		"id" : 503,
+		"Nombre" : "Iguanacolossus",
+		"Descripcion" : "Un nuevo ornitópodo de América del Norte.",
+		"imagen" : "../static/Imagenes/Iguanacolossus.jpg"
+	},
+	{
+		"id" : 505,
+		"Nombre" : "Iguanodon",
+		"Descripcion" : "El segundo dinosaurio en la historia en recibir un nombre.",
+		"imagen" : "../static/Imagenes/Iguanodon.jpg"
+	},
+	{
+		"id" : 509,
+		"Nombre" : "Ilokelesia",
+		"Descripcion" : "Un abelisaurio primitivo de América del Sur.",
+		"imagen" : "../static/Imagenes/Ilokelesia.jpg"
+	},
+	{
+		"id" : 511,
+		"Nombre" : "Incisivosaurus",
+		"Descripcion" : "Este dinosaurio de dientes de castor era el equivalente cretácico de un castor.",
+		"imagen" : "../static/Imagenes/Incisivosaurus.jpg"
+	},
+	{
+		"id" : 513,
+		"Nombre" : "Indosuchus",
+		"Descripcion" : "Este \"cocodrilo indio\" era en realidad un dinosaurio.",
+		"imagen" : "../static/Imagenes/Indosuchus.jpg"
+	},
+	{
+		"id" : 515,
+		"Nombre" : "Ingenia",
+		"Descripcion" : "Un pequeño dinosaurio parecido a un ave de Asia central.",
+		"imagen" : "../static/Imagenes/Ingenia.jpg"
+	},
+	{
+		"id" : 517,
+		"Nombre" : "Irritator",
+		"Descripcion" : "Este espinosáurido fue nombrado por un paleontólogo muy frustrado.",
+		"imagen" : "../static/Imagenes/Irritator.jpg"
+	},
+	{
+		"id" : 519,
+		"Nombre" : "Isanosaurus",
+		"Descripcion" : "Uno de los primeros saurópodos que caminaron sobre la Tierra.",
+		"imagen" : "../static/Imagenes/Isanosaurus.jpg"
+	},
+	{
+		"id" : 521,
+		"Nombre" : "Isisaurus",
+		"Descripcion" : "También conocido como el Lagarto del Instituto Estadístico de la India.",
+		"imagen" : "../static/Imagenes/Isisaurus.jpg"
+	},
+	{
+		"id" : 522,
+		"Nombre" : "Jainosaurus",
+		"Descripcion" : "Nombrado en honor al paleontólogo indio Sohan Lal Jain.",
+		"imagen" : "../static/Imagenes/Jainosaurus.jpg"
+	},
+	{
+		"id" : 523,
+		"Nombre" : "Janenschia",
+		"Descripcion" : "El titanosaurio más antiguo en el registro fósil.",
+		"imagen" : "../static/Imagenes/Janenschia.jpg"
+	},
+	{
+		"id" : 524,
+		"Nombre" : "Jaxartosaurus",
+		"Descripcion" : "Un hadrosaurio poco conocido de Asia central.",
+		"imagen" : "../static/Imagenes/Jaxartosaurus.jpg"
+	},
+	{
+		"id" : 525,
+		"Nombre" : "Jeholosaurus",
+		"Descripcion" : "Este ornitópodo puede haber tenido una dieta omnívora.",
+		"imagen" : "../static/Imagenes/Jeholosaurus.jpg"
+	},
+	{
+		"id" : 526,
+		"Nombre" : "Jeyawati",
+		"Descripcion" : "Su nombre en zuni significa \"boca de molienda\".",
+		"imagen" : "../static/Imagenes/Jeyawati.jpg"
+	},
+	{
+		"id" : 527,
+		"Nombre" : "Jianchangosaurus",
+		"Descripcion" : "Uno de los primeros tericinosaurios en el registro fósil.",
+		"imagen" : "../static/Imagenes/Jianchangosaurus.jpg"
+	},
+	{
+		"id" : 534,
+		"Nombre" : "Jinfengopteryx",
+		"Descripcion" : "Este dinosaurio con plumas alguna vez se creyó que era un ave verdadera.",
+		"imagen" : "../static/Imagenes/Jinfengopteryx.jpg"
+	},
+	{
+		"id" : 535,
+		"Nombre" : "Jingshanosaurus",
+		"Descripcion" : "Un pariente cercano de Yunnanosaurus.",
+		"imagen" : "../static/Imagenes/Jingshanosaurus.jpg"
+	},
+	{
+		"id" : 536,
+		"Nombre" : "Jinzhousaurus",
+		"Descripcion" : "Este dinosaurio asiático fue uno de los primeros hadrosaurios.",
+		"imagen" : "../static/Imagenes/Jinzhousaurus.jpg"
+	},
+	{
+		"id" : 537,
+		"Nombre" : "Jobaria",
+		"Descripcion" : "Un extraño saurópodo africano de cola corta.",
+		"imagen" : "../static/Imagenes/Jobaria.jpg"
+	},
+	{
+		"id" : 538,
+		"Nombre" : "Judiceratops",
+		"Descripcion" : "El antepasado más temprano de Chasmosaurus identificado hasta el momento.",
+		"imagen" : "../static/Imagenes/Judiceratops.jpg"
+	},
+	{
+		"id" : 539,
+		"Nombre" : "Juratyrant",
+		"Descripcion" : "Este tiranosaurio temprano fue descubierto en Inglaterra.",
+		"imagen" : "../static/Imagenes/Juratyrant.jpg"
+	},
+	{
+		"id" : 540,
+		"Nombre" : "Juravenator",
+		"Descripcion" : "¿Por qué este supuesto \"dino-pájaro\" no tenía plumas?",
+		"imagen" : "../static/Imagenes/Juravenator.jpg"
+	},
+	{
+		"id" : 541,
+		"Nombre" : "Kaatedocus",
+		"Descripcion" : "Este pariente de Diplodocus tenía una sonrisa característica.",
+		"imagen" : "../static/Imagenes/Kaatedocus.jpg"
+	},
+	{
+		"id" : 542,
+		"Nombre" : "Kaijiangosaurus",
+		"Descripcion" : "Este podría haber sido el mismo dinosaurio que Gasosaurus.",
+		"imagen" : "../static/Imagenes/Kaijiangosaurus.jpg"
+	},
+	{
+		"id" : 543,
+		"Nombre" : "Kazaklambia",
+		"Descripcion" : "Este hadrosaurio de pico de pato fue descubierto en Kazajistán.",
+		"imagen" : "../static/Imagenes/Kazaklambia.jpg"
+	},
+	{
+		"id" : 550,
+		"Nombre" : "Kentrosaurus",
+		"Descripcion" : "Un pariente más pequeño de Stegosaurus en África.",
+		"imagen" : "../static/Imagenes/Kentrosaurus.jpg"
+	},
+	{
+		"id" : 552,
+		"Nombre" : "Kerberosaurus",
+		"Descripcion" : "Nombrado en honor al perro de tres cabezas de la mitología griega.",
+		"imagen" : "../static/Imagenes/Kerberosaurus.jpg"
+	},
+	{
+		"id" : 554,
+		"Nombre" : "Khaan",
+		"Descripcion" : "Pocos pequeños mamíferos se atrevieron a enfrentar la ira de este dinosaurio.",
+		"imagen" : "../static/Imagenes/Khaan.jpg"
+	},
+	{
+		"id" : 557,
+		"Nombre" : "Kileskus",
+		"Descripcion" : "Otro tiranosaurio \"básico\" de Asia central.",
+		"imagen" : "../static/Imagenes/Kileskus.jpg"
+	},
+	{
+		"id" : 558,
+		"Nombre" : "Kinnareemimus",
+		"Descripcion" : "Este dinosaurio \"imitador de aves\" fue descubierto recientemente en Tailandia.",
+		"imagen" : "../static/Imagenes/Kinnareemimus.jpg"
+	},
+	{
+		"id" : 560,
+		"Nombre" : "Kol",
+		"Descripcion" : "Está empatado con Mei como el \"nombre de dinosaurio más corto\".",
+		"imagen" : "../static/Imagenes/Kol.jpg"
+	},
+	{
+		"id" : 561,
+		"Nombre" : "Koreaceratops",
+		"Descripcion" : "Hay evidencia de que este ceratopsiano le gustaba nadar.",
+		"imagen" : "../static/Imagenes/Koreaceratops.jpg"
+	},
+	{
+		"id" : 562,
+		"Nombre" : "Koreanosaurus",
+		"Descripcion" : "Adivina en qué país se descubrió este ornitópodo.",
+		"imagen" : "../static/Imagenes/Koreanosaurus.jpg"
+	},
+	{
+		"id" : 563,
+		"Nombre" : "Kosmoceratops",
+		"Descripcion" : "Este ceratopsiano tenía una extraña gola que se doblaba hacia abajo.",
+		"imagen" : "../static/Imagenes/Kosmoceratops.jpg"
+	},
+	{
+		"id" : 564,
+		"Nombre" : "Kotasaurus",
+		"Descripcion" : "Uno de los pocos saurópodos descubiertos en India.",
+		"imagen" : "../static/Imagenes/Kotasaurus.jpg"
+	},
+	{
+		"id" : 566,
+		"Nombre" : "Kritosaurus",
+		"Descripcion" : "Un hadrosaurio famoso, pero poco comprendido.",
+		"imagen" : "../static/Imagenes/Kritosaurus.jpg"
+	},
+	{
+		"id" : 568,
+		"Nombre" : "Kryptops",
+		"Descripcion" : "Este dinosaurio vino equipado con su propia máscara facial.",
+		"imagen" : "../static/Imagenes/Kryptops.jpg"
+	},
+	{
+		"id" : 570,
+		"Nombre" : "Kukufeldia",
+		"Descripcion" : "Otro ornitópodo que alguna vez se agrupó con Iguanodon.",
+		"imagen" : "../static/Imagenes/Kukufeldia.jpg"
+	},
+	{
+		"id" : 572,
+		"Nombre" : "Kulindadromeus",
+		"Descripcion" : "¿Por qué tenía plumas este dinosaurio ornitópodo?",
+		"imagen" : "../static/Imagenes/Kulindadromeus.jpg"
+	},
+	{
+		"id" : 574,
+		"Nombre" : "Kundurosaurus",
+		"Descripcion" : "Este hadrosaurio fue descubierto en Extremo Oriente de Rusia.",
+		"imagen" : "../static/Imagenes/Kundurosaurus.jpg"
+	},
+	{
+		"id" : 578,
+		"Nombre" : "Labocania",
+		"Descripcion" : "Puede o no haber sido un verdadero tiranosaurio.",
+		"imagen" : "../static/Imagenes/Labocania.jpg"
+	},
+	{
+		"id" : 590,
+		"Nombre" : "Lagosuchus",
+		"Descripcion" : "¿Podría haber sido el ancestro de todos los dinosaurios?",
+		"imagen" : "../static/Imagenes/Lagosuchus.jpg"
+	},
+	{
+		"id" : 592,
+		"Nombre" : "Lambeosaurus",
+		"Descripcion" : "Este dinosaurio de pico de pato tenía una cresta en forma de hacha en su cabeza.",
+		"imagen" : "../static/Imagenes/Lambeosaurus.jpg"
+	},
+	{
+		"id" : 594,
+		"Nombre" : "Lamplughsaura",
+		"Descripcion" : "Este saurópodo primitivo fue descubierto en India.",
+		"imagen" : "../static/Imagenes/Lamplughsaura.jpg"
+	},
+	{
+		"id" : 596,
+		"Nombre" : "Lanzhousaurus",
+		"Descripcion" : "Los dientes de este herbívoro tenían medio pie de largo.",
+		"imagen" : "../static/Imagenes/Lanzhousaurus.jpg"
+	},
+	{
+		"id" : 598,
+		"Nombre" : "Laosaurus",
+		"Descripcion" : "Este dudoso ornitópodo fue nombrado por Othniel C. Marsh.",
+		"imagen" : "../static/Imagenes/Laosaurus.jpg"
+	},
+	{
+		"id" : 600,
+		"Nombre" : "Lapparentosaurus",
+		"Descripcion" : "Este saurópodo fue descubierto en Madagascar.",
+		"imagen" : "../static/Imagenes/Lapparentosaurus.jpg"
+	},
+	{
+		"id" : 602,
+		"Nombre" : "Laquintasaura",
+		"Descripcion" : "El primer dinosaurio herbívoro jamás descubierto en Venezuela.",
+		"imagen" : "../static/Imagenes/Laquintasaura.jpg"
+	},
+	{
+		"id" : 603,
+		"Nombre" : "Latirhinus",
+		"Descripcion" : "Este dinosaurio de pico de pato tenía una nariz enorme.",
+		"imagen" : "../static/Imagenes/Latirhinus.jpg"
+	},
+	{
+		"id" : 605,
+		"Nombre" : "Leaellynasaura",
+		"Descripcion" : "Uno de los pocos dinosaurios nombrados en honor a una niña.",
+		"imagen" : "../static/Imagenes/Leaellynasaura.jpg"
+	},
+	{
+		"id" : 607,
+		"Nombre" : "Leinkupal",
+		"Descripcion" : "El último saurópodo diplodócido superviviente.",
+		"imagen" : "../static/Imagenes/Leinkupal.jpg"
+	},
+	{
+		"id" : 609,
+		"Nombre" : "Leonerasaurus",
+		"Descripcion" : "Este prosaurópodo fue descubierto recientemente en Argentina.",
+		"imagen" : "../static/Imagenes/Leonerasaurus.jpg"
+	},
+	{
+		"id" : 611,
+		"Nombre" : "Leptoceratops",
+		"Descripcion" : "Uno de los ceratopsianos más primitivos de todos.",
+		"imagen" : "../static/Imagenes/Leptoceratops.jpg"
+	},
+	{
+		"id" : 613,
+		"Nombre" : "Leshansaurus",
+		"Descripcion" : "¿Se alimentaba este carnívoro de pequeños dinosaurios acorazados?",
+		"imagen" : "../static/Imagenes/Leshansaurus.jpg"
+	},
+	{
+		"id" : 614,
+		"Nombre" : "Lesothosaurus",
+		"Descripcion" : "Uno de los más antiguos de todos los dinosaurios ornitisquios.",
+		"imagen" : "../static/Imagenes/Lesothosaurus.jpg"
+	},
+	{
+		"id" : 616,
+		"Nombre" : "Lessemsaurus",
+		"Descripcion" : "Nombrado en honor al popular escritor de divulgación científica Don Lessem.",
+		"imagen" : "../static/Imagenes/Lessemsaurus.jpg"
+	},
+	{
+		"id" : 629,
+		"Nombre" : "Lexovisaurus",
+		"Descripcion" : "Uno de los estegosaurios europeos más antiguos.",
+		"imagen" : "../static/Imagenes/Lexovisaurus.jpg"
+	},
+	{
+		"id" : 631,
+		"Nombre" : "Leyesaurus",
+		"Descripcion" : "Un prosaurópodo recién descubierto de América del Sur.",
+		"imagen" : "../static/Imagenes/Leyesaurus.jpg"
+	},
+	{
+		"id" : 633,
+		"Nombre" : "Liaoceratops",
+		"Descripcion" : "Un pequeño ceratopsiano del Asia del Cretácico temprano.",
+		"imagen" : "../static/Imagenes/Liaoceratops.jpg"
+	},
+	{
+		"id" : 634,
+		"Nombre" : "Liaoningosaurus",
+		"Descripcion" : "Uno de los anquilosáuridos más pequeños en el registro fósil.",
+		"imagen" : "../static/Imagenes/Liaoningosaurus.jpg"
+	},
+	{
+		"id" : 636,
+		"Nombre" : "Liliensternus",
+		"Descripcion" : "Uno de los carnívoros más grandes del período Triásico.",
+		"imagen" : "../static/Imagenes/Liliensternus.jpg"
+	},
+	{
+		"id" : 638,
+		"Nombre" : "Limaysaurus",
+		"Descripcion" : "Una vez se clasificó como una especie de Rebbachisaurus.",
+		"imagen" : "../static/Imagenes/Limaysaurus.jpg"
+	},
+	{
+		"id" : 640,
+		"Nombre" : "Limusaurus",
+		"Descripcion" : "¿Fue este terópodo desdentado un vegetariano?",
+		"imagen" : "../static/Imagenes/Limusaurus.jpg"
+	},
+	{
+		"id" : 642,
+		"Nombre" : "Linhenykus",
+		"Descripcion" : "Este pequeño dinosaurio tenía manos con una sola garra.",
+		"imagen" : "../static/Imagenes/Linhenykus.jpg"
+	},
+	{
+		"id" : 644,
+		"Nombre" : "Linheraptor",
+		"Descripcion" : "Este raptor mongol fue descubierto en 2008.",
+		"imagen" : "../static/Imagenes/Linheraptor.jpg"
+	},
+	{
+		"id" : 646,
+		"Nombre" : "Linhevenato",
+		"Descripcion" : "Este troodóntido fue descubierto recientemente en Mongolia.",
+		"imagen" : "../static/Imagenes/Linhevenato.jpg"
+	},
+	{
+		"id" : 647,
+		"Nombre" : "Lophorhothon",
+		"Descripcion" : "El primer dinosaurio jamás descubierto en Alabama.",
+		"imagen" : "../static/Imagenes/Lophorhothon.jpg"
+	},
+	{
+		"id" : 658,
+		"Nombre" : "Lophostropheus",
+		"Descripcion" : "Este terópodo vivió cerca del límite Triásico/Jurásico.",
+		"imagen" : "../static/Imagenes/Lophostropheus.jpg"
+	},
+	{
+		"id" : 659,
+		"Nombre" : "Loricatosaurus",
+		"Descripcion" : "Este estegosaurio fue una vez clasificado como una especie de Lexovisaurus.",
+		"imagen" : "../static/Imagenes/Loricatosaurus.jpg"
+	},
+	{
+		"id" : 660,
+		"Nombre" : "Lourinhanosaurus",
+		"Descripcion" : "No confundir con Lourinhasaurus, abajo.",
+		"imagen" : "../static/Imagenes/Lourinhanosaurus.jpg"
+	},
+	{
+		"id" : 661,
+		"Nombre" : "Lourinhasaurus",
+		"Descripcion" : "No confundir con Lourinhanosaurus, arriba.",
+		"imagen" : "../static/Imagenes/Lourinhasaurus.jpg"
+	},
+	{
+		"id" : 662,
+		"Nombre" : "Luanchuanraptor",
+		"Descripcion" : "Un pequeño raptor asiático poco comprendido.",
+		"imagen" : "../static/Imagenes/Luanchuanraptor.jpg"
+	},
+	{
+		"id" : 663,
+		"Nombre" : "Lufengosaurus",
+		"Descripcion" : "Una vista común en los museos de historia natural chinos.",
+		"imagen" : "../static/Imagenes/Lufengosaurus.jpg"
+	},
+	{
+		"id" : 664,
+		"Nombre" : "Lurdusaurus",
+		"Descripcion" : "Este ornitópodo se asemejaba a un perezoso gigante.",
+		"imagen" : "../static/Imagenes/Lurdusaurus.jpg"
+	},
+	{
+		"id" : 665,
+		"Nombre" : "Lusotitan",
+		"Descripcion" : "Este saurópodo fue una vez clasificado como una especie de Brachiosaurus.",
+		"imagen" : "../static/Imagenes/Lusotitan.jpg"
+	},
+	{
+		"id" : 666,
+		"Nombre" : "Lycorhinus",
+		"Descripcion" : "Este dinosaurio una vez se pensó que era un reptil semejante a un mamífero.",
+		"imagen" : "../static/Imagenes/Lycorhinus.jpg"
+	},
+	{
+		"id" : 667,
+		"Nombre" : "Lythronax",
+		"Descripcion" : "Este tiranosaurio vivió en la isla de Laramidia.",
+		"imagen" : "../static/Imagenes/Lythronax.jpg"
+	},
+	{
+		"id" : 668,
+		"Nombre" : "Machairasaurus",
+		"Descripcion" : "Este \"lagarto de cimitarra corta\" fue un pariente cercano de Oviraptor.",
+		"imagen" : "../static/Imagenes/Machairasaurus.jpg"
+	},
+	{
+		"id" : 669,
+		"Nombre" : "Macrogryphosaurus",
+		"Descripcion" : "También conocido como el Gran Lagarto Enigmático.",
+		"imagen" : "../static/Imagenes/Macrogryphosaurus.jpg"
+	},
+	{
+		"id" : 670,
+		"Nombre" : "Magnapaulia",
+		"Descripcion" : "El lambeosaurino hadrosaurio más grande identificado hasta ahora.",
+		"imagen" : "../static/Imagenes/Magnapaulia.jpg"
+	},
+	{
+		"id" : 671,
+		"Nombre" : "Magnirostris",
+		"Descripcion" : "Este ceratopsiano tenía un pico inusualmente grande.",
+		"imagen" : "../static/Imagenes/Magnirostris.jpg"
+	},
+	{
+		"id" : 672,
+		"Nombre" : "Magnosaurus",
+		"Descripcion" : "Una vez se creyó que era una especie de Megalosaurus.",
+		"imagen" : "../static/Imagenes/Magnosaurus.jpg"
+	},
+	{
+		"id" : 673,
+		"Nombre" : "Magyarosaurus",
+		"Descripcion" : "Este titanosaurio enano probablemente estaba confinado en una pequeña isla.",
+		"imagen" : "../static/Imagenes/Magyarosaurus.jpg"
+	},
+	{
+		"id" : 674,
+		"Nombre" : "Mahakala",
+		"Descripcion" : "Este dino-pájaro fue nombrado en honor a una deidad budista.",
+		"imagen" : "../static/Imagenes/Mahakala.jpg"
+	},
+	{
+		"id" : 675,
+		"Nombre" : "Maiasaura",
+		"Descripcion" : "Esta \"buena madre lagarto\" vigilaba de cerca a sus crías.",
+		"imagen" : "../static/Imagenes/Maiasaura.jpg"
+	},
+	{
+		"id" : 676,
+		"Nombre" : "Majungasaurus",
+		"Descripcion" : "Conocido o injustamente conocido como el \"dinosaurio caníbal\".",
+		"imagen" : "../static/Imagenes/Majungasaurus.jpg"
+	},
+	{
+		"id" : 677,
+		"Nombre" : "Malawisaurus",
+		"Descripcion" : "El primer titanosaurio encontrado con un cráneo intacto.",
+		"imagen" : "../static/Imagenes/Malawisaurus.jpg"
+	},
+	{
+		"id" : 678,
+		"Nombre" : "Mamenchisaurus",
+		"Descripcion" : "El dinosaurio de cuello más largo que jamás haya vivido.",
+		"imagen" : "../static/Imagenes/Mamenchisaurus.jpg"
+	},
+	{
+		"id" : 679,
+		"Nombre" : "Manidens",
+		"Descripcion" : "Un pariente extrañamente dentado de Heterodontosaurus.",
+		"imagen" : "../static/Imagenes/Manidens.jpg"
+	},
+	{
+		"id" : 680,
+		"Nombre" : "Mantellisaurus",
+		"Descripcion" : "Nombrado en honor al famoso cazador de fósiles Gideon Mantell.",
+		"imagen" : "../static/Imagenes/Mantellisaurus.jpg"
+	},
+	{
+		"id" : 681,
+		"Nombre" : "Mantellodon",
+		"Descripcion" : "Este refugiado de Iguanodon puede o no merecer su propio género.",
+		"imagen" : "../static/Imagenes/Mantellodon.jpg"
+	},
+	{
+		"id" : 682,
+		"Nombre" : "Mapusaurus",
+		"Descripcion" : "Este gran carnívoro estaba estrechamente relacionado con Giganotosaurus.",
+		"imagen" : "../static/Imagenes/Mapusaurus.jpg"
+	},
+	{
+		"id" : 683,
+		"Nombre" : "Marshosaurus",
+		"Descripcion" : "Nombrado en honor al famoso paleontólogo Othniel C. Marsh.",
+		"imagen" : "../static/Imagenes/Marshosaurus.jpg"
+	},
+	{
+		"id" : 684,
+		"Nombre" : "Martharaptor",
+		"Descripcion" : "Este dinosaurio fue nombrado en honor a un paleontólogo de Utah.",
+		"imagen" : "../static/Imagenes/Martharaptor.jpg"
+	},
+	{
+		"id" : 685,
+		"Nombre" : "Masiakasaurus",
+		"Descripcion" : "Un extraño depredador con dientes de sierra del Cretácico superior.",
+		"imagen" : "../static/Imagenes/Masiakasaurus.jpg"
+	},
+	{
+		"id" : 686,
+		"Nombre" : "Massospondylus",
+		"Descripcion" : "Este pequeño herbívoro bípedo y ágil deambulaba por las llanuras de Sudáfrica.",
+		"imagen" : "../static/Imagenes/Massospondylus.jpg"
+	},
+	{
+		"id" : 687,
+		"Nombre" : "Maxakalisaurus",
+		"Descripcion" : "Uno de los titanosauros más grandes jamás encontrados en Brasil.",
+		"imagen" : "../static/Imagenes/Maxakalisaurus.jpg"
+	},
+	{
+		"id" : 688,
+		"Nombre" : "Medusaceratops",
+		"Descripcion" : "Este dinosaurio con flecos era un pariente cercano de Centrosaurus.",
+		"imagen" : "../static/Imagenes/Medusaceratops.jpg"
+	},
+	{
+		"id" : 689,
+		"Nombre" : "Megalosaurus",
+		"Descripcion" : "El primer dinosaurio jamás descubierto y nombrado.",
+		"imagen" : "../static/Imagenes/Megalosaurus.jpg"
+	},
+	{
+		"id" : 690,
+		"Nombre" : "Megapnosaurus",
+		"Descripcion" : "Su nombre en griego significa \"gran lagarto muerto\".",
+		"imagen" : "../static/Imagenes/Megapnosaurus.jpg"
+	},
+	{
+		"id" : 691,
+		"Nombre" : "Megaraptor",
+		"Descripcion" : "A pesar de su nombre, en realidad no era un raptor.",
+		"imagen" : "../static/Imagenes/Megaraptor.jpg"
+	},
+	{
+		"id" : 692,
+		"Nombre" : "Mei",
+		"Descripcion" : "El actual poseedor del \"nombre de dinosaurio más corto\".",
+		"imagen" : "../static/Imagenes/Mei.jpg"
+	},
+	{
+		"id" : 693,
+		"Nombre" : "Melanorosaurus",
+		"Descripcion" : "Probablemente el prosaurópodo más grande que jamás haya vivido.",
+		"imagen" : "../static/Imagenes/Melanorosaurus.jpg"
+	},
+	{
+		"id" : 694,
+		"Nombre" : "Mendozasaurus",
+		"Descripcion" : "Este titanosaurio fue ancestral a Futalognkosaurus.",
+		"imagen" : "../static/Imagenes/Mendozasaurus.jpg"
+	},
+	{
+		"id" : 695,
+		"Nombre" : "Mercuriceratops",
+		"Descripcion" : "Este ceratopsiano fue descubierto en la frontera entre EE. UU. y Canadá.",
+		"imagen" : "../static/Imagenes/Mercuriceratops.jpg"
+	},
+	{
+		"id" : 696,
+		"Nombre" : "Metriacanthosaurus",
+		"Descripcion" : "Otro dinosaurio que una vez fue confundido con Megalosaurus.",
+		"imagen" : "../static/Imagenes/Metriacanthosaurus.jpg"
+	},
+	{
+		"id" : 697,
+		"Nombre" : "Microceratops",
+		"Descripcion" : "Probablemente el ceratopsiano más pequeño que jamás haya vivido.",
+		"imagen" : "../static/Imagenes/Microceratops.jpg"
+	},
+	{
+		"id" : 698,
+		"Nombre" : "Micropachycephalosaurus",
+		"Descripcion" : "El actual poseedor del \"nombre de dinosaurio más largo\".",
+		"imagen" : "../static/Imagenes/Micropachycephalosaurus.jpg"
+	},
+	{
+		"id" : 699,
+		"Nombre" : "Microraptor",
+		"Descripcion" : "Este pequeño dinosaurio emplumado tenía cuatro alas en lugar de dos.",
+		"imagen" : "../static/Imagenes/Microraptor.jpg"
+	},
+	{
+		"id" : 700,
+		"Nombre" : "Microvenator",
+		"Descripcion" : "Este \"cazador diminuto\" realmente medía 10 pies de cabeza a cola.",
+		"imagen" : "../static/Imagenes/Microvenator.jpg"
+	},
+	{
+		"id" : 701,
+		"Nombre" : "Minmi",
+		"Descripcion" : "Un anquilosaurio temprano (y muy tonto) de Australia.",
+		"imagen" : "../static/Imagenes/Minmi.jpg"
+	},
+	{
+		"id" : 702,
+		"Nombre" : "Minotaurasaurus",
+		"Descripcion" : "Nombrado en honor al medio hombre, medio toro de la mitología griega.",
+		"imagen" : "../static/Imagenes/Minotaurasaurus.jpg"
+	},
+	{
+		"id" : 703,
+		"Nombre" : "Miragaia",
+		"Descripcion" : "Este estegosaurio tenía un cuello inusualmente largo.",
+		"imagen" : "../static/Imagenes/Miragaia.jpg"
+	},
+	{
+		"id" : 704,
+		"Nombre" : "Mirischia",
+		"Descripcion" : "Su nombre significa \"maravillosa pelvis\".",
+		"imagen" : "../static/Imagenes/Mirischia.jpg"
+	},
+	{
+		"id" : 705,
+		"Nombre" : "Mochlodon",
+		"Descripcion" : "Uno de los pocos dinosaurios jamás descubiertos en Austria.",
+		"imagen" : "../static/Imagenes/Mochlodon.jpg"
+	},
+	{
+		"id" : 706,
+		"Nombre" : "Mojoceratops",
+		"Descripcion" : "Este ceratopsiano tenía una cabeza en forma de corazón.",
+		"imagen" : "../static/Imagenes/Mojoceratops.jpg"
+	},
+	{
+		"id" : 707,
+		"Nombre" : "Monkonosaurus",
+		"Descripcion" : "El primer dinosaurio jamás descubierto en el Tíbet moderno.",
+		"imagen" : "../static/Imagenes/Monkonosaurus.jpg"
+	},
+	{
+		"id" : 708,
+		"Nombre" : "Monoclonius",
+		"Descripcion" : "¿Podría haber sido una especie de Centrosaurus?",
+		"imagen" : "../static/Imagenes/Monoclonius.jpg"
+	},
+	{
+		"id" : 709,
+		"Nombre" : "Monolophosaurus",
+		"Descripcion" : "Este depredador jurásico tenía una cresta única en su cráneo.",
+		"imagen" : "../static/Imagenes/Monolophosaurus.jpg"
+	},
+	{
+		"id" : 333,
+		"Nombre" : "Mononykus",
+		"Descripcion" : "Este dinosaurio puede haber excavado en termiteros para almorzar.",
+		"imagen" : "../static/Imagenes/Mononykus.jpg"
+	},
+	{
+		"id" : 338,
+		"Nombre" : "Montanoceratops",
+		"Descripcion" : "Un ceratopsiano primitivo del período Cretácico superior.",
+		"imagen" : "../static/Imagenes/Montanoceratops.jpg"
+	},
+	{
+		"id" : 342,
+		"Nombre" : "Mussaurus",
+		"Descripcion" : "Este \"lagarto ratón\" vivía en el Triásico de Sudamérica.",
+		"imagen" : "../static/Imagenes/Mussaurus.jpg"
+	},
+	{
+		"id" : 355,
+		"Nombre" : "Muttaburrasaurus",
+		"Descripcion" : "El fósil de dinosaurio más completo jamás encontrado en Australia.",
+		"imagen" : "../static/Imagenes/Muttaburrasaurus.jpg"
+	},
+	{
+		"id" : 356,
+		"Nombre" : "Mymoorapelta",
+		"Descripcion" : "Nombrado en honor a la cantera Mygand-Moore en Colorado.",
+		"imagen" : "../static/Imagenes/Mymoorapelta.jpg"
+	},
+	{
+		"id" : 357,
+		"Nombre" : "Nankangia",
+		"Descripcion" : "Un oviraptor recientemente descubierto en China.",
+		"imagen" : "../static/Imagenes/Nankangia.jpg"
+	},
+	{
+		"id" : 362,
+		"Nombre" : "Nanosaurus",
+		"Descripcion" : "Este \"lagarto diminuto\" fue nombrado por Othniel C. Marsh.",
+		"imagen" : "../static/Imagenes/Nanosaurus.jpg"
+	},
+	{
+		"id" : 363,
+		"Nombre" : "Nanotyrannus",
+		"Descripcion" : "¿Podría haber sido un Tyrannosaurus rex joven?",
+		"imagen" : "../static/Imagenes/Nanotyrannus.jpg"
+	},
+	{
+		"id" : 365,
+		"Nombre" : "Nanshiungosaurus",
+		"Descripcion" : "Un extraño terizinosaurio de Asia.",
+		"imagen" : "../static/Imagenes/Nanshiungosaurus.jpg"
+	},
+	{
+		"id" : 369,
+		"Nombre" : "Nanuqsaurus",
+		"Descripcion" : "Este \"lagarto polar\" fue descubierto recientemente en Alaska.",
+		"imagen" : "../static/Imagenes/Nanuqsaurus.jpg"
+	},
+	{
+		"id" : 375,
+		"Nombre" : "Nanyangosaurus",
+		"Descripcion" : "Un ornitópodo iguanodóntido del Cretácico medio de Asia.",
+		"imagen" : "../static/Imagenes/Nanyangosaurus.jpg"
+	},
+	{
+		"id" : 378,
+		"Nombre" : "Nasutoceratops",
+		"Descripcion" : "Este dinosaurio tenía cuernos como un toro moderno.",
+		"imagen" : "../static/Imagenes/Nasutoceratops.jpg"
+	},
+	{
+		"id" : 379,
+		"Nombre" : "Nebulasaurus",
+		"Descripcion" : "Este \"lagarto de nebulosa\" fue descubierto recientemente en China.",
+		"imagen" : "../static/Imagenes/Nebulasaurus.jpg"
+	},
+	{
+		"id" : 381,
+		"Nombre" : "Nedcolbertia",
+		"Descripcion" : "Nombrado en honor al famoso paleontólogo Edwin Colbert.",
+		"imagen" : "../static/Imagenes/Nedcolbertia.jpg"
+	},
+	{
+		"id" : 383,
+		"Nombre" : "Neimongosaurus",
+		"Descripcion" : "Un raro terizinosaurio de Mongolia Interior.",
+		"imagen" : "../static/Imagenes/Neimongosaurus.jpg"
+	},
+	{
+		"id" : 385,
+		"Nombre" : "Nemegtomaia",
+		"Descripcion" : "Este dinosaurio tenía un cráneo con una forma extraña.",
+		"imagen" : "../static/Imagenes/Nemegtomaia.jpg"
+	},
+	{
+		"id" : 386,
+		"Nombre" : "Nemegtosaurus",
+		"Descripcion" : "Este titanosaurio se ha reconstruido a partir de un único cráneo incompleto.",
+		"imagen" : "../static/Imagenes/Nemegtosaurus.jpg"
+	},
+	{
+		"id" : 387,
+		"Nombre" : "Neovenator",
+		"Descripcion" : "Uno de los dinosaurios carnívoros más grandes de Europa occidental.",
+		"imagen" : "../static/Imagenes/Neovenator.jpg"
+	},
+	{
+		"id" : 388,
+		"Nombre" : "Neuquenraptor",
+		"Descripcion" : "Podría ser en realidad una especie (o espécimen) de Unenlagia.",
+		"imagen" : "../static/Imagenes/Neuquenraptor.jpg"
+	},
+	{
+		"id" : 391,
+		"Nombre" : "Neuquensaurus",
+		"Descripcion" : "¿Fue este titanosaurio realmente una especie de Saltasaurus?",
+		"imagen" : "../static/Imagenes/Neuquensaurus.jpg"
+	},
+	{
+		"id" : 399,
+		"Nombre" : "Nigersaurus",
+		"Descripcion" : "Este sauropodo africano tenía un gran número de dientes.",
+		"imagen" : "../static/Imagenes/Nigersaurus.jpg"
+	},
+	{
+		"id" : 402,
+		"Nombre" : "Nipponosaurus",
+		"Descripcion" : "Este hadrosaurio fue descubierto en la isla de Sajalín.",
+		"imagen" : "../static/Imagenes/Nipponosaurus.jpg"
+	},
+	{
+		"id" : 415,
+		"Nombre" : "Noasaurus",
+		"Descripcion" : "¿Tenía este depredador garras gigantes en las manos o en los pies?",
+		"imagen" : "../static/Imagenes/Noasaurus.jpg"
+	},
+	{
+		"id" : 418,
+		"Nombre" : "Nodocephalosaurus",
+		"Descripcion" : "Este dinosaurio acorazado se ha reconstruido a partir de un único cráneo.",
+		"imagen" : "../static/Imagenes/Nodocephalosaurus.jpg"
+	},
+	{
+		"id" : 419,
+		"Nombre" : "Nodosaurus",
+		"Descripcion" : "Uno de los primeros dinosaurios acorazados jamás descubiertos en América del Norte.",
+		"imagen" : "../static/Imagenes/Nodosaurus.jpg"
+	},
+	{
+		"id" : 453,
+		"Nombre" : "Nomingia",
+		"Descripcion" : "Este pequeño dinosaurio tenía una cola parecida a la de un pavo real.",
+		"imagen" : "../static/Imagenes/Nomingia.jpg"
+	},
+	{
+		"id" : 454,
+		"Nombre" : "Nothronychus",
+		"Descripcion" : "El primer terizinosaurio encontrado fuera de Asia.",
+		"imagen" : "../static/Imagenes/Nothronychus.jpg"
+	},
+	{
+		"id" : 455,
+		"Nombre" : "Notohypsilophodon",
+		"Descripcion" : "Un raro ornitópodo sudamericano.",
+		"imagen" : "../static/Imagenes/Notohypsilophodon.jpg"
+	},
+	{
+		"id" : 456,
+		"Nombre" : "Nqwebasaurus",
+		"Descripcion" : "Uno de los pocos terópodos descubiertos en el África subsahariana.",
+		"imagen" : "../static/Imagenes/Nqwebasaurus.jpg"
+	},
+	{
+		"id" : 457,
+		"Nombre" : "Nuthetes",
+		"Descripcion" : "Este raptor fue nombrado en honor al lagarto monitor moderno.",
+		"imagen" : "../static/Imagenes/Nuthetes.jpg"
+	},
+	{
+		"id" : 458,
+		"Nombre" : "Nyasasaurus",
+		"Descripcion" : "¿Podría ser el dinosaurio más antiguo en el registro fósil?",
+		"imagen" : "../static/Imagenes/Nyasasaurus.jpg"
+	},
+	{
+		"id" : 459,
+		"Nombre" : "Ojoceratops",
+		"Descripcion" : "Un pariente muy cercano de Triceratops.",
+		"imagen" : "../static/Imagenes/Ojoceratops.jpg"
+	},
+	{
+		"id" : 460,
+		"Nombre" : "Olorotitan",
+		"Descripcion" : "Uno de los fósiles de dinosaurios más completos jamás encontrados en Rusia.",
+		"imagen" : "../static/Imagenes/Olorotitan.jpg"
+	},
+	{
+		"id" : 461,
+		"Nombre" : "Omeisaurus",
+		"Descripcion" : "Uno de los saurópodos chinos más comunes.",
+		"imagen" : "../static/Imagenes/Omeisaurus.jpg"
+	},
+	{
+		"id" : 462,
+		"Nombre" : "Oohkotokia",
+		"Descripcion" : "Su nombre en lengua Blackfoot significa \"piedra grande\".",
+		"imagen" : "../static/Imagenes/Oohkotokia.jpg"
+	},
+	{
+		"id" : 463,
+		"Nombre" : "Opisthocoelicaudia",
+		"Descripcion" : "Un titanosaurio torpemente nombrado del período Cretácico superior.",
+		"imagen" : "../static/Imagenes/Opisthocoelicaudia.jpg"
+	},
+	{
+		"id" : 464,
+		"Nombre" : "Orkoraptor",
+		"Descripcion" : "El terópodo más meridional que haya vivido en América del Sur.",
+		"imagen" : "../static/Imagenes/Orkoraptor.jpg"
+	},
+	{
+		"id" : 465,
+		"Nombre" : "Ornithodesmus",
+		"Descripcion" : "Este misterioso raptor alguna vez se pensó que era un pterosaurio.",
+		"imagen" : "../static/Imagenes/Ornithodesmus.jpg"
+	},
+	{
+		"id" : 466,
+		"Nombre" : "Ornitholestes",
+		"Descripcion" : "Este \"ladrón de aves\" probablemente cazaba lagartijas pequeñas en su lugar.",
+		"imagen" : "../static/Imagenes/Ornitholestes.jpg"
+	},
+	{
+		"id" : 467,
+		"Nombre" : "Ornithomimus",
+		"Descripcion" : "Este \"imitador de aves\" se parecía a un avestruz moderno.",
+		"imagen" : "../static/Imagenes/Ornithomimus.jpg"
+	},
+	{
+		"id" : 468,
+		"Nombre" : "Ornithopsis",
+		"Descripcion" : "Este \"rostro de ave\" en realidad era un género de titanosaurio.",
+		"imagen" : "../static/Imagenes/Ornithopsis.jpg"
+	},
+	{
+		"id" : 470,
+		"Nombre" : "Orodromeus",
+		"Descripcion" : "Este pequeño herbívoro estaba en el menú de Troodon.",
+		"imagen" : "../static/Imagenes/Orodromeus.jpg"
+	},
+	{
+		"id" : 471,
+		"Nombre" : "Orthomerus",
+		"Descripcion" : "Uno de los pocos dinosaurios que se ha descubierto en los Países Bajos.",
+		"imagen" : "../static/Imagenes/Orthomerus.jpg"
+	},
+	{
+		"id" : 473,
+		"Nombre" : "Oryctodromeus",
+		"Descripcion" : "El único ornitópodo conocido por haber vivido en madrigueras.",
+		"imagen" : "../static/Imagenes/Oryctodromeus.jpg"
+	},
+	{
+		"id" : 474,
+		"Nombre" : "Ostafrikasaurus",
+		"Descripcion" : "¿Podría haber sido el espinosáurido más antiguo conocido?",
+		"imagen" : "../static/Imagenes/Ostafrikasaurus.jpg"
+	},
+	{
+		"id" : 476,
+		"Nombre" : "Othnielia",
+		"Descripcion" : "Nombrado en honor al famoso paleontólogo Othniel C. Marsh.",
+		"imagen" : "../static/Imagenes/Othnielia.jpg"
+	},
+	{
+		"id" : 477,
+		"Nombre" : "Othnielosaurus",
+		"Descripcion" : "También nombrado en honor al famoso paleontólogo Othniel C. Marsh.",
+		"imagen" : "../static/Imagenes/Othnielosaurus.jpg"
+	},
+	{
+		"id" : 478,
+		"Nombre" : "Ouranosaurus",
+		"Descripcion" : "Los científicos no pueden decidir si este herbívoro tenía una vela o una joroba.",
+		"imagen" : "../static/Imagenes/Ouranosaurus.jpg"
+	},
+	{
+		"id" : 480,
+		"Nombre" : "Overosaurus",
+		"Descripcion" : "Este enano titanosaurio fue anunciado al mundo en 2013.",
+		"imagen" : "../static/Imagenes/Overosaurus.jpg"
+	},
+	{
+		"id" : 482,
+		"Nombre" : "Oviraptor",
+		"Descripcion" : "Resulta que este \"ladrón de huevos\" tuvo mala fama.",
+		"imagen" : "../static/Imagenes/Oviraptor.jpg"
+	},
+	{
+		"id" : 484,
+		"Nombre" : "Oxalaia",
+		"Descripcion" : "Este espinosáurido fue descubierto recientemente en Brasil.",
+		"imagen" : "../static/Imagenes/Oxalaia.jpg"
+	},
+	{
+		"id" : 485,
+		"Nombre" : "Ozraptor",
+		"Descripcion" : "No se sabe mucho sobre este terópodo australiano.",
+		"imagen" : "../static/Imagenes/Ozraptor.jpg"
+	},
+	{
+		"id" : 486,
+		"Nombre" : "Pachycephalosaurus",
+		"Descripcion" : "Este herbívoro dio un nuevo significado a la palabra 'cabezón'.",
+		"imagen" : "../static/Imagenes/Pachycephalosaurus.jpg"
+	},
+	{
+		"id" : 487,
+		"Nombre" : "Pachyrhinosaurus",
+		"Descripcion" : "Este 'lagarto de nariz gruesa' deambulaba por los bosques de América del Norte.",
+		"imagen" : "../static/Imagenes/Pachyrhinosaurus.jpg"
+	},
+	{
+		"id" : 488,
+		"Nombre" : "Palaeoscincus",
+		"Descripcion" : "Este 'escinco antiguo' era en realidad un dinosaurio acorazado.",
+		"imagen" : "../static/Imagenes/Palaeoscincus.jpg"
+	},
+	{
+		"id" : 489,
+		"Nombre" : "Paluxysaurus",
+		"Descripcion" : "El dinosaurio estatal oficial de Texas.",
+		"imagen" : "../static/Imagenes/Paluxysaurus.jpg"
+	},
+	{
+		"id" : 490,
+		"Nombre" : "Pampadromaeus",
+		"Descripcion" : "Este 'corredor de las Pampas' fue ancestral de los saurópodos.",
+		"imagen" : "../static/Imagenes/Pampadromaeus.jpg"
+	},
+	{
+		"id" : 491,
+		"Nombre" : "Pamparaptor",
+		"Descripcion" : "Este raptor fue descubierto en las Pampas argentinas.",
+		"imagen" : "../static/Imagenes/Pamparaptor.jpg"
+	},
+	{
+		"id" : 492,
+		"Nombre" : "Panamericansaurus",
+		"Descripcion" : "Este titanosaurio fue nombrado en honor a una compañía de energía.",
+		"imagen" : "../static/Imagenes/Panamericansaurus.jpg"
+	},
+	{
+		"id" : 493,
+		"Nombre" : "Panoplosaurus",
+		"Descripcion" : "Un nodosáurido bajo y fornido del Cretácico superior.",
+		"imagen" : "../static/Imagenes/Panoplosaurus.jpg"
+	},
+	{
+		"id" : 494,
+		"Nombre" : "Panphagia",
+		"Descripcion" : "Su nombre en griego significa 'come todo'.",
+		"imagen" : "../static/Imagenes/Panphagia.jpg"
+	},
+	{
+		"id" : 497,
+		"Nombre" : "Pantydraco",
+		"Descripcion" : "No, este dinosaurio no llevaba lo que estás pensando.",
+		"imagen" : "../static/Imagenes/Pantydraco.jpg"
+	},
+	{
+		"id" : 499,
+		"Nombre" : "Paralititan",
+		"Descripcion" : "Este inmenso saurópodo fue descubierto recientemente en Egipto.",
+		"imagen" : "../static/Imagenes/Paralititan.jpg"
+	},
+	{
+		"id" : 501,
+		"Nombre" : "Paranthodon",
+		"Descripcion" : "Este estegosaurio fue descubierto hace más de 150 años.",
+		"imagen" : "../static/Imagenes/Paranthodon.jpg"
+	},
+	{
+		"id" : 504,
+		"Nombre" : "Pararhabdodon",
+		"Descripcion" : "El equivalente de Europa occidental a Tsintaosaurus.",
+		"imagen" : "../static/Imagenes/Pararhabdodon.jpg"
+	},
+	{
+		"id" : 506,
+		"Nombre" : "Parasaurolophus",
+		"Descripcion" : "Posiblemente el dinosaurio más ruidoso que haya vagado por la Tierra.",
+		"imagen" : "../static/Imagenes/Parasaurolophus.jpg"
+	},
+	{
+		"id" : 507,
+		"Nombre" : "Parksosaurus",
+		"Descripcion" : "En un momento se clasificó como una especie de Thescelosaurus.",
+		"imagen" : "../static/Imagenes/Parksosaurus.jpg"
+	},
+	{
+		"id" : 508,
+		"Nombre" : "Paronychodon",
+		"Descripcion" : "Este 'taxón de dientes' no sobrevivió el siglo XIX.",
+		"imagen" : "../static/Imagenes/Paronychodon.jpg"
+	},
+	{
+		"id" : 510,
+		"Nombre" : "Parvicursor",
+		"Descripcion" : "Uno de los dinosaurios más pequeños identificados hasta ahora.",
+		"imagen" : "../static/Imagenes/Parvicursor.jpg"
+	},
+	{
+		"id" : 512,
+		"Nombre" : "Patagosaurus",
+		"Descripcion" : "Este 'lagarto patagónico' provenía de América del Sur.",
+		"imagen" : "../static/Imagenes/Patagosaurus.jpg"
+	},
+	{
+		"id" : 514,
+		"Nombre" : "Pawpawsaurus",
+		"Descripcion" : "Este antiguo nodosáurido fue descubierto en Texas.",
+		"imagen" : "../static/Imagenes/Pawpawsaurus.jpg"
+	},
+	{
+		"id" : 516,
+		"Nombre" : "Pedopenna",
+		"Descripcion" : "Uno de los primeros dino-pájaros conocidos.",
+		"imagen" : "../static/Imagenes/Pedopenna.jpg"
+	},
+	{
+		"id" : 518,
+		"Nombre" : "Pegomastax",
+		"Descripcion" : "Este dinosaurio estaba cubierto de espinas similares a las de un puercoespín.",
+		"imagen" : "../static/Imagenes/Pegomastax.jpg"
+	},
+	{
+		"id" : 520,
+		"Nombre" : "Pelecanimimus",
+		"Descripcion" : "Este 'imitador de pelícano' lucía más de 200 dientes.",
+		"imagen" : "../static/Imagenes/Pelecanimimus.jpg"
+	},
+	{
+		"id" : 528,
+		"Nombre" : "Peloroplites",
+		"Descripcion" : "Este 'hoplita monstruoso' fue descubierto recientemente en Utah.",
+		"imagen" : "../static/Imagenes/Peloroplites.jpg"
+	},
+	{
+		"id" : 529,
+		"Nombre" : "Pelorosaurus",
+		"Descripcion" : "El primer saurópodo jamás descubierto.",
+		"imagen" : "../static/Imagenes/Pelorosaurus.jpg"
+	},
+	{
+		"id" : 530,
+		"Nombre" : "Pentaceratops",
+		"Descripcion" : "Este herbívoro 'de cinco cuernos' en realidad tenía solo tres.",
+		"imagen" : "../static/Imagenes/Pentaceratops.jpg"
+	},
+	{
+		"id" : 531,
+		"Nombre" : "Philovenator",
+		"Descripcion" : "Como su nombre indica, este dinosaurio 'amaba cazar'.",
+		"imagen" : "../static/Imagenes/Philovenator.jpg"
+	},
+	{
+		"id" : 532,
+		"Nombre" : "Phuwiangosaurus",
+		"Descripcion" : "Este titanosaurio fue descubierto en la actual Tailandia.",
+		"imagen" : "../static/Imagenes/Phuwiangosaurus.jpg"
+	},
+	{
+		"id" : 533,
+		"Nombre" : "Piatnitzkysaurus",
+		"Descripcion" : "Sus dientes eran tan afilados como su nombre es gracioso.",
+		"imagen" : "../static/Imagenes/Piatnitzkysaurus.jpg"
+	},
+	{
+		"id" : 544,
+		"Nombre" : "Pinacosaurus",
+		"Descripcion" : "¿Este anquilosaurio deambulaba por Asia central en manadas?",
+		"imagen" : "../static/Imagenes/Pinacosaurus.jpg"
+	},
+	{
+		"id" : 545,
+		"Nombre" : "Pisanosaurus",
+		"Descripcion" : "Uno de los ornitisquios más antiguos conocidos.",
+		"imagen" : "../static/Imagenes/Pisanosaurus.jpg"
+	},
+	{
+		"id" : 546,
+		"Nombre" : "Piveteausaurus",
+		"Descripcion" : "Nadie está seguro de qué hacer con este dinosaurio terópodo.",
+		"imagen" : "../static/Imagenes/Piveteausaurus.jpg"
+	},
+	{
+		"id" : 547,
+		"Nombre" : "Planicoxa",
+		"Descripcion" : "Un iguanodonte de tamaño medio de principios del Cretácico de América del Norte.",
+		"imagen" : "../static/Imagenes/Planicoxa.jpg"
+	},
+	{
+		"id" : 548,
+		"Nombre" : "Plateosaurus",
+		"Descripcion" : "Este dinosaurio de manada oscurecía las llanuras del Triásico superior.",
+		"imagen" : "../static/Imagenes/Plateosaurus.jpg"
+	},
+	{
+		"id" : 549,
+		"Nombre" : "Pleurocoelus",
+		"Descripcion" : "Fue el dinosaurio estatal oficial de Texas.",
+		"imagen" : "../static/Imagenes/Pleurocoelus.jpg"
+	},
+	{
+		"id" : 551,
+		"Nombre" : "Pneumatoraptor",
+		"Descripcion" : "Este 'ladrón de aire' fue descubierto recientemente en Hungría.",
+		"imagen" : "../static/Imagenes/Pneumatoraptor.jpg"
+	},
+	{
+		"id" : 553,
+		"Nombre" : "Podokesaurus",
+		"Descripcion" : "Uno de los primeros dinosaurios en vivir en el este de América del Norte.",
+		"imagen" : "../static/Imagenes/Podokesaurus.jpg"
+	},
+	{
+		"id" : 555,
+		"Nombre" : "Poekilopleuron",
+		"Descripcion" : "Podría (o no) haber sido una especie de Megalosaurus.",
+		"imagen" : "../static/Imagenes/Poekilopleuron.jpg"
+	},
+	{
+		"id" : 556,
+		"Nombre" : "Polacanthus",
+		"Descripcion" : "Un anquilosaurio extremadamente espinoso del Cretácico medio.",
+		"imagen" : "../static/Imagenes/Polacanthus.jpg"
+	},
+	{
+		"id" : 559,
+		"Nombre" : "Prenocephale",
+		"Descripcion" : "Este 'cabezón' tenía un cráneo redondo y grueso.",
+		"imagen" : "../static/Imagenes/Prenocephale.jpg"
+	},
+	{
+		"id" : 565,
+		"Nombre" : "Prenoceratops",
+		"Descripcion" : "Un pariente cercano de Leptoceratops.",
+		"imagen" : "../static/Imagenes/Prenoceratops.jpg"
+	},
+	{
+		"id" : 567,
+		"Nombre" : "Proa",
+		"Descripcion" : "Este ornitópodo fue nombrado por su mandíbula en forma de proa.",
+		"imagen" : "../static/Imagenes/Proa.jpg"
+	},
+	{
+		"id" : 569,
+		"Nombre" : "Probactrosaurus",
+		"Descripcion" : "Una etapa temprana en la evolución de los hadrosaurios.",
+		"imagen" : "../static/Imagenes/Probactrosaurus.jpg"
+	},
+	{
+		"id" : 571,
+		"Nombre" : "Proceratosaurus",
+		"Descripcion" : "A pesar de su nombre, no es un pariente cercano de Ceratosaurus.",
+		"imagen" : "../static/Imagenes/Proceratosaurus.jpg"
+	},
+	{
+		"id" : 573,
+		"Nombre" : "Procompsognathus",
+		"Descripcion" : "¿Era un arcosaurio o un dinosaurio temprano?",
+		"imagen" : "../static/Imagenes/Procompsognathus.jpg"
+	},
+	{
+		"id" : 575,
+		"Nombre" : "Propanoplosaurus",
+		"Descripcion" : "Este pequeño anquilosaurio fue descubierto recientemente en Maryland.",
+		"imagen" : "../static/Imagenes/Propanoplosaurus.jpg"
+	},
+	{
+		"id" : 576,
+		"Nombre" : "Prosaurolophus",
+		"Descripcion" : "El ancestro probable tanto de Saurolophus como de Parasaurolophus.",
+		"imagen" : "../static/Imagenes/Prosaurolophus.jpg"
+	},
+	{
+		"id" : 577,
+		"Nombre" : "Protarchaeopteryx",
+		"Descripcion" : "¿Antes que Archaeopteryx? En realidad, vivió millones de años después.",
+		"imagen" : "../static/Imagenes/Protarchaeopteryx.jpg"
+	},
+	{
+		"id" : 579,
+		"Nombre" : "Protoceratops",
+		"Descripcion" : "Un dinosaurio famoso con una cresta muy peculiar.",
+		"imagen" : "../static/Imagenes/Protoceratops.jpg"
+	},
+	{
+		"id" : 580,
+		"Nombre" : "Protohadros",
+		"Descripcion" : "A pesar de su nombre, en realidad no fue el 'primer' hadrosaurio.",
+		"imagen" : "../static/Imagenes/Protohadros.jpg"
+	},
+	{
+		"id" : 581,
+		"Nombre" : "Psittacosaurus",
+		"Descripcion" : "La cabeza de este dinosaurio no habría parecido fuera de lugar en un loro.",
+		"imagen" : "../static/Imagenes/Psittacosaurus.jpg"
+	},
+	{
+		"id" : 582,
+		"Nombre" : "Puertasaurus",
+		"Descripcion" : "Este titanosaurio rivalizaba en tamaño con Argentinosaurus.",
+		"imagen" : "../static/Imagenes/Puertasaurus.jpg"
+	},
+	{
+		"id" : 583,
+		"Nombre" : "Pyroraptor",
+		"Descripcion" : "Este 'ladrón de fuego' merodeaba por las llanuras de la Francia prehistórica.",
+		"imagen" : "../static/Imagenes/Pyroraptor.jpg"
+	},
+	{
+		"id" : 584,
+		"Nombre" : "Qantassaurus",
+		"Descripcion" : "Nombrado en honor a la aerolínea nacional de Australia.",
+		"imagen" : "../static/Imagenes/Qantassaurus.jpg"
+	},
+	{
+		"id" : 585,
+		"Nombre" : "Qianzhousaurus",
+		"Descripcion" : "Este tiranosaurio de largo hocico ha sido apodado Rex Pinocho.",
+		"imagen" : "../static/Imagenes/Qianzhousaurus.jpg"
+	},
+	{
+		"id" : 586,
+		"Nombre" : "Qiaowanlong",
+		"Descripcion" : "Un pariente asiático de Brachiosaurus.",
+		"imagen" : "../static/Imagenes/Qiaowanlong.jpg"
+	},
+	{
+		"id" : 587,
+		"Nombre" : "Qiupalong",
+		"Descripcion" : "Este dinosaurio 'imitador de aves' fue descubierto recientemente en China.",
+		"imagen" : "../static/Imagenes/Qiupalong.jpg"
+	},
+	{
+		"id" : 588,
+		"Nombre" : "Quaesitosaurus",
+		"Descripcion" : "Este titanosaurio podría haber tenido una audición notablemente aguda.",
+		"imagen" : "../static/Imagenes/Quaesitosaurus.jpg"
+	},
+	{
+		"id" : 589,
+		"Nombre" : "Quilmesaurus",
+		"Descripcion" : "Este dinosaurio fue nombrado en honor a una tribu indígena sudamericana.",
+		"imagen" : "../static/Imagenes/Quilmesaurus.jpg"
+	},
+	{
+		"id" : 591,
+		"Nombre" : "Rahiolisaurus",
+		"Descripcion" : "Este dinosaurio indio está representado por siete individuos enredados.",
+		"imagen" : "../static/Imagenes/Rahiolisaurus.jpg"
+	},
+	{
+		"id" : 593,
+		"Nombre" : "Rahonavis",
+		"Descripcion" : "¿Era un ave similar a un raptor o un raptor similar a un ave?",
+		"imagen" : "../static/Imagenes/Rahonavis.jpg"
+	},
+	{
+		"id" : 595,
+		"Nombre" : "Rajasaurus",
+		"Descripcion" : "Este 'lagarto príncipe' vivió en lo que hoy es la India moderna.",
+		"imagen" : "../static/Imagenes/Rajasaurus.jpg"
+	},
+	{
+		"id" : 597,
+		"Nombre" : "Rapator",
+		"Descripcion" : "No, este misterioso terópodo australiano no era un raptor.",
+		"imagen" : "../static/Imagenes/Rapator.jpg"
+	},
+	{
+		"id" : 599,
+		"Nombre" : "Rapetosaurus",
+		"Descripcion" : "El único saurópodo que se ha descubierto en la actual Madagascar.",
+		"imagen" : "../static/Imagenes/Rapetosaurus.jpg"
+	},
+	{
+		"id" : 601,
+		"Nombre" : "Raptorex",
+		"Descripcion" : "Un precursor de tamaño reducido de T. Rex.",
+		"imagen" : "../static/Imagenes/Raptorex.jpg"
+	},
+	{
+		"id" : 604,
+		"Nombre" : "Rebbachisaurus",
+		"Descripcion" : "Un saurópodo mal comprendido del norte de África.",
+		"imagen" : "../static/Imagenes/Rebbachisaurus.jpg"
+	},
+	{
+		"id" : 606,
+		"Nombre" : "Regaliceratops",
+		"Descripcion" : "Este ceratopsiano tenía una gran cresta con forma de corona.",
+		"imagen" : "../static/Imagenes/Regaliceratops.jpg"
+	},
+	{
+		"id" : 608,
+		"Nombre" : "Regnosaurus",
+		"Descripcion" : "Este estegosaurio vivía en lo que hoy es la Inglaterra moderna.",
+		"imagen" : "../static/Imagenes/Regnosaurus.jpg"
+	},
+	{
+		"id" : 610,
+		"Nombre" : "Rhabdodon",
+		"Descripcion" : "Un posible 'eslabón perdido' entre Iguanodon y Hypsilophodon.",
+		"imagen" : "../static/Imagenes/Rhabdodon.jpg"
+	},
+	{
+		"id" : 612,
+		"Nombre" : "Rhinorex",
+		"Descripcion" : "Este dinosaurio de pico de pato tenía una nariz inusualmente grande.",
+		"imagen" : "../static/Imagenes/Rhinorex.jpg"
+	},
+	{
+		"id" : 615,
+		"Nombre" : "Rhoetosaurus",
+		"Descripcion" : "Un saurópodo de tamaño mediano de Down Under.",
+		"imagen" : "../static/Imagenes/Rhoetosaurus.jpg"
+	},
+	{
+		"id" : 617,
+		"Nombre" : "Richardoestesia",
+		"Descripcion" : "Nombrado en honor al paleontólogo Richard Estes.",
+		"imagen" : "../static/Imagenes/Richardoestesia.jpg"
+	},
+	{
+		"id" : 618,
+		"Nombre" : "Rinchenia",
+		"Descripcion" : "Nombrado en honor al famoso paleontólogo Rinchen Barsbold.",
+		"imagen" : "../static/Imagenes/Rinchenia.jpg"
+	},
+	{
+		"id" : 619,
+		"Nombre" : "Rinconsaurus",
+		"Descripcion" : "Un titanosaurio modestamente tamaño de América del Sur.",
+		"imagen" : "../static/Imagenes/Rinconsaurus.jpg"
+	},
+	{
+		"id" : 620,
+		"Nombre" : "Riojasaurus",
+		"Descripcion" : "Uno de los pocos prosaurópodos conocidos que vivieron en América del Sur.",
+		"imagen" : "../static/Imagenes/Riojasaurus.jpg"
+	},
+	{
+		"id" : 621,
+		"Nombre" : "Rubeosaurus",
+		"Descripcion" : "Un dinosaurio ceratopsiano de la Formación Two Medicine.",
+		"imagen" : "../static/Imagenes/Rubeosaurus.jpg"
+	},
+	{
+		"id" : 622,
+		"Nombre" : "Rugops",
+		"Descripcion" : "Este carnívoro con cara arrugada probablemente se alimentaba de carroña.",
+		"imagen" : "../static/Imagenes/Rugops.jpg"
+	},
+	{
+		"id" : 623,
+		"Nombre" : "Sahaliyania",
+		"Descripcion" : "El nombre de este hadrosaurio en manchuriano significa 'negro'.",
+		"imagen" : "../static/Imagenes/Sahaliyania.jpg"
+	},
+	{
+		"id" : 624,
+		"Nombre" : "Saichania",
+		"Descripcion" : "El nombre de este anquilosaurio en chino significa 'hermoso'.",
+		"imagen" : "../static/Imagenes/Saichania.jpg"
+	},
+	{
+		"id" : 625,
+		"Nombre" : "Saltasaurus",
+		"Descripcion" : "El primer saurópodo acorazado jamás descubierto.",
+		"imagen" : "../static/Imagenes/Saltasaurus.jpg"
+	},
+	{
+		"id" : 626,
+		"Nombre" : "Saltopus",
+		"Descripcion" : "Los expertos no están seguros si esto era un dinosaurio o un arcosaurio.",
+		"imagen" : "../static/Imagenes/Saltopus.jpg"
+	},
+	{
+		"id" : 627,
+		"Nombre" : "Sanjuansaurus",
+		"Descripcion" : "Un primer terópodo de América del Sur.",
+		"imagen" : "../static/Imagenes/Sanjuansaurus.jpg"
+	},
+	{
+		"id" : 628,
+		"Nombre" : "Santanaraptor",
+		"Descripcion" : "Nombrado en honor a la formación Santana de Brasil.",
+		"imagen" : "../static/Imagenes/Santanaraptor.jpg"
+	},
+	{
+		"id" : 630,
+		"Nombre" : "Sarahsaurus",
+		"Descripcion" : "Este prosaurópodo tenía manos inusualmente fuertes.",
+		"imagen" : "../static/Imagenes/Sarahsaurus.jpg"
+	},
+	{
+		"id" : 632,
+		"Nombre" : "Sarcolestes",
+		"Descripcion" : "El ancestro más probable de los anquilosaurios.",
+		"imagen" : "../static/Imagenes/Sarcolestes.jpg"
+	},
+	{
+		"id" : 635,
+		"Nombre" : "Sarcosaurus",
+		"Descripcion" : "Este 'lagarto de carne' deambulaba por el Jurásico temprano de Inglaterra.",
+		"imagen" : "../static/Imagenes/Sarcosaurus.jpg"
+	},
+	{
+		"id" : 637,
+		"Nombre" : "Saturnalia",
+		"Descripcion" : "El dinosaurio más antiguo conocido que tenía una dieta herbívora.",
+		"imagen" : "../static/Imagenes/Saturnalia.jpg"
+	},
+	{
+		"id" : 639,
+		"Nombre" : "Saurolophus",
+		"Descripcion" : "Uno de los pocos hadrosaurios conocidos que vivieron en dos continentes.",
+		"imagen" : "../static/Imagenes/Saurolophus.jpg"
+	},
+	{
+		"id" : 641,
+		"Nombre" : "Sauroniops",
+		"Descripcion" : "El nombre de este dinosaurio significa 'Ojo de Sauron'.",
+		"imagen" : "../static/Imagenes/Sauroniops.jpg"
+	},
+	{
+		"id" : 643,
+		"Nombre" : "Sauropelta",
+		"Descripcion" : "La armadura de este anquilosaurio ayudó a mantener a raptors a raya.",
+		"imagen" : "../static/Imagenes/Sauropelta.jpg"
+	},
+	{
+		"id" : 645,
+		"Nombre" : "Saurophaganax",
+		"Descripcion" : "El dinosaurio oficial del estado de Oklahoma.",
+		"imagen" : "../static/Imagenes/Saurophaganax.jpg"
+	},
+	{
+		"id" : 648,
+		"Nombre" : "Sauroposeidon",
+		"Descripcion" : "Uno de los dinosaurios más altos que jamás haya caminado sobre la Tierra.",
+		"imagen" : "../static/Imagenes/Sauroposeidon.jpg"
+	},
+	{
+		"id" : 649,
+		"Nombre" : "Saurornithoides",
+		"Descripcion" : "Un depredador similar a Troodon de Asia central.",
+		"imagen" : "../static/Imagenes/Saurornithoides.jpg"
+	},
+	{
+		"id" : 650,
+		"Nombre" : "Saurornitholestes",
+		"Descripcion" : "Un pariente cercano de Velociraptor.",
+		"imagen" : "../static/Imagenes/Saurornitholestes.jpg"
+	},
+	{
+		"id" : 651,
+		"Nombre" : "Savannasaurus",
+		"Descripcion" : "Este titanosaurio fue descubierto recientemente en Australia.",
+		"imagen" : "../static/Imagenes/Savannasaurus.jpg"
+	},
+	{
+		"id" : 652,
+		"Nombre" : "Scansoriopteryx",
+		"Descripcion" : "Este proto-pájaro temprano probablemente vivía en los árboles.",
+		"imagen" : "../static/Imagenes/Scansoriopteryx.jpg"
+	},
+	{
+		"id" : 653,
+		"Nombre" : "Scelidosaurus",
+		"Descripcion" : "Uno de los dinosaurios acorazados más antiguos.",
+		"imagen" : "../static/Imagenes/Scelidosaurus.jpg"
+	},
+	{
+		"id" : 654,
+		"Nombre" : "Scipionyx",
+		"Descripcion" : "Uno de los fósiles de dinosaurios mejor preservados jamás encontrados.",
+		"imagen" : "../static/Imagenes/Scipionyx.jpg"
+	},
+	{
+		"id" : 655,
+		"Nombre" : "Sciurumimus",
+		"Descripcion" : "Este 'imitador de ardillas' fue uno de los dinosaurios con plumas más tempranos.",
+		"imagen" : "../static/Imagenes/Sciurumimus.jpg"
+	},
+	{
+		"id" : 656,
+		"Nombre" : "Scolosaurus",
+		"Descripcion" : "Una vez fue clasificado como una especie de Euoplocephalus.",
+		"imagen" : "../static/Imagenes/Scolosaurus.jpg"
+	},
+	{
+		"id" : 657,
+		"Nombre" : "Scutellosaurus",
+		"Descripcion" : "Probablemente el más pequeño de todos los dinosaurios acorazados.",
+		"imagen" : "../static/Imagenes/Scutellosaurus.jpg"
+	},
+	{
+		"id" : 153,
+		"Nombre" : "Secernosaurus",
+		"Descripcion" : "El primer hadrosaurio descubierto en Sudamérica.",
+		"imagen" : "../static/Imagenes/Secernosaurus.jpg"
+	},
+	{
+		"id" : 155,
+		"Nombre" : "Segisaurus",
+		"Descripcion" : "Un dinosaurio primitivo estrechamente relacionado con Coelophysis.",
+		"imagen" : "../static/Imagenes/Segisaurus.jpg"
+	},
+	{
+		"id" : 156,
+		"Nombre" : "Segnosaurus",
+		"Descripcion" : "Uno de los dinosaurios del Cretácico más inusuales (y menos comprendidos).",
+		"imagen" : "../static/Imagenes/Segnosaurus.jpg"
+	},
+	{
+		"id" : 157,
+		"Nombre" : "Seismosaurus",
+		"Descripcion" : "Era enorme, sin duda, pero ¿podría haber sido una especie de Diplodocus?",
+		"imagen" : "../static/Imagenes/Seismosaurus.jpg"
+	},
+	{
+		"id" : 154,
+		"Nombre" : "Seitaad",
+		"Descripcion" : "Este pequeño dinosaurio pudo haber sido enterrado en un alud.",
+		"imagen" : "../static/Imagenes/Seitaad.jpg"
+	},
+	{
+		"id" : 158,
+		"Nombre" : "Sellosaurus",
+		"Descripcion" : "Otro prosaurópodo temprano del período Triásico.",
+		"imagen" : "../static/Imagenes/Sellosaurus.jpg"
+	},
+	{
+		"id" : 159,
+		"Nombre" : "Serendipaceratops",
+		"Descripcion" : "¿Realmente fue un ceratopsiano australiano?",
+		"imagen" : "../static/Imagenes/Serendipaceratops.jpg"
+	},
+	{
+		"id" : 160,
+		"Nombre" : "Shamosaurus",
+		"Descripcion" : "Este anquilosaurio mongol era un pariente cercano de Gobisaurus.",
+		"imagen" : "../static/Imagenes/Shamosaurus.jpg"
+	},
+	{
+		"id" : 161,
+		"Nombre" : "Shanag",
+		"Descripcion" : "Un raptor basal del Asia del Cretácico temprano.",
+		"imagen" : "../static/Imagenes/Shanag.jpg"
+	},
+	{
+		"id" : 162,
+		"Nombre" : "Shantungosaurus",
+		"Descripcion" : "El más grande de todos los dinosaurios con pico de pato.",
+		"imagen" : "../static/Imagenes/Shantungosaurus.jpg"
+	},
+	{
+		"id" : 163,
+		"Nombre" : "Shaochilong",
+		"Descripcion" : "Su nombre en chino significa 'dragón de dientes de tiburón'.",
+		"imagen" : "../static/Imagenes/Shaochilong.jpg"
+	},
+	{
+		"id" : 164,
+		"Nombre" : "Shenzhousaurus",
+		"Descripcion" : "Un pequeño ornitomímido primitivo de China.",
+		"imagen" : "../static/Imagenes/Shenzhousaurus.jpg"
+	},
+	{
+		"id" : 165,
+		"Nombre" : "Shunosaurus",
+		"Descripcion" : "Anatómicamente hablando, probablemente el mejor conocido de todos los saurópodos.",
+		"imagen" : "../static/Imagenes/Shunosaurus.jpg"
+	},
+	{
+		"id" : 166,
+		"Nombre" : "Shuvosaurus",
+		"Descripcion" : "¿Este carnívoro fue un dinosaurio temprano o un cocodrilo bípedo?",
+		"imagen" : "../static/Imagenes/Shuvosaurus.jpg"
+	},
+	{
+		"id" : 167,
+		"Nombre" : "Shuvuuia",
+		"Descripcion" : "Los científicos no pueden decidir si fue un dinosaurio o un pájaro.",
+		"imagen" : "../static/Imagenes/Shuvuuia.jpg"
+	},
+	{
+		"id" : 168,
+		"Nombre" : "Siamodon",
+		"Descripcion" : "Este ornitópodo fue descubierto recientemente en Tailandia.",
+		"imagen" : "../static/Imagenes/Siamodon.jpg"
+	},
+	{
+		"id" : 169,
+		"Nombre" : "Siamosaurus",
+		"Descripcion" : "Esto pudo haber sido (o no) un espinosáurido de Tailandia.",
+		"imagen" : "../static/Imagenes/Siamosaurus.jpg"
+	},
+	{
+		"id" : 170,
+		"Nombre" : "Siamotyrannus",
+		"Descripcion" : "A pesar de su nombre, no era un verdadero tiranosaurio.",
+		"imagen" : "../static/Imagenes/Siamotyrannus.jpg"
+	},
+	{
+		"id" : 171,
+		"Nombre" : "Siats",
+		"Descripcion" : "Uno de los terópodos más grandes que haya vivido en América del Norte.",
+		"imagen" : "../static/Imagenes/Siats.jpg"
+	},
+	{
+		"id" : 172,
+		"Nombre" : "Sigilmassasaurus",
+		"Descripcion" : "¿Realmente fue una especie de Carcharodontosaurus?",
+		"imagen" : "../static/Imagenes/Sigilmassasaurus.jpg"
+	},
+	{
+		"id" : 173,
+		"Nombre" : "Silvisaurus",
+		"Descripcion" : "Este primitivo nodosáurido fue descubierto en Kansas.",
+		"imagen" : "../static/Imagenes/Silvisaurus.jpg"
+	},
+	{
+		"id" : 174,
+		"Nombre" : "Similicaudipteryx",
+		"Descripcion" : "Los juveniles pueden haber tenido plumas diferentes a los adultos.",
+		"imagen" : "../static/Imagenes/Similicaudipteryx.jpg"
+	},
+	{
+		"id" : 175,
+		"Nombre" : "Sinocalliopteryx",
+		"Descripcion" : "El 'dino-pájaro' más grande jamás descubierto.",
+		"imagen" : "../static/Imagenes/Sinocalliopteryx.jpg"
+	},
+	{
+		"id" : 176,
+		"Nombre" : "Sinoceratops",
+		"Descripcion" : "Un raro ceratopsiano del Cretácico tardío en China.",
+		"imagen" : "../static/Imagenes/Sinoceratops.jpg"
+	},
+	{
+		"id" : 177,
+		"Nombre" : "Sinornithoides",
+		"Descripcion" : "Un pequeño dinosaurio con plumas estrechamente relacionado con Troodon.",
+		"imagen" : "../static/Imagenes/Sinornithoides.jpg"
+	},
+	{
+		"id" : 178,
+		"Nombre" : "Sinornithomimus",
+		"Descripcion" : "Este ornitomímido es conocido por más de una docena de esqueletos.",
+		"imagen" : "../static/Imagenes/Sinornithomimus.jpg"
+	},
+	{
+		"id" : 179,
+		"Nombre" : "Sinornithosaurus",
+		"Descripcion" : "Un 'dino-pájaro' típico del Cretácico temprano.",
+		"imagen" : "../static/Imagenes/Sinornithosaurus.jpg"
+	},
+	{
+		"id" : 180,
+		"Nombre" : "Sinosauropteryx",
+		"Descripcion" : "El primer dinosaurio probado en tener plumas.",
+		"imagen" : "../static/Imagenes/Sinosauropteryx.jpg"
+	},
+	{
+		"id" : 181,
+		"Nombre" : "Sinosaurus",
+		"Descripcion" : "Una vez fue clasificado como una especie asiática de Dilophosaurus.",
+		"imagen" : "../static/Imagenes/Sinosaurus.jpg"
+	},
+	{
+		"id" : 182,
+		"Nombre" : "Sinotyrannus",
+		"Descripcion" : "Este 'tirano chino' fue un antiguo antepasado de los tiranosaurios.",
+		"imagen" : "../static/Imagenes/Sinotyrannus.jpg"
+	},
+	{
+		"id" : 183,
+		"Nombre" : "Sinovenator",
+		"Descripcion" : "Este 'cazador chino' cazaba a sus compañeros 'dino-pájaros'.",
+		"imagen" : "../static/Imagenes/Sinovenator.jpg"
+	},
+	{
+		"id" : 184,
+		"Nombre" : "Sinraptor",
+		"Descripcion" : "A pesar de su nombre, este allosaurio no era mejor ni peor que otros dinosaurios.",
+		"imagen" : "../static/Imagenes/Sinraptor.jpg"
+	},
+	{
+		"id" : 185,
+		"Nombre" : "Sinusonasus",
+		"Descripcion" : "Suena como una enfermedad, pero en realidad fue un dinosaurio con plumas.",
+		"imagen" : "../static/Imagenes/Sinusonasus.jpg"
+	},
+	{
+		"id" : 186,
+		"Nombre" : "Skorpiovenator",
+		"Descripcion" : "Este 'cazador de escorpiones' realmente comía carne.",
+		"imagen" : "../static/Imagenes/Skorpiovenator.jpg"
+	},
+	{
+		"id" : 187,
+		"Nombre" : "Sonorasaurus",
+		"Descripcion" : "Los restos de este saurópodo fueron descubiertos en Arizona.",
+		"imagen" : "../static/Imagenes/Sonorasaurus.jpg"
+	},
+	{
+		"id" : 188,
+		"Nombre" : "Sphaerotholus",
+		"Descripcion" : "Otro dinosaurio de cabeza abovedada de América del Norte.",
+		"imagen" : "../static/Imagenes/Sphaerotholus.jpg"
+	},
+	{
+		"id" : 189,
+		"Nombre" : "Spinophorosaurus",
+		"Descripcion" : "Este saurópodo temprano tenía un 'thagomizer' en su cola.",
+		"imagen" : "../static/Imagenes/Spinophorosaurus.jpg"
+	},
+	{
+		"id" : 190,
+		"Nombre" : "Spinops",
+		"Descripcion" : "Este ceratopsiano fue nombrado 100 años después de que se encontraron sus huesos.",
+		"imagen" : "../static/Imagenes/Spinops.jpg"
+	},
+	{
+		"id" : 191,
+		"Nombre" : "Spinosaurus",
+		"Descripcion" : "Este dinosaurio se distinguía por la estructura en forma de vela en su espalda.",
+		"imagen" : "../static/Imagenes/Spinosaurus.jpg"
+	},
+	{
+		"id" : 192,
+		"Nombre" : "Spinostropheus",
+		"Descripcion" : "Este terópodo alguna vez se pensó que era una especie de Elaphrosaurus.",
+		"imagen" : "../static/Imagenes/Spinostropheus.jpg"
+	},
+	{
+		"id" : 193,
+		"Nombre" : "Staurikosaurus",
+		"Descripcion" : "Otro terópodo primitivo del período Triásico.",
+		"imagen" : "../static/Imagenes/Staurikosaurus.jpg"
+	},
+	{
+		"id" : 194,
+		"Nombre" : "Stegoceras",
+		"Descripcion" : "Este pequeño herbívoro estaba diseñado para embestidas a alta velocidad con la cabeza.",
+		"imagen" : "../static/Imagenes/Stegoceras.jpg"
+	},
+	{
+		"id" : 195,
+		"Nombre" : "Stegosaurus",
+		"Descripcion" : "El dinosaurio de cerebro pequeño, cola espinosa y alimentación de plantas.",
+		"imagen" : "../static/Imagenes/Stegosaurus.jpg"
+	},
+	{
+		"id" : 196,
+		"Nombre" : "Stenopelix",
+		"Descripcion" : "Los expertos no están seguros de cómo clasificar este dinosaurio.",
+		"imagen" : "../static/Imagenes/Stenopelix.jpg"
+	},
+	{
+		"id" : 197,
+		"Nombre" : "Stokesosaurus",
+		"Descripcion" : "Algunos expertos creen que este fue el primer tiranosaurio.",
+		"imagen" : "../static/Imagenes/Stokesosaurus.jpg"
+	},
+	{
+		"id" : 198,
+		"Nombre" : "Struthiomimus",
+		"Descripcion" : "Este 'imitador de avestruz' deambulaba por las llanuras de América del Norte.",
+		"imagen" : "../static/Imagenes/Struthiomimus.jpg"
+	},
+	{
+		"id" : 199,
+		"Nombre" : "Struthiosaurus",
+		"Descripcion" : "El nodosáurido más pequeño descubierto hasta la fecha.",
+		"imagen" : "../static/Imagenes/Struthiosaurus.jpg"
+	},
+	{
+		"id" : 200,
+		"Nombre" : "Stygimoloch",
+		"Descripcion" : "Su nombre significa 'demonio del río de la muerte'. ¿Te llamó la atención?",
+		"imagen" : "../static/Imagenes/Stygimoloch.jpg"
+	},
+	{
+		"id" : 201,
+		"Nombre" : "Styracosaurus",
+		"Descripcion" : "Ganador de la competencia 'muestra de cabeza más elaborada'.",
+		"imagen" : "../static/Imagenes/Styracosaurus.jpg"
+	},
+	{
+		"id" : 202,
+		"Nombre" : "Suchomimus",
+		"Descripcion" : "Un dinosaurio que se alimentaba de peces con un perfil crocodiliano distintivo.",
+		"imagen" : "../static/Imagenes/Suchomimus.jpg"
+	},
+	{
+		"id" : 203,
+		"Nombre" : "Sulaimanisaurus",
+		"Descripcion" : "Uno de los pocos dinosaurios descubiertos en Pakistán.",
+		"imagen" : "../static/Imagenes/Sulaimanisaurus.jpg"
+	},
+	{
+		"id" : 204,
+		"Nombre" : "Supersaurus",
+		"Descripcion" : "No, no llevaba capa, pero este gigante aún era impresionante.",
+		"imagen" : "../static/Imagenes/Supersaurus.jpg"
+	},
+	{
+		"id" : 205,
+		"Nombre" : "Suuwassea",
+		"Descripcion" : "Su nombre es nativo americano y significa 'trueno antiguo'.",
+		"imagen" : "../static/Imagenes/Suuwassea.jpg"
+	},
+	{
+		"id" : 206,
+		"Nombre" : "Suzhousaurus",
+		"Descripcion" : "Un tericinosaurio grande del Cretácico temprano.",
+		"imagen" : "../static/Imagenes/Suzhousaurus.jpg"
+	},
+	{
+		"id" : 207,
+		"Nombre" : "Szechuanosaurus",
+		"Descripcion" : "Este terópodo era un pariente cercano de Sinraptor.",
+		"imagen" : "../static/Imagenes/Szechuanosaurus.jpg"
+	},
+	{
+		"id" : 208,
+		"Nombre" : "Tachiraptor",
+		"Descripcion" : "El primer dinosaurio carnívoro jamás descubierto en Venezuela.",
+		"imagen" : "../static/Imagenes/Tachiraptor.jpg"
+	},
+	{
+		"id" : 209,
+		"Nombre" : "Talarurus",
+		"Descripcion" : "Este anquilosaurio fue descubierto en el Desierto de Gobi.",
+		"imagen" : "../static/Imagenes/Talarurus.jpg"
+	},
+	{
+		"id" : 210,
+		"Nombre" : "Talos",
+		"Descripcion" : "Este dinosaurio fue encontrado con un dedo gordo del pie herido.",
+		"imagen" : "../static/Imagenes/Talos.jpg"
+	},
+	{
+		"id" : 211,
+		"Nombre" : "Tangvayosaurus",
+		"Descripcion" : "Este titanosaurio laosiano estaba estrechamente relacionado con Phuwiangosaurus.",
+		"imagen" : "../static/Imagenes/Tangvayosaurus.jpg"
+	},
+	{
+		"id" : 212,
+		"Nombre" : "Tanius",
+		"Descripcion" : "No se sabe mucho sobre este hadrosaurio chino.",
+		"imagen" : "../static/Imagenes/Tanius.jpg"
+	},
+	{
+		"id" : 213,
+		"Nombre" : "Tanycolagreus",
+		"Descripcion" : "Este misterioso terópodo alguna vez se pensó que era una especie de Coelurus.",
+		"imagen" : "../static/Imagenes/Tanycolagreus.jpg"
+	},
+	{
+		"id" : 214,
+		"Nombre" : "Taohelong",
+		"Descripcion" : "El primer anquilosaurio 'polacanthine' descubierto en Asia.",
+		"imagen" : "../static/Imagenes/Taohelong.jpg"
+	},
+	{
+		"id" : 215,
+		"Nombre" : "Tapuiasaurus",
+		"Descripcion" : "Un titanosaurio descubierto recientemente en América del Sur.",
+		"imagen" : "../static/Imagenes/Tapuiasaurus.jpg"
+	},
+	{
+		"id" : 216,
+		"Nombre" : "Tarascosaurus",
+		"Descripcion" : "El único abelisaurio conocido del hemisferio norte.",
+		"imagen" : "../static/Imagenes/Tarascosaurus.jpg"
+	},
+	{
+		"id" : 217,
+		"Nombre" : "Tarbosaurus",
+		"Descripcion" : "El segundo tiranosaurio más grande después del T. Rex.",
+		"imagen" : "../static/Imagenes/Tarbosaurus.jpg"
+	},
+	{
+		"id" : 218,
+		"Nombre" : "Tarchia",
+		"Descripcion" : "Su nombre significa 'inteligente', pero eso puede ser una exageración.",
+		"imagen" : "../static/Imagenes/Tarchia.jpg"
+	},
+	{
+		"id" : 219,
+		"Nombre" : "Tastavinsaurus",
+		"Descripcion" : "Este titanosaurio fue descubierto en España.",
+		"imagen" : "../static/Imagenes/Tastavinsaurus.jpg"
+	},
+	{
+		"id" : 220,
+		"Nombre" : "Tatankacephalus",
+		"Descripcion" : "Un nuevo anquilosaurio de América del Norte.",
+		"imagen" : "../static/Imagenes/Tatankacephalus.jpg"
+	},
+	{
+		"id" : 221,
+		"Nombre" : "Tatankaceratops",
+		"Descripcion" : "¿Realmente fue un espécimen juvenil de Triceratops?",
+		"imagen" : "../static/Imagenes/Tatankaceratops.jpg"
+	},
+	{
+		"id" : 222,
+		"Nombre" : "Tataouinea",
+		"Descripcion" : "No, este dinosaurio no fue nombrado en honor a Tatooine de Star Wars.",
+		"imagen" : "../static/Imagenes/Tataouinea.jpg"
+	},
+	{
+		"id" : 223,
+		"Nombre" : "Tawa",
+		"Descripcion" : "Este terópodo antiguo señala un origen sudamericano para los dinosaurios.",
+		"imagen" : "../static/Imagenes/Tawa.jpg"
+	},
+	{
+		"id" : 224,
+		"Nombre" : "Tazoudasaurus",
+		"Descripcion" : "Este pariente de Vulcanodon fue uno de los sauropodos más tempranos.",
+		"imagen" : "../static/Imagenes/Tazoudasaurus.jpg"
+	},
+	{
+		"id" : 225,
+		"Nombre" : "Technosaurus",
+		"Descripcion" : "Este herbívoro temprano fue nombrado en honor a la Universidad Texas Tech.",
+		"imagen" : "../static/Imagenes/Technosaurus.jpg"
+	},
+	{
+		"id" : 226,
+		"Nombre" : "Tehuelchesaurus",
+		"Descripcion" : "Este sauropodo fue nombrado en honor a un pueblo indígena sudamericano.",
+		"imagen" : "../static/Imagenes/Tehuelchesaurus.jpg"
+	},
+	{
+		"id" : 227,
+		"Nombre" : "Telmatosaurus",
+		"Descripcion" : "Este dinosaurio de pico de pato fue descubierto en Transilvania.",
+		"imagen" : "../static/Imagenes/Telmatosaurus.jpg"
+	},
+	{
+		"id" : 228,
+		"Nombre" : "Tendaguria",
+		"Descripcion" : "Este sauropodo tanzano ha resultado difícil de clasificar.",
+		"imagen" : "../static/Imagenes/Tendaguria.jpg"
+	},
+	{
+		"id" : 229,
+		"Nombre" : "Tenontosaurus",
+		"Descripcion" : "Este herbívoro de cola larga fue cazado por Deinonychus.",
+		"imagen" : "../static/Imagenes/Tenontosaurus.jpg"
+	},
+	{
+		"id" : 230,
+		"Nombre" : "Teratophoneus",
+		"Descripcion" : "Este 'asesino monstruoso' no era tan grande.",
+		"imagen" : "../static/Imagenes/Teratophoneus.jpg"
+	},
+	{
+		"id" : 231,
+		"Nombre" : "Tethyshadros",
+		"Descripcion" : "Uno de los pocos dinosaurios que se han encontrado en la Italia moderna.",
+		"imagen" : "../static/Imagenes/Tethyshadros.jpg"
+	},
+	{
+		"id" : 232,
+		"Nombre" : "Texacephale",
+		"Descripcion" : "Este paquicefalosaurio texano fue nombrado en 2010.",
+		"imagen" : "../static/Imagenes/Texacephale.jpg"
+	},
+	{
+		"id" : 233,
+		"Nombre" : "Thecocoelurus",
+		"Descripcion" : "¿Es este el ornitomímido más temprano en el registro fósil?",
+		"imagen" : "../static/Imagenes/Thecocoelurus.jpg"
+	},
+	{
+		"id" : 234,
+		"Nombre" : "Thecodontosaurus",
+		"Descripcion" : "El primer prosaurópodo jamás descubierto.",
+		"imagen" : "../static/Imagenes/Thecodontosaurus.jpg"
+	},
+	{
+		"id" : 235,
+		"Nombre" : "Theiophytalia",
+		"Descripcion" : "Su nombre significa 'jardín de los dioses'.",
+		"imagen" : "../static/Imagenes/Theiophytalia.jpg"
+	},
+	{
+		"id" : 236,
+		"Nombre" : "Therizinosaurus",
+		"Descripcion" : "¿Qué le dijo Little Orphan Annie a este dinosaurio? ¡'¡Reaping lizards!'",
+		"imagen" : "../static/Imagenes/Therizinosaurus.jpg"
+	},
+	{
+		"id" : 237,
+		"Nombre" : "Thescelosaurus",
+		"Descripcion" : "¿Encontraron los paleontólogos el corazón momificado de este dinosaurio?",
+		"imagen" : "../static/Imagenes/Thescelosaurus.jpg"
+	},
+	{
+		"id" : 238,
+		"Nombre" : "Tianchisaurus",
+		"Descripcion" : "El nombre de la especie de este dinosaurio rinde homenaje a 'Jurassic Park'.",
+		"imagen" : "../static/Imagenes/Tianchisaurus.jpg"
+	},
+	{
+		"id" : 239,
+		"Nombre" : "Tianyulong",
+		"Descripcion" : "¿Por qué tenía plumas este ornitópodo?",
+		"imagen" : "../static/Imagenes/Tianyulong.jpg"
+	},
+	{
+		"id" : 240,
+		"Nombre" : "Tianyuraptor",
+		"Descripcion" : "Un pequeño raptor de patas largas de Asia oriental.",
+		"imagen" : "../static/Imagenes/Tianyuraptor.jpg"
+	},
+	{
+		"id" : 241,
+		"Nombre" : "Tianzhenosaurus",
+		"Descripcion" : "El cráneo de este anquilosaurio ha sido espectacularmente conservado.",
+		"imagen" : "../static/Imagenes/Tianzhenosaurus.jpg"
+	},
+	{
+		"id" : 242,
+		"Nombre" : "Timimus",
+		"Descripcion" : "El único ornitomímido jamás descubierto en Australia.",
+		"imagen" : "../static/Imagenes/Timimus.jpg"
+	},
+	{
+		"id" : 243,
+		"Nombre" : "Titanoceratops",
+		"Descripcion" : "El más grande de todos los dinosaurios con cuernos y crestas.",
+		"imagen" : "../static/Imagenes/Titanoceratops.jpg"
+	},
+	{
+		"id" : 244,
+		"Nombre" : "Titanosaurus",
+		"Descripcion" : "Este saurópodo puede, o no, haber sido un miembro único de su género.",
+		"imagen" : "../static/Imagenes/Titanosaurus.jpg"
+	},
+	{
+		"id" : 245,
+		"Nombre" : "Tochisaurus",
+		"Descripcion" : "Un gran troodóntido de finales del Cretácico en Asia.",
+		"imagen" : "../static/Imagenes/Tochisaurus.jpg"
+	},
+	{
+		"id" : 246,
+		"Nombre" : "Tornieria",
+		"Descripcion" : "Este sauropodo tiene una historia taxonómica complicada.",
+		"imagen" : "../static/Imagenes/Tornieria.jpg"
+	},
+	{
+		"id" : 247,
+		"Nombre" : "Torosaurus",
+		"Descripcion" : "¿Realmente fue un ejemplar anciano de Triceratops?",
+		"imagen" : "../static/Imagenes/Torosaurus.jpg"
+	},
+	{
+		"id" : 248,
+		"Nombre" : "Torvosaurus",
+		"Descripcion" : "Uno de los depredadores más grandes del Jurásico en América del Norte.",
+		"imagen" : "../static/Imagenes/Torvosaurus.jpg"
+	},
+	{
+		"id" : 249,
+		"Nombre" : "Triceratops",
+		"Descripcion" : "El famoso dinosaurio herbívoro de tres cuernos.",
+		"imagen" : "../static/Imagenes/Triceratops.jpg"
+	},
+	{
+		"id" : 250,
+		"Nombre" : "Trinisaura",
+		"Descripcion" : "El primer ornitópodo jamás descubierto en la Antártida.",
+		"imagen" : "../static/Imagenes/Trinisaura.jpg"
+	},
+	{
+		"id" : 251,
+		"Nombre" : "Troodon",
+		"Descripcion" : "Posiblemente el dinosaurio más inteligente que jamás haya vivido.",
+		"imagen" : "../static/Imagenes/Troodon.jpg"
+	},
+	{
+		"id" : 252,
+		"Nombre" : "Tsaagan",
+		"Descripcion" : "Uno de los primeros dromeosáuridos descubiertos.",
+		"imagen" : "../static/Imagenes/Tsaagan.jpg"
+	},
+	{
+		"id" : 253,
+		"Nombre" : "Tsintaosaurus",
+		"Descripcion" : "También conocido como el 'Dinosaurio Unicornio'.",
+		"imagen" : "../static/Imagenes/Tsintaosaurus.jpg"
+	},
+	{
+		"id" : 254,
+		"Nombre" : "Tuojiangosaurus",
+		"Descripcion" : "Uno de los estegosaurios chinos más conocidos.",
+		"imagen" : "../static/Imagenes/Tuojiangosaurus.jpg"
+	},
+	{
+		"id" : 255,
+		"Nombre" : "Turanoceratops",
+		"Descripcion" : "¿Qué hacía este ceratópsido en el Asia del Cretácico tardío?",
+		"imagen" : "../static/Imagenes/Turanoceratops.jpg"
+	},
+	{
+		"id" : 256,
+		"Nombre" : "Turiasaurus",
+		"Descripcion" : "El dinosaurio más grande jamás descubierto en Europa.",
+		"imagen" : "../static/Imagenes/Turiasaurus.jpg"
+	},
+	{
+		"id" : 257,
+		"Nombre" : "Tylocephale",
+		"Descripcion" : "El de mayor cúpula de todos los paquicefalosáuridos.",
+		"imagen" : "../static/Imagenes/Tylocephale.jpg"
+	},
+	{
+		"id" : 258,
+		"Nombre" : "Tyrannosaurus Rex",
+		"Descripcion" : "El antiguo y siempre rey de los dinosaurios.",
+		"imagen" : "../static/Imagenes/Tyrannosaurus Rex.jpg"
+	},
+	{
+		"id" : 259,
+		"Nombre" : "Tyrannotitan",
+		"Descripcion" : "Sabemos muy poco sobre este dinosaurio con un nombre temible.",
+		"imagen" : "../static/Imagenes/Tyrannotitan.jpg"
+	},
+	{
+		"id" : 260,
+		"Nombre" : "Uberabatitan",
+		"Descripcion" : "Descubierto en la región de Uberaba en Brasil.",
+		"imagen" : "../static/Imagenes/Uberabatitan.jpg"
+	},
+	{
+		"id" : 261,
+		"Nombre" : "Udanoceratops",
+		"Descripcion" : "El ceratópsido más grande que corría en dos patas.",
+		"imagen" : "../static/Imagenes/Udanoceratops.jpg"
+	},
+	{
+		"id" : 262,
+		"Nombre" : "Unaysaurus",
+		"Descripcion" : "Uno de los prosaurópodos más antiguos jamás descubiertos.",
+		"imagen" : "../static/Imagenes/Unaysaurus.jpg"
+	},
+	{
+		"id" : 263,
+		"Nombre" : "Unenlagia",
+		"Descripcion" : "Este raptor parecido a las aves era nativo de América del Sur.",
+		"imagen" : "../static/Imagenes/Unenlagia.jpg"
+	},
+	{
+		"id" : 264,
+		"Nombre" : "Unescoceratops",
+		"Descripcion" : "Nombrado en honor a la UNESCO de las Naciones Unidas.",
+		"imagen" : "../static/Imagenes/Unescoceratops.jpg"
+	},
+	{
+		"id" : 265,
+		"Nombre" : "Urbacodon",
+		"Descripcion" : "Este depredador parecido a Troodon fue descubierto en Uzbekistán.",
+		"imagen" : "../static/Imagenes/Urbacodon.jpg"
+	},
+	{
+		"id" : 266,
+		"Nombre" : "Utahceratops",
+		"Descripcion" : "Adivina en qué estado fue descubierto este dinosaurio.",
+		"imagen" : "../static/Imagenes/Utahceratops.jpg"
+	},
+	{
+		"id" : 267,
+		"Nombre" : "Utahraptor",
+		"Descripcion" : "Probablemente el raptor más grande que jamás haya vivido.",
+		"imagen" : "../static/Imagenes/Utahraptor.jpg"
+	},
+	{
+		"id" : 268,
+		"Nombre" : "Uteodon",
+		"Descripcion" : "Una vez fue clasificado como una especie de Camptosaurus.",
+		"imagen" : "../static/Imagenes/Uteodon.jpg"
+	},
+	{
+		"id" : 269,
+		"Nombre" : "Vagaceratops",
+		"Descripcion" : "Este dinosaurio de gran volante estaba estrechamente relacionado con Kosmoceratops.",
+		"imagen" : "../static/Imagenes/Vagaceratops.jpg"
+	},
+	{
+		"id" : 270,
+		"Nombre" : "Vahiny",
+		"Descripcion" : "Su nombre en malgache significa 'viajero'.",
+		"imagen" : "../static/Imagenes/Vahiny.jpg"
+	},
+	{
+		"id" : 271,
+		"Nombre" : "Valdoraptor",
+		"Descripcion" : "Este dinosaurio 'imitador de aves' temprano vivía en Inglaterra.",
+		"imagen" : "../static/Imagenes/Valdoraptor.jpg"
+	},
+	{
+		"id" : 272,
+		"Nombre" : "Valdosaurus",
+		"Descripcion" : "Este ornitópodo fue descubierto en la Isla de Wight.",
+		"imagen" : "../static/Imagenes/Valdosaurus.jpg"
+	},
+	{
+		"id" : 273,
+		"Nombre" : "Variraptor",
+		"Descripcion" : "El primer raptor jamás descubierto en Francia.",
+		"imagen" : "../static/Imagenes/Variraptor.jpg"
+	},
+	{
+		"id" : 274,
+		"Nombre" : "Velafrons",
+		"Descripcion" : "Una nueva adición a la familia de los dinosaurios de pico de pato.",
+		"imagen" : "../static/Imagenes/Velafrons.jpg"
+	},
+	{
+		"id" : 275,
+		"Nombre" : "Velociraptor",
+		"Descripcion" : "Este dinosaurio era feroz pero mucho más pequeño de lo que pensabas.",
+		"imagen" : "../static/Imagenes/Velociraptor.jpg"
+	},
+	{
+		"id" : 276,
+		"Nombre" : "Velocisaurus",
+		"Descripcion" : "Un terópodo pequeño y veloz del Cretácico tardío de América del Sur.",
+		"imagen" : "../static/Imagenes/Velocisaurus.jpg"
+	},
+	{
+		"id" : 277,
+		"Nombre" : "Venenosaurus",
+		"Descripcion" : "Este 'lagarto venenoso' en realidad era un apacible herbívoro.",
+		"imagen" : "../static/Imagenes/Venenosaurus.jpg"
+	},
+	{
+		"id" : 278,
+		"Nombre" : "Veterupristisaurus",
+		"Descripcion" : "Uno de los primeros carcharodontosáuridos identificados.",
+		"imagen" : "../static/Imagenes/Veterupristisaurus.jpg"
+	},
+	{
+		"id" : 279,
+		"Nombre" : "Vulcanodon",
+		"Descripcion" : "Un sauropodo temprano del período Jurásico.",
+		"imagen" : "../static/Imagenes/Vulcanodon.jpg"
+	},
+	{
+		"id" : 280,
+		"Nombre" : "Wannanosaurus",
+		"Descripcion" : "Probablemente el más pequeño de todos los dinosaurios de cabeza ósea.",
+		"imagen" : "../static/Imagenes/Wannanosaurus.jpg"
+	},
+	{
+		"id" : 281,
+		"Nombre" : "Wellnhoferia",
+		"Descripcion" : "¿Realmente fue una especie de Archaeopteryx?",
+		"imagen" : "../static/Imagenes/Wellnhoferia.jpg"
+	},
+	{
+		"id" : 282,
+		"Nombre" : "Wendiceratops",
+		"Descripcion" : "Este dinosaurio honra a la cazadora de fósiles canadiense Wendy Sloboda.",
+		"imagen" : "../static/Imagenes/Wendiceratops.jpg"
+	},
+	{
+		"id" : 283,
+		"Nombre" : "Willinakaqe",
+		"Descripcion" : "Un raro dinosaurio de pico de pato de América del Sur.",
+		"imagen" : "../static/Imagenes/Willinakaqe.jpg"
+	},
+	{
+		"id" : 284,
+		"Nombre" : "Wintonotitan",
+		"Descripcion" : "Otro titanosaurio recién descubierto de Australia.",
+		"imagen" : "../static/Imagenes/Wintonotitan.jpg"
+	},
+	{
+		"id" : 285,
+		"Nombre" : "Wuerhosaurus",
+		"Descripcion" : "¿Podría haber sido el último de los estegosaurios?",
+		"imagen" : "../static/Imagenes/Wuerhosaurus.jpg"
+	},
+	{
+		"id" : 286,
+		"Nombre" : "Wulagasaurus",
+		"Descripcion" : "El saurólofino hadrosaurio más temprano en el registro fósil.",
+		"imagen" : "../static/Imagenes/Wulagasaurus.jpg"
+	},
+	{
+		"id" : 287,
+		"Nombre" : "Xenoceratops",
+		"Descripcion" : "Este 'alienígena de cuerno' fue anunciado en 2012.",
+		"imagen" : "../static/Imagenes/Xenoceratops.jpg"
+	},
+	{
+		"id" : 288,
+		"Nombre" : "Xenoposeidon",
+		"Descripcion" : "Los expertos no están seguros de cómo clasificar a este sauropodo.",
+		"imagen" : "../static/Imagenes/Xenoposeidon.jpg"
+	},
+	{
+		"id" : 289,
+		"Nombre" : "Xenotarsosaurus",
+		"Descripcion" : "Un abelisaurio poco comprendido de América del Sur.",
+		"imagen" : "../static/Imagenes/Xenotarsosaurus.jpg"
+	},
+	{
+		"id" : 290,
+		"Nombre" : "Xiaosaurus",
+		"Descripcion" : "Un pequeño ornitópodo del Asia del Jurásico tardío.",
+		"imagen" : "../static/Imagenes/Xiaosaurus.jpg"
+	},
+	{
+		"id" : 291,
+		"Nombre" : "Xiaotingia",
+		"Descripcion" : "Este dinosaurio emplumado precedió a Archaeopteryx.",
+		"imagen" : "../static/Imagenes/Xiaotingia.jpg"
+	},
+	{
+		"id" : 292,
+		"Nombre" : "Xinjiangtitan",
+		"Descripcion" : "Este inmenso sauropodo era un pariente cercano de Mamenchisaurus.",
+		"imagen" : "../static/Imagenes/Xinjiangtitan.jpg"
+	},
+	{
+		"id" : 293,
+		"Nombre" : "Xiongguanlong",
+		"Descripcion" : "Un pequeño tiranosaurio primitivo de Asia.",
+		"imagen" : "../static/Imagenes/Xiongguanlong.jpg"
+	},
+	{
+		"id" : 294,
+		"Nombre" : "Xixianykus",
+		"Descripcion" : "Un dino-ave de patas largas del este de Asia.",
+		"imagen" : "../static/Imagenes/Xixianykus.jpg"
+	},
+	{
+		"id" : 295,
+		"Nombre" : "Xuanhanosaurus",
+		"Descripcion" : "¿No pensaste que habría tantas 'X' en esta lista, verdad?",
+		"imagen" : "../static/Imagenes/Xuanhanosaurus.jpg"
+	},
+	{
+		"id" : 296,
+		"Nombre" : "Xuanhuaceratops",
+		"Descripcion" : "Un ceratópsido temprano del Jurásico tardío.",
+		"imagen" : "../static/Imagenes/Xuanhuaceratops.jpg"
+	},
+	{
+		"id" : 297,
+		"Nombre" : "Xuwulong",
+		"Descripcion" : "Este ornitópodo iguanodóntido fue descubierto recientemente en China.",
+		"imagen" : "../static/Imagenes/Xuwulong.jpg"
+	},
+	{
+		"id" : 298,
+		"Nombre" : "Yamaceratops",
+		"Descripcion" : "No, no tenía una cabeza de batata dulce.",
+		"imagen" : "../static/Imagenes/Yamaceratops.jpg"
+	},
+	{
+		"id" : 299,
+		"Nombre" : "Yandusaurus",
+		"Descripcion" : "Un pequeño ornitópodo del Jurásico medio de China.",
+		"imagen" : "../static/Imagenes/Yandusaurus.jpg"
+	},
+	{
+		"id" : 300,
+		"Nombre" : "Yangchuanosaurus",
+		"Descripcion" : "Un gran terópodo del Jurásico tardío de Asia.",
+		"imagen" : "../static/Imagenes/Yangchuanosaurus.jpg"
+	},
+	{
+		"id" : 301,
+		"Nombre" : "Yaverlandia",
+		"Descripcion" : "Un caso clásico de identidad de dinosaurio errónea.",
+		"imagen" : "../static/Imagenes/Yaverlandia.jpg"
+	},
+	{
+		"id" : 302,
+		"Nombre" : "Yi Qi",
+		"Descripcion" : "Este extraño dinosaurio jurásico tenía alas parecidas a las de los murciélagos.",
+		"imagen" : "../static/Imagenes/Yi Qi.jpg"
+	},
+	{
+		"id" : 303,
+		"Nombre" : "Yimenosaurus",
+		"Descripcion" : "Uno de los prosaurópodos chinos mejor conocidos.",
+		"imagen" : "../static/Imagenes/Yimenosaurus.jpg"
+	},
+	{
+		"id" : 304,
+		"Nombre" : "Yinlong",
+		"Descripcion" : "Este 'dragón oculto' fue un ceratópsido temprano.",
+		"imagen" : "../static/Imagenes/Yinlong.jpg"
+	},
+	{
+		"id" : 305,
+		"Nombre" : "Yixianosaurus",
+		"Descripcion" : "¿Cómo usaba este dino-ave sus dedos largos?",
+		"imagen" : "../static/Imagenes/Yixianosaurus.jpg"
+	},
+	{
+		"id" : 306,
+		"Nombre" : "Yizhousaurus",
+		"Descripcion" : "El sauropodo intacto más temprano jamás descubierto.",
+		"imagen" : "../static/Imagenes/Yizhousaurus.jpg"
+	},
+	{
+		"id" : 307,
+		"Nombre" : "Yongjinglong",
+		"Descripcion" : "Este titanosaurio fue descubierto recientemente en China.",
+		"imagen" : "../static/Imagenes/Yongjinglong.jpg"
+	},
+	{
+		"id" : 308,
+		"Nombre" : "Yueosaurus",
+		"Descripcion" : "Este ornitópodo basal fue descubierto por trabajadores de la construcción.",
+		"imagen" : "../static/Imagenes/Yueosaurus.jpg"
+	},
+	{
+		"id" : 309,
+		"Nombre" : "Yulong",
+		"Descripcion" : "El ovirraptor más pequeño identificado hasta ahora.",
+		"imagen" : "../static/Imagenes/Yulong.jpg"
+	},
+	{
+		"id" : 310,
+		"Nombre" : "Yunnanosaurus",
+		"Descripcion" : "Uno de los últimos prosaurópodos en caminar sobre la Tierra.",
+		"imagen" : "../static/Imagenes/Yunnanosaurus.jpg"
+	},
+	{
+		"id" : 311,
+		"Nombre" : "Yutyrannus",
+		"Descripcion" : "El tiranosaurio con plumas más grande identificado hasta ahora.",
+		"imagen" : "../static/Imagenes/Yutyrannus.jpg"
+	},
+	{
+		"id" : 312,
+		"Nombre" : "Zalmoxes",
+		"Descripcion" : "Un extraño ornitópodo de Rumania.",
+		"imagen" : "../static/Imagenes/Zalmoxes.jpg"
+	},
+	{
+		"id" : 313,
+		"Nombre" : "Zanabazar",
+		"Descripcion" : "Nombrado en honor a un líder espiritual budista.",
+		"imagen" : "../static/Imagenes/Zanabazar.jpg"
+	},
+	{
+		"id" : 314,
+		"Nombre" : "Zapalasaurus",
+		"Descripcion" : "Este sauropodo 'diplodocoide' vivió en el Cretácico temprano de América del Sur.",
+		"imagen" : "../static/Imagenes/Zapalasaurus.jpg"
+	},
+	{
+		"id" : 315,
+		"Nombre" : "Zby",
+		"Descripcion" : "El nombre de este dinosaurio era inversamente proporcional a su tamaño.",
+		"imagen" : "../static/Imagenes/Zby.jpg"
+	},
+	{
+		"id" : 316,
+		"Nombre" : "Zephyrosaurus",
+		"Descripcion" : "También conocido como el 'Lagarto Viento del Oeste'.",
+		"imagen" : "../static/Imagenes/Zephyrosaurus.jpg"
+	},
+	{
+		"id" : 317,
+		"Nombre" : "Zhanghenglong",
+		"Descripcion" : "Un hadrosaurio de transición del Cretácico tardío de Asia.",
+		"imagen" : "../static/Imagenes/Zhanghenglong.jpg"
+	},
+	{
+		"id" : 318,
+		"Nombre" : "Zhejiangosaurus",
+		"Descripcion" : "El primer nodosáurido identificado de Asia.",
+		"imagen" : "../static/Imagenes/Zhejiangosaurus.jpg"
+	},
+	{
+		"id" : 319,
+		"Nombre" : "Zhenyuanlong",
+		"Descripcion" : "También conocido como el 'caniche emplumado y esponjoso del infierno'.",
+		"imagen" : "../static/Imagenes/Zhenyuanlong.jpg"
+	},
+	{
+		"id" : 320,
+		"Nombre" : "Zhongyuansaurus",
+		"Descripcion" : "El único anquilosaurio conocido que carece de una maza en la cola.",
+		"imagen" : "../static/Imagenes/Zhongyuansaurus.jpg"
+	},
+	{
+		"id" : 321,
+		"Nombre" : "Zhuchengceratops",
+		"Descripcion" : "Probablemente figuraba en el menú del almuerzo de Zhuchengtyrannus.",
+		"imagen" : "../static/Imagenes/Zhuchengceratops.jpg"
+	},
+	{
+		"id" : 322,
+		"Nombre" : "Zhuchengosaurus",
+		"Descripcion" : "Este hadrosaurio era aún más grande que Shantungosaurus.",
+		"imagen" : "../static/Imagenes/Zhuchengosaurus.jpg"
+	},
+	{
+		"id" : 323,
+		"Nombre" : "Zhuchengtyrannus",
+		"Descripcion" : "Este tiranosaurio asiático tenía el tamaño de un Tyrannosaurus Rex.",
+		"imagen" : "../static/Imagenes/Zhuchengtyrannus.jpg"
+	},
+	{
+		"id" : 324,
+		"Nombre" : "Zuniceratops",
+		"Descripcion" : "Este dinosaurio con cuernos fue descubierto por un niño de ocho años.",
+		"imagen" : "../static/Imagenes/Zuniceratops.jpg"
+	},
+	{
+		"id" : 325,
+		"Nombre" : "Zuolong",
+		"Descripcion" : "Fue nombrado en honor al General Tso, famoso en restaurantes chinos.",
+		"imagen" : "../static/Imagenes/Zuolong.jpg"
+	},
+	{
+		"id" : 326,
+		"Nombre" : "Zupaysaurus",
+		"Descripcion" : "Este 'lagarto diabólico' fue uno de los primeros terópodos.",
+		"imagen" : "../static/Imagenes/Zupaysaurus.jpg"
+	}
+]

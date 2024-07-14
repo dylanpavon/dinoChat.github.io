@@ -70,23 +70,23 @@
       <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
         <main class="px-3">
           <!--Buscador ↓↓↓-->
-          <form role="search" action="/" method="post">
+          <form role="search" action="/" method="post" id="formBuscador">
             <input
               class="form-control"
               type="text"
-              placeholder="¿Qué dino buscas?"
+              placeholder="¿QUÉ DINO BUSCAS?"
               list="datalistOptions"
               name="nombreDino"
               id="buscador"
             />
             <div class="d-grid gap-2 col-3 mx-auto">
-              <button class="btn btn-success px-5" type="submit" value="Buscar">
+              <button class="btn btn-success px-5" type="submit" value="BUSCAR">
                 Buscar
               </button>
             </div>
             <datalist id="datalistOptions">
               {% for d in dinos %}
-              <option class="dino" value="{{ d.1 }}"></option>
+              <option class="dino" value="{{ d['Nombre'].upper() }}"></option>
               {% endfor %}
             </datalist>
           </form>
@@ -107,29 +107,22 @@
           {% endfor %} {% endif %}
         </main>
         <!-- Acá se mostrará la información del dino seleccionado ↓↓↓ -->
-        <div class="mt-5">
-          {% for i in info %}
-          <h3 class="text-center anton-regular">{{ i.1.upper() }}</h3>
+        <div class="mt-5" id="infoDino">
+          {% if info %}
+          <h3 class="text-center anton-regular">{{ info['Nombre'].upper() }}</h3>
           <div class="text-center">
-            <!-- <img
-              class="bd-placeholder-img rounded-pill mb-2"
-              style="object-fit: cover; background-position: right"
-              width="450"
-              height="225"
-              src="{{i.3}}"
-              alt="{{i.1}}"
-            />-->
-            <div class="zoomable-image-container">
+                  <div class="zoomable-image-container">
               <img
                 class="img-fluid zoomable-image rounded-pill mb-2"
                 style="object-fit: cover;"
                 width="450"
                 height="225"
-                src="{{i.3}}"
-                alt="{{i.1}}"
+                src="{{info['imagen']}}"
+                alt="{{info['Nombre']}}"
               />
             </div>
           </div>
+          <!--Script para abrir la imagen completa-->
           <script>
             document.addEventListener("DOMContentLoaded", function () {
               const zoomableImages =
@@ -160,36 +153,51 @@
               });
             });
           </script>
-          <h6 class="text-center">{{ i.2 }}</h6>
+          <h6 class="text-center">{{ info['Descripcion'].upper() }}</h6>
         </div>
-        <!--<p class="text-center float-end">
-          <a class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
-             href='#fondo'
-             alt="boton"
-             >Bajar ⇩</a>
-        </p>-->
         
         <!--Este div contiene el chat ↓↓↓ -->
-        <div class="card overflow-auto text-chat">
+        <div class="card overflow-auto text-chat" id="response">
           <div class="card-body">
             {% for c in chat %}
             <p>{{c}}</p>
             {% endfor %}
           </div>
-          <form action="/dinochat/{{i.0}}" method="POST">
+          <form action="/dinochat/{{info['id']}}" method="POST">
             <div class="d-flex mx-1">
               <input
                 type="text"
                 style="width: 600px"
                 class="form-control mb-2 w-80"
                 name="pregunta"
-                placeholder="Chatea con el {{ i.1 }}!"
+                placeholder="CHATEA CON EL {{ info['Nombre'].upper() }}!"
               />
-              <button class="btn btn-success mx-1 w-20 h-25" type="submit">
+              <button class="btn btn-success mx-1 w-20 h-25" type="submit" id="btnChat">
                 ➤
               </button>
             </div>
-            {% endfor %}
+            <script>
+              function ajax(){
+                const http = new XMLHttpRequest();
+                const url = 'http://localhost:5500/dinochat/{{info["id"]}}';
+
+                http.onreadystatechange = function(){
+                  if(this.readyState == 4 && this.status == 200){
+                    console.log(this.responseText);
+                    document.getElementById("response").innerHTML = this.responseText;
+                  }
+                }
+
+                http.open("GET",url);
+                http.send();
+
+                document.getElementById("btnChat").addEventListener("click", function(){
+                  ajax();
+                })
+
+              }
+            </script>
+            {% endif %}
           </form>
         </div id="fondo">
 
@@ -198,7 +206,7 @@
             class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
             href="#"
             alt="boton"
-            >Subir ⇧</a
+            >SUBIR ⇧</a
           >
         </p>
       </div>
