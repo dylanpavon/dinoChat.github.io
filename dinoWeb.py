@@ -7,10 +7,10 @@ import json
 # Obtener la clave de API desde la variable de entorno
 api_key = os.getenv("OPENAI_API_KEY")
 
-if api_key is None:
-    print("No se encontró la clave de API. Asegúrate de que la variable de entorno OPENAI_API_KEY esté configurada.")
-else:
-    print("Clave de API encontrada: ", api_key)
+# if api_key is None:
+#     print("No se encontró la clave de API. Asegúrate de que la variable de entorno OPENAI_API_KEY esté configurada.")
+# else:
+#     print("Clave de API encontrada: ", api_key)
 
 client= OpenAI()
 OpenAI.api_key = os.getenv("OPENAI_API_KEY")
