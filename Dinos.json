@@ -3841,7 +3841,7 @@
 	},
 	{
 		"id" : 258,
-		"Nombre" : "Tyrannosaurus Rex",
+		"Nombre" : "Tiranosaurio Rex",
 		"Descripcion" : "El antiguo y siempre rey de los dinosaurios.",
 		"imagen" : "../static/Imagenes/TyrannosaurusRex.jpg"
 	},
