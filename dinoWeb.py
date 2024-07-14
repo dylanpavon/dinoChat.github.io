@@ -1,34 +1,16 @@
 from openai import OpenAI
 import os
 from flask import Flask, render_template, request, redirect, url_for, flash, jsonify  
-#import mysql.connector
 import json
 
 
 # Obtener la clave de API desde la variable de entorno
 api_key = os.getenv("OPENAI_API_KEY")
-
-# if api_key is None:
-#     print("No se encontró la clave de API. Asegúrate de que la variable de entorno OPENAI_API_KEY esté configurada.")
-# else:
-#     print("Clave de API encontrada: ", api_key)
-
 client= OpenAI()
 OpenAI.api_key = os.getenv("OPENAI_API_KEY")
 app = Flask(__name__)
-# conexion_db = mysql.connector.connect(user="root", password="root", host="localhost", database="dino_web", port="3306")
-# query = conexion_db.cursor()
-
-# if conexion_db.is_connected():
-#     print("CONEXION OK")
 
 app.secret_key= 'key'
-
-#query.execute("SELECT * FROM dino ORDER BY Nombre")
-#dinos = query.fetchall()
-#for d in dinos:
-#   query.execute(f"UPDATE dino SET imagen = '../static/Imagenes/{d[1]}.jpg' WHERE id = {d[0]}")
-#   conexion_db.commit()
 
 def cargar_datos():
     with open('Dinos.json', 'r', encoding='utf-8') as file:
