@@ -3,16 +3,7 @@ import os
 from flask import Flask, render_template, request, redirect, url_for, flash, jsonify  
 #import mysql.connector
 import json
-from http.server import BaseHTTPRequestHandler
- 
-class handler(BaseHTTPRequestHandler):
- 
-    def do_GET(self):
-        self.send_response(200)
-        self.send_header('Content-type','text/plain')
-        self.end_headers()
-        self.wfile.write('Hello, world!'.encode('utf-8'))
-        return
+
 
 # Obtener la clave de API desde la variable de entorno
 api_key = os.getenv("OPENAI_API_KEY")
@@ -24,14 +15,14 @@ api_key = os.getenv("OPENAI_API_KEY")
 
 client= OpenAI()
 OpenAI.api_key = os.getenv("OPENAI_API_KEY")
-dino_web = Flask(__name__)
+app = Flask(__name__)
 # conexion_db = mysql.connector.connect(user="root", password="root", host="localhost", database="dino_web", port="3306")
 # query = conexion_db.cursor()
 
 # if conexion_db.is_connected():
 #     print("CONEXION OK")
 
-dino_web.secret_key= 'key'
+app.secret_key= 'key'
 
 #query.execute("SELECT * FROM dino ORDER BY Nombre")
 #dinos = query.fetchall()
@@ -76,7 +67,7 @@ class Dino:
 ##################################################################################
 # CONTROLADORES
 
-@dino_web.route("/", methods=['GET','POST'])
+@app.route("/", methods=['GET','POST'])
 def dinoWeb():
     salida = "dinoWeb.html"
     dinos = cargar_datos()
@@ -86,7 +77,7 @@ def dinoWeb():
     return render_template(salida,dinos=dinos)
         
 conversacion=[] #Lo dejo afuera para que guarde y muestre la conversacion sin reiniciarse vacía   
-@dino_web.route('/dinochat', methods=['GET','POST'])
+@app.route('/dinochat', methods=['GET','POST'])
 def dinoChat():
     salida = "dinoChat.html"
     dinos = cargar_datos()
@@ -113,7 +104,7 @@ def buscar_dino(salida):
             flash(f'NO SE ENCONTRÓ EL DINOSAURIO {nombre} ☹ INTÉNTALO DE NUEVO!')
             return render_template(salida)
 
-@dino_web.route('/dinochat/<int:id>', methods=['GET','POST'])
+@app.route('/dinochat/<int:id>', methods=['GET','POST'])
 def chatear(id):   
     dinos = cargar_datos()
     dino = next((d for d in dinos if d['id'] == id), None)
@@ -132,6 +123,6 @@ def chatear(id):
         
 
 if __name__ == "__main__":
-    dino_web.run(host='0.0.0.0',port="5500", debug=True)    
+    app.run(host='0.0.0.0',port="5500", debug=True)    
     
     
