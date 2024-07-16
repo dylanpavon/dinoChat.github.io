@@ -36,8 +36,8 @@ def generar_rol(nombre, descripcion):
              Puedes usar esta información como referencia: {descripcion}
              No puedes excederte de los 150 tokens, ni hablar de temas que no estén relacionados al {nombre}"""
     return system_rol
-
-mensajes = []
+rol = generar_rol("a definir", "a definir") #Es provisorio para inicializar GPT
+mensajes = [{"role": "system", "content": rol}]
 
 completion = client.chat.completions.create(
             model="gpt-3.5-turbo", 
@@ -78,7 +78,8 @@ def buscar_dino(salida):
         dino = next((d for d in dinos if d['Nombre'] == nombre), None)
         if dino:
             id = int(dino['id'])
-            conversacion.clear() #Se vacía la conversación cuando se elige otro dino
+            system_rol = generar_rol(dino['Nombre'],dino['Descripcion'])
+            mensajes = [{"role": "system", "content": system_rol}]
             return redirect(url_for("chatear", id=id))
         else:
             flash(f'NO SE ENCONTRÓ EL DINOSAURIO {nombre} ☹ INTÉNTALO DE NUEVO!')
@@ -89,8 +90,6 @@ def chatear(id):
     dinos = cargar_datos()
     dino = next((d for d in dinos if d['id'] == id), None)
     
-    generar_rol(dino['Nombre'],dino['Descripcion'])
-    mensajes = [{"role": "system", "content": system_rol}]
     if "pregunta" in request.form:        
         pregunta = "😃➜ " + request.form.get('pregunta')  # Obtiene la pregunta del formulario 
         respuesta = "🦖🦕➜ " + completion.choices[0].message.content.upper()
