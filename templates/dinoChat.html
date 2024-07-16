@@ -161,7 +161,9 @@
         <div class="card overflow-auto text-chat" id="response">
           <div class="card-body">
             {% for c in chat %}
-            <p>{{c}}</p>
+            {% loop.index0 > 0 %}
+            <p>{{c['content']}}</p>
+            {% endif %}
             {% endfor %}
           </div>
           <form action="/dinochat/{{info['id']}}" method="POST">
