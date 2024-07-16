@@ -71,12 +71,13 @@ def buscar_dino(salida):
 
     if "id" in request.form:
         id_dino = int(request.form['id'])  # Obtiene el valor seleccionado en el formulario
-        conversacion.clear() #Se vacía la conversación cuando se elige otro dino
+        mensajes.clear() #Se vacía la conversación cuando se elige otro dino
         return redirect(url_for("chatear", id=id_dino))
     if "nombreDino" in request.form:
         nombre = request.form['nombreDino'].title()
         dino = next((d for d in dinos if d['Nombre'] == nombre), None)
         if dino:
+            mensajes.clear() #Se vacía la conversación cuando se elige otro dino
             id = int(dino['id'])
             system_rol = generar_rol(dino['Nombre'],dino['Descripcion'])
             mensajes = [{"role": "system", "content": system_rol}]
@@ -98,7 +99,8 @@ def chatear(id):
     else:
         pass
             
-    return render_template("dinoChat.html", id=id, chat=mensajes, info=dino, dinos=dinos)
+    return render_template("dinoChat.html", id=id, chat=mensajes
+                           , info=dino, dinos=dinos)
         
 
 if __name__ == "__main__":
