@@ -161,7 +161,7 @@
         <div class="card overflow-auto text-chat" id="response">
           <div class="card-body">
             {% for c in chat %}
-            {% loop.index0 > 0 %}
+            {% if c['role' != 'system'] %}
             <p>{{c['content']}}</p>
             {% endif %}
             {% endfor %}
