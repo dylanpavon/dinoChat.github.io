@@ -36,14 +36,16 @@ def generar_rol(nombre, descripcion):
              Puedes usar esta información como referencia: {descripcion}
              No puedes excederte de los 150 tokens, ni hablar de temas que no estén relacionados al {nombre}"""
     return system_rol
-rol = generar_rol("a definir", "a definir") #Es provisorio para inicializar GPT
-mensajes = [{"role": "system", "content": rol}]
 
-completion = client.chat.completions.create(
-            model="gpt-3.5-turbo", 
+def generar_completion(mensajes):
+    completion = client.chat.completions.create(
+            model="gpt-4o-mini", 
             messages=mensajes, 
             max_tokens=150
         )
+    return completion
+
+mensajes = []
 
 ##################################################################################
 # CONTROLADORES
@@ -66,18 +68,18 @@ def dinoChat():
         return respuesta
     return render_template(salida,dinos=dinos)
 
+@app.route('/indexDinos', methods=['POST'])
 def buscar_dino(salida):
     dinos = cargar_datos()
+    global mensajes
 
     if "id" in request.form:
-        id_dino = int(request.form['id'])  # Obtiene el valor seleccionado en el formulario
-        mensajes.clear() #Se vacía la conversación cuando se elige otro dino
-        return redirect(url_for("chatear", id=id_dino))
+         id_dino = int(request.form['id'])  # Obtiene el valor seleccionado en el formulario
+         return redirect(url_for("chatear", id=id_dino))
     if "nombreDino" in request.form:
         nombre = request.form['nombreDino'].title()
         dino = next((d for d in dinos if d['Nombre'] == nombre), None)
         if dino:
-            mensajes.clear() #Se vacía la conversación cuando se elige otro dino
             id = int(dino['id'])
             system_rol = generar_rol(dino['Nombre'],dino['Descripcion'])
             mensajes = [{"role": "system", "content": system_rol}]
@@ -92,15 +94,13 @@ def chatear(id):
     dino = next((d for d in dinos if d['id'] == id), None)
     
     if "pregunta" in request.form:        
-        pregunta = "😃➜ " + request.form.get('pregunta')  # Obtiene la pregunta del formulario 
-        respuesta = "🦖🦕➜ " + completion.choices[0].message.content.upper()
+        pregunta = request.form.get('pregunta')  # Obtiene la pregunta del formulario 
         mensajes.append({"role": "user", "content": pregunta }) # Agrega la pregunta a la conversación
+        completion = generar_completion(mensajes)
+        respuesta = completion.choices[0].message.content.upper()
         mensajes.append({"role": "assistant", "content": respuesta})# Agrega la respuesta a la conversación
-    else:
-        pass
             
-    return render_template("dinoChat.html", id=id, chat=mensajes
-                           , info=dino, dinos=dinos)
+    return render_template("dinoChat.html", id=id, chat=mensajes, info=dino, dinos=dinos)
         
 
 if __name__ == "__main__":
