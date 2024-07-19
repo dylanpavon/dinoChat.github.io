@@ -91,8 +91,7 @@ def chatear(id):
     dinos = cargar_datos()
     dino = next((d for d in dinos if d['id'] == id), None)
     dinox = Dino(dino['Nombre'],dino['Descripcion'],id)
-    
-    
+     
     if "pregunta" in request.form:        
         pregunta = "😃➜ " + request.form.get('pregunta')  # Obtiene la pregunta del formulario        
         respuesta = dinox.conversar(dinox.nombre, dinox.descripcion, pregunta)
