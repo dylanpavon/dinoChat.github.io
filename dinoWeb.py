@@ -24,27 +24,26 @@ class Dino:
         self.nombre = nombre
         self.descripcion = descripcion
         self.id = id
+
         
-        
-    def conversar(self, nombre, descripcion, pregunta):
-        system_rol = f"""Hace de cuenta que sos un dinosaurio {nombre} y 
+#####################################################################       
+# CONDICIONES OPENAI
+def generar_rol(nombre, descripcion):
+    system_rol = f"""Hace de cuenta que sos un dinosaurio {nombre} y 
              estás interactuando con niños, de 6 a 10 años, usuarios de una web de información de dinosaurios.
              Te voy a hacer una pregunta respecto a ti (por ejemplo que comes, donde vives) 
              y me tenés que responder como si fueras el {nombre}.
              Puedes usar esta información como referencia: {descripcion}
              No puedes excederte de los 150 tokens, ni hablar de temas que no estén relacionados al {nombre}"""
-        mensajes = [{"role": "system", "content": system_rol}]
-        user_prompt = pregunta 
-        mensajes.append({"role": "user", "content": user_prompt})
-        completion = client.chat.completions.create(
+    return system_rol
+rol = generar_rol("a definir", "a definir") #Es provisorio para inicializar GPT
+mensajes = [{"role": "system", "content": rol}]
+
+completion = client.chat.completions.create(
             model="gpt-3.5-turbo", 
             messages=mensajes, 
             max_tokens=150
         )
-        respuesta = "🦖🦕➜ " + completion.choices[0].message.content.upper()
-        mensajes.append({"role": "assistant", "content": respuesta})
-        
-        return respuesta
 
 ##################################################################################
 # CONTROLADORES
@@ -58,7 +57,6 @@ def dinoWeb():
         return respuesta
     return render_template(salida,dinos=dinos)
         
-conversacion=[] #Lo dejo afuera para que guarde y muestre la conversacion sin reiniciarse vacía   
 @app.route('/dinochat', methods=['GET','POST'])
 def dinoChat():
     salida = "dinoChat.html"
@@ -73,14 +71,16 @@ def buscar_dino(salida):
 
     if "id" in request.form:
         id_dino = int(request.form['id'])  # Obtiene el valor seleccionado en el formulario
-        conversacion.clear() #Se vacía la conversación cuando se elige otro dino
+        mensajes.clear() #Se vacía la conversación cuando se elige otro dino
         return redirect(url_for("chatear", id=id_dino))
     if "nombreDino" in request.form:
         nombre = request.form['nombreDino'].title()
         dino = next((d for d in dinos if d['Nombre'] == nombre), None)
         if dino:
+            mensajes.clear() #Se vacía la conversación cuando se elige otro dino
             id = int(dino['id'])
-            conversacion.clear() #Se vacía la conversación cuando se elige otro dino
+            system_rol = generar_rol(dino['Nombre'],dino['Descripcion'])
+            mensajes = [{"role": "system", "content": system_rol}]
             return redirect(url_for("chatear", id=id))
         else:
             flash(f'NO SE ENCONTRÓ EL DINOSAURIO {nombre} ☹ INTÉNTALO DE NUEVO!')
@@ -90,20 +90,19 @@ def buscar_dino(salida):
 def chatear(id):   
     dinos = cargar_datos()
     dino = next((d for d in dinos if d['id'] == id), None)
-    dinox = Dino(dino['Nombre'],dino['Descripcion'],id)
-     
+    
     if "pregunta" in request.form:        
-        pregunta = "😃➜ " + request.form.get('pregunta')  # Obtiene la pregunta del formulario        
-        respuesta = dinox.conversar(dinox.nombre, dinox.descripcion, pregunta)
-        conversacion.append(pregunta)  # Agrega la pregunta a la conversación
-        conversacion.append(respuesta)  # Agrega la respuesta a la conversación
+        pregunta = "😃➜ " + request.form.get('pregunta')  # Obtiene la pregunta del formulario 
+        respuesta = "🦖🦕➜ " + completion.choices[0].message.content.upper()
+        mensajes.append({"role": "user", "content": pregunta }) # Agrega la pregunta a la conversación
+        mensajes.append({"role": "assistant", "content": respuesta})# Agrega la respuesta a la conversación
     else:
-        conversacion.clear()
+        pass
             
-    return render_template("dinoChat.html", id=id, chat=conversacion, info=dino, dinos=dinos)
+    return render_template("dinoChat.html", id=id, chat=mensajes
+                           , info=dino, dinos=dinos)
         
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0',port="5500", debug=True)    
-    
+    app.run(host='0.0.0.0',port="5500", debug=True)   
     
