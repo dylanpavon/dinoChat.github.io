@@ -52,6 +52,7 @@ mensajes = []
 
 @app.route("/", methods=['GET','POST'])
 def dinoWeb():
+    mensajes.clear()
     salida = "dinoWeb.html"
     dinos = cargar_datos()
     respuesta = buscar_dino(salida)
@@ -68,7 +69,7 @@ def dinoChat():
         return respuesta
     return render_template(salida,dinos=dinos)
 
-@app.route('/indexDinos', methods=['POST'])
+
 def buscar_dino(salida):
     dinos = cargar_datos()
     global mensajes
@@ -92,8 +93,13 @@ def buscar_dino(salida):
 def chatear(id):   
     dinos = cargar_datos()
     dino = next((d for d in dinos if d['id'] == id), None)
+    global mensajes
     
-    if "pregunta" in request.form:        
+    if "pregunta" in request.form:
+        if len(mensajes) < 1:
+            system_rol = generar_rol(dino['Nombre'],dino['Descripcion'])
+            mensajes = [{"role": "system", "content": system_rol}]
+
         pregunta = request.form.get('pregunta')  # Obtiene la pregunta del formulario 
         mensajes.append({"role": "user", "content": pregunta }) # Agrega la pregunta a la conversación
         completion = generar_completion(mensajes)
