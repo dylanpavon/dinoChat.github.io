@@ -60,14 +60,15 @@ def dinoWeb():
         return respuesta
     return render_template(salida,dinos=dinos)
         
-@app.route('/dinochat', methods=['GET','POST'])
-def dinoChat():
+@app.route('/mostrar/<int:id>', methods=['GET'])
+def dinoChat(id):
     salida = "dinoChat.html"
     dinos = cargar_datos()
+    dino = next((d for d in dinos if d['id'] == id), None)
     respuesta = buscar_dino(salida)
     if respuesta:
         return respuesta
-    return render_template(salida,dinos=dinos)
+    return render_template("dinoChat.html", id=id, chat=mensajes, info=dino, dinos=dinos)
 
 
 def buscar_dino(salida):
@@ -76,7 +77,7 @@ def buscar_dino(salida):
 
     if "id" in request.form:
          id_dino = int(request.form['id'])  # Obtiene el valor seleccionado en el formulario
-         return redirect(url_for("chatear", id=id_dino))
+         return redirect(url_for("dinoChat", id=id_dino))
     if "nombreDino" in request.form:
         nombre = request.form['nombreDino'].title()
         dino = next((d for d in dinos if d['Nombre'] == nombre), None)
@@ -84,29 +85,32 @@ def buscar_dino(salida):
             id = int(dino['id'])
             system_rol = generar_rol(dino['Nombre'],dino['Descripcion'])
             mensajes = [{"role": "system", "content": system_rol}]
-            return redirect(url_for("chatear", id=id))
+            return redirect(url_for("dinoChat", id=id))
         else:
             flash(f'NO SE ENCONTRÓ EL DINOSAURIO {nombre} ☹ INTÉNTALO DE NUEVO!')
             return render_template(salida)
 
-@app.route('/dinochat/<int:id>', methods=['GET','POST'])
+@app.route('/chatear/<int:id>', methods=['GET','POST'])
 def chatear(id):   
     dinos = cargar_datos()
     dino = next((d for d in dinos if d['id'] == id), None)
     global mensajes
     
-    if "pregunta" in request.form:
-        if len(mensajes) < 1:
+    if request.method == 'POST':
+        data = request.get_json()
+        pregunta = data.get('pregunta', '')
+        if not mensajes:
             system_rol = generar_rol(dino['Nombre'],dino['Descripcion'])
             mensajes = [{"role": "system", "content": system_rol}]
 
-        pregunta = request.form.get('pregunta')  # Obtiene la pregunta del formulario 
         mensajes.append({"role": "user", "content": pregunta }) # Agrega la pregunta a la conversación
         completion = generar_completion(mensajes)
         respuesta = completion.choices[0].message.content.upper()
         mensajes.append({"role": "assistant", "content": respuesta})# Agrega la respuesta a la conversación
+
+        return jsonify({"pregunta": pregunta, "respuesta": respuesta})
             
-    return render_template("dinoChat.html", id=id, chat=mensajes, info=dino, dinos=dinos)
+    return jsonify({"error": "Método no permitido"}), 405
         
 
 if __name__ == "__main__":

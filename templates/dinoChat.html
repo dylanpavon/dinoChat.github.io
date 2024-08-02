@@ -66,6 +66,30 @@
         max-width: 90%;
         max-height: 90%;
       }
+      #loading {
+        display: inline-block;
+        font-size: 24px;
+      }
+      
+      #loading::after {
+        content: ' ';
+        display: inline-block;
+        width: 1em;
+        height: 1em;
+        border-radius: 50%;
+        background: currentColor;
+        animation: loading 1s infinite steps(3, end);
+      }
+      
+      @keyframes loading {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(1em);
+        }
+      }
+      
     </style>
   </head>
   <body>
@@ -164,7 +188,7 @@
         
         <!--Este div contiene el chat ↓↓↓ -->
         <div class="card overflow-auto text-chat" id="response">
-          <div class="card-body">
+          <div class="card-body" id="chatCard">
             {% for c in chat %}
             {% if c['role'] != 'system' %}
             <p>{% if c.role == 'user' %}
@@ -175,23 +199,28 @@
             {% endif %}
             {% endfor %}
           </div>
-          <form action="/dinochat/{{info['id']}}" method="POST">
-            <div class="d-flex mx-1">
+          <div class="text-center" id="loading" style="display: none;"></div>
+
+          <form action="/chatear/{{info['id']}}" method="POST" id="chatForm">
+            <div class="d-flex mx-1" id="inputChat">
               <input
                 type="text"
                 style="width: 600px"
                 class="form-control mb-2 w-80"
                 name="pregunta"
+                id="pregunta"
                 placeholder="CHATEA CON EL {{ info['Nombre'].upper() }}!"
               />
               <button class="btn btn-success mx-1 w-20 h-25" type="submit" id="btnChat">
                 ➤
               </button>
             </div>
+          </form>
+
             <script>
               function ajax(){
                 const http = new XMLHttpRequest();
-                const url = 'http://localhost:5500/dinochat/{{info["id"]}}';
+                const url = 'http://localhost:5500/chatear/{{info["id"]}}';
 
                 http.onreadystatechange = function(){
                   if(this.readyState == 4 && this.status == 200){
@@ -209,8 +238,7 @@
 
               }
             </script>
-            {% endif %}
-          </form>
+            
         </div id="fondo">
 
         <p class="text-center float-end">
@@ -241,5 +269,56 @@
         </p>
       </footer>
     </div>
+    <script>
+      document.getElementById('chatForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        const pregunta = document.getElementById('pregunta').value;
+
+        document.getElementById('loading').style.display = 'inline-block';
+        document.getElementById('pregunta').value = ''; // Limpiar el campo de entrada
+    
+        fetch('/chatear/{{info["id"]}}', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ pregunta: pregunta })
+        })
+        .then(response => {
+            if (!response.ok) {
+                return response.json().then(errorData => {
+                    throw new Error(errorData.error || 'Error desconocido');
+                });
+            }
+            return response.json();
+        })
+        .then(data => {
+
+            document.getElementById('loading').style.display = 'none';
+
+            const chatCard = document.getElementById('chatCard');
+            const chatDiv = document.getElementById('response');
+            const userMessage = document.createElement('p');
+            userMessage.textContent = '😃➜ ' + data.pregunta;
+            chatCard.appendChild(userMessage);
+    
+            const assistantMessage = document.createElement('p');
+            assistantMessage.textContent = '🦖🦕➜ ' + data.respuesta;
+            chatCard.appendChild(assistantMessage);
+    
+
+            chatDiv.appendChild(chatCard);
+            chatDiv.appendChild(document.getElementById('loading'));
+            chatDiv.appendChild(document.getElementById('chatForm'));
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            document.getElementById('loading').style.display = 'none';
+            alert('Ocurrió un error: ' + error.message);
+        });
+    });
+    
+  </script>
+  {% endif %}
   </body>
 </html>
