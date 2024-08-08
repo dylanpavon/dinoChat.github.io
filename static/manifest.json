@@ -1,0 +1,21 @@
+{
+    "short_name": "DinoChat",
+    "name": "DinoChat - Aprende chateando con los dinos!",
+    "icons": [
+      {
+        "src": "/static/icons/pwa192.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "/static/icons/pwa500.png",
+        "type": "image/png",
+        "sizes": "500x500"
+      }
+    ],
+    "start_url": "/",
+    "background_color": "#ffffff",
+    "display": "standalone",
+    "scope": "/",
+    "theme_color": "#000000"
+  }
