@@ -308,16 +308,22 @@
 
             // Crear un botón de reproducción
             const playButton = document.createElement('button');
-            playButton.textContent = 'Reproducir Audio';
-            chatDiv.appendChild(playButton);
+            playButton.textContent = '🔊';
+            chatCard.appendChild(playButton);
 
             // Crear un objeto de audio
-            const audio = new Audio(data.audio_url);
+            const audioData = data.audio_data;
+            const audio = new Audio('data:audio/mpeg;base64,' + audioData);
 
             // Añadir evento para reproducir el audio cuando se haga clic en el botón
             playButton.addEventListener('click', function() {
-              audio.play();
-        });
+              if (audio.paused) {
+                audio.play();
+                playButton.textContent = '⏸️';} 
+              else {
+                audio.pause();
+                playButton.textContent = '🔊';}
+            });
 
             chatDiv.appendChild(chatCard);
             chatDiv.appendChild(document.getElementById('loading'));

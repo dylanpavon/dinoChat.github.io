@@ -1,16 +1,17 @@
 from openai import OpenAI
 import os
-from flask import Flask, render_template, request, redirect, url_for, flash, jsonify  
+from flask import Flask, render_template, request, redirect, url_for, flash, jsonify
 import json
 from typing import IO
 from io import BytesIO
 from elevenlabs import VoiceSettings
 from elevenlabs.client import ElevenLabs
+import base64
 
 
 # Obtener la clave de API OPENAI y ELEVENLABS desde la variable de entorno
 ELEVENLABS_API_KEY = os.getenv("ELEVENLABS_API_KEY")
-client = ElevenLabs(
+client_el = ElevenLabs(
     api_key=ELEVENLABS_API_KEY,
 )
 api_key = os.getenv("OPENAI_API_KEY")
@@ -116,23 +117,29 @@ def chatear(id):
         respuesta = completion.choices[0].message.content.upper()
         mensajes.append({"role": "assistant", "content": respuesta})# Agrega la respuesta a la conversación
 
-        return jsonify({"pregunta": pregunta, "respuesta": respuesta})
+        audio_stream = texto_a_audio(respuesta)
+        #audio_stream.seek(0)
+        audio_data = audio_stream.read()
+        audio_base64 = base64.b64encode(audio_data).decode('utf-8')
+
+        return jsonify({"pregunta": pregunta, "respuesta": respuesta, "audio_data": audio_base64})
             
     return jsonify({"error": "Método no permitido"}), 405
 
+
 def texto_a_audio(text: str) -> IO[bytes]:
     # Perform the text-to-speech conversion
-    response = client.text_to_speech.convert(
+    response = client_el.text_to_speech.convert(
         voice_id="D38z5RcWu1voky8WS1ja", # Voz de Fin
         output_format="mp3_22050_32",
         text=text,
         model_id="eleven_multilingual_v2",
-        voice_settings=VoiceSettings(
-            stability=0.0,
-            similarity_boost=1.0,
-            style=0.0,
-            use_speaker_boost=True,
-        ),
+            voice_settings=VoiceSettings(
+                stability=0.7,
+                similarity_boost=0.5,
+                style=0.5,
+                use_speaker_boost=True,
+            ),
     )
     # Create a BytesIO object to hold the audio data in memory
     audio_stream = BytesIO()
@@ -147,7 +154,7 @@ def texto_a_audio(text: str) -> IO[bytes]:
 
     # Return the stream for further use
     return audio_stream
-        
+     
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0',port="5500", debug=True)   
