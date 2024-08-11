@@ -305,7 +305,19 @@
             const assistantMessage = document.createElement('p');
             assistantMessage.textContent = '🦖🦕➜ ' + data.respuesta;
             chatCard.appendChild(assistantMessage);
-    
+
+            // Crear un botón de reproducción
+            const playButton = document.createElement('button');
+            playButton.textContent = 'Reproducir Audio';
+            chatDiv.appendChild(playButton);
+
+            // Crear un objeto de audio
+            const audio = new Audio(data.audio_url);
+
+            // Añadir evento para reproducir el audio cuando se haga clic en el botón
+            playButton.addEventListener('click', function() {
+              audio.play();
+        });
 
             chatDiv.appendChild(chatCard);
             chatDiv.appendChild(document.getElementById('loading'));
