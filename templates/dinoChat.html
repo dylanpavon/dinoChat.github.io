@@ -1,342 +1,309 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DinoChat</title>
-    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
-    <meta property="og:title" content="DinoWeb">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DinoChat</title>
+  <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+  <meta property="og:title" content="DinoWeb">
   <meta property="og:description" content="Chatea con diferentes dinosaurios y aprende sobre ellos.">
   <meta property="og:image" content="https://dinoweb.vercel.app/static/Imagenes/previa.jpg">
   <meta property="og:url" content="https://dinoweb.vercel.app">
   <meta property="og:type" content="website">
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
-      rel="stylesheet"
-    />
-    <style>
-      body {
-        background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cpolygon fill='%23AE9' points='120 120 60 120 90 90 120 60 120 0 120 0 60 60 0 0 0 60 30 90 60 120 120 120 '/%3E%3C/svg%3E");
-        background-color: #ddffaa;
-        background-size: 10%;
-      }
-      .filtro {
-        display: none;
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cpolygon fill='%23AE9' points='120 120 60 120 90 90 120 60 120 0 120 0 60 60 0 0 0 60 30 90 60 120 120 120 '/%3E%3C/svg%3E");
+      background-color: #ddffaa;
+      background-size: 10%;
+    }
+
+    .filtro {
+      display: none;
+    }
+
+    .cover-container {
+      max-width: 42em;
+    }
+
+    .text-chat {
+      text-shadow: 0 0.01rem 0.1rem rgba(0, 0, 0, 0.1);
+    }
+
+    .anton-regular {
+      font-family: "Anton", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    .zoomable-image-container {
+      cursor: zoom-in;
+      /* Cambia el cursor al pasar sobre la imagen */
+    }
+
+    .zoomed-image-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 1050;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.5);
+      /* Fondo oscuro */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .zoomed-image {
+      max-width: 90%;
+      max-height: 90%;
+    }
+
+    #loading {
+      display: inline-block;
+      font-size: 24px;
+    }
+
+    #loading::after {
+      content: ' ';
+      display: inline-block;
+      width: 1em;
+      height: 1em;
+      border-radius: 50%;
+      background: currentColor;
+      animation: loading 1s infinite steps(3, end);
+    }
+
+    @keyframes loading {
+      0% {
+        transform: translateX(0);
       }
 
-      .cover-container {
-        max-width: 42em;
+      100% {
+        transform: translateX(1em);
       }
-      .text-chat {
-        text-shadow: 0 0.01rem 0.1rem rgba(0, 0, 0, 0.1);
-      }
+    }
+  </style>
+</head>
 
-      .anton-regular {
-        font-family: "Anton", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-      }
-      .zoomable-image-container {
-        cursor: zoom-in; /* Cambia el cursor al pasar sobre la imagen */
-      }
-
-      .zoomed-image-container {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        z-index: 1050;
-        overflow: auto;
-        background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .zoomed-image {
-        max-width: 90%;
-        max-height: 90%;
-      }
-      #loading {
-        display: inline-block;
-        font-size: 24px;
-      }
-      
-      #loading::after {
-        content: ' ';
-        display: inline-block;
-        width: 1em;
-        height: 1em;
-        border-radius: 50%;
-        background: currentColor;
-        animation: loading 1s infinite steps(3, end);
-      }
-      
-      @keyframes loading {
-        0% {
-          transform: translateX(0);
-        }
-        100% {
-          transform: translateX(1em);
-        }
-      }
-      
-    </style>
-  </head>
-  <body>
-    <div class="container mt-1">
-      <h1 class="text-center">
-        <a href="/"><img width="240" height="120" src="../static/Imagenes/LogoOK.png" alt="logo" /></a>
-      </h1>
-      <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-        <main class="px-3">
-          <!--Buscador ↓↓↓-->
-          <form role="search" action="/" method="post" id="formBuscador">
-            <input
-              class="form-control"
-              type="text"
-              placeholder="¿QUÉ DINO BUSCAS?"
-              list="datalistOptions"
-              name="nombreDino"
-              id="buscador"
-            />
-            <div class="d-grid gap-2 col-3 mx-auto">
-              <button class="btn btn-success px-5" type="submit" value="BUSCAR">
-                Buscar
-              </button>
-            </div>
-            <datalist id="datalistOptions">
-              {% for d in dinos %}
-              <option class="dino" value="{{ d['Nombre'].upper() }}"></option>
-              {% endfor %}
-            </datalist>
-          </form>
-          <!--Mensajes de Alerta ↓↓↓-->
-          {% if messages %} {% for m in messages %}
-          <div
-            class="alert alert-warning alert-dismissible fade show"
-            role="alert"
-          >
-            {{ m }}
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="alert"
-              aria-label="Close"
-            ></button>
+<body>
+  <div class="container mt-1">
+    <h1 class="text-center">
+      <a href="/"><img width="240" height="120" src="../static/Imagenes/LogoOK.png" alt="logo" /></a>
+    </h1>
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <main class="px-3">
+        <!--Buscador ↓↓↓-->
+        <form role="search" action="/" method="post" id="formBuscador">
+          <input class="form-control" type="text" placeholder="¿QUÉ DINO BUSCAS?" list="datalistOptions"
+            name="nombreDino" id="buscador" />
+          <div class="d-grid gap-2 col-3 mx-auto">
+            <button class="btn btn-success px-5" type="submit" value="BUSCAR">
+              Buscar
+            </button>
           </div>
-          {% endfor %} {% endif %}
-        </main>
-        <!-- Acá se mostrará la información del dino seleccionado ↓↓↓ -->
-        <div class="mt-5" id="infoDino">
-          {% if info %}
-          <h3 class="text-center anton-regular">{{ info['Nombre'].upper() }}</h3>
-          <div class="text-center">
-                  <div class="zoomable-image-container">
-              <img
-                class="img-fluid zoomable-image rounded-pill mb-2"
-                style="object-fit: cover;"
-                width="450"
-                height="225"
-                src="{{info['imagen']}}"
-                alt="{{info['Nombre']}}"
-              />
-            </div>
+          <datalist id="datalistOptions">
+            {% for d in dinos %}
+            <option class="dino" value="{{ d['Nombre'].upper() }}"></option>
+            {% endfor %}
+          </datalist>
+        </form>
+        <!--Mensajes de Alerta ↓↓↓-->
+        {% if messages %} {% for m in messages %}
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+          {{ m }}
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        {% endfor %} {% endif %}
+      </main>
+      <!-- Acá se mostrará la información del dino seleccionado ↓↓↓ -->
+      <div class="mt-5" id="infoDino">
+        {% if info %}
+        <h3 class="text-center anton-regular">{{ info['Nombre'].upper() }}</h3>
+        <div class="text-center">
+          <div class="zoomable-image-container">
+            <img class="img-fluid zoomable-image rounded-pill mb-2" style="object-fit: cover;" width="450" height="225"
+              src="{{info['imagen']}}" alt="{{info['Nombre']}}" />
           </div>
-          <!--Script para abrir la imagen completa-->
-          <script>
-            document.addEventListener("DOMContentLoaded", function () {
-              const zoomableImages =
-                document.querySelectorAll(".zoomable-image");
+        </div>
+        <!--Script para abrir la imagen completa-->
+        <script>
+          document.addEventListener("DOMContentLoaded", function () {
+            const zoomableImages =
+              document.querySelectorAll(".zoomable-image");
 
-              zoomableImages.forEach(function (image) {
-                image.addEventListener("click", function () {
-                  const zoomedContainer = document.createElement("div");
-                  zoomedContainer.classList.add("zoomed-image-container");
+            zoomableImages.forEach(function (image) {
+              image.addEventListener("click", function () {
+                const zoomedContainer = document.createElement("div");
+                zoomedContainer.classList.add("zoomed-image-container");
 
-                  const zoomedImage = document.createElement("img");
-                  zoomedImage.classList.add("zoomed-image");
-                  zoomedImage.src = image.src;
-                  zoomedImage.alt = image.alt;
+                const zoomedImage = document.createElement("img");
+                zoomedImage.classList.add("zoomed-image");
+                zoomedImage.src = image.src;
+                zoomedImage.alt = image.alt;
 
-                  zoomedContainer.appendChild(zoomedImage);
-                  document.body.appendChild(zoomedContainer);
+                zoomedContainer.appendChild(zoomedImage);
+                document.body.appendChild(zoomedContainer);
 
-                  zoomedContainer.addEventListener("click", function () {
+                zoomedContainer.addEventListener("click", function () {
+                  zoomedContainer.remove();
+                });
+                document.addEventListener("keydown", function (event) {
+                  if (event.key === "Escape") {
                     zoomedContainer.remove();
-                  });
-                  document.addEventListener("keydown", function (event) {
-                    if (event.key === "Escape") {
-                      zoomedContainer.remove();
-                    }
-                  });
+                  }
                 });
               });
             });
-          </script>
-          <h6 class="text-center">{{ info['Descripcion'].upper() }}</h6>
-        </div>
-        
-        <!--Este div contiene el chat ↓↓↓ -->
-        <div class="card overflow-auto text-chat" id="response">
-          <div class="card-body" id="chatCard">
-            {% for c in chat %}
-            {% if c['role'] != 'system' %}
-            <p>{% if c.role == 'user' %}
-              😃➜ {{ c.content }}
-          {% elif c.role == 'assistant' %}
-              🦖🦕➜ {{ c.content }}
-          {% endif %}</p>
-            {% endif %}
-            {% endfor %}
-          </div>
-          <div class="text-center" id="loading" style="display: none;"></div>
-
-          <form action="/chatear/{{info['id']}}" method="POST" id="chatForm">
-            <div class="d-flex mx-1" id="inputChat">
-              <input
-                type="text"
-                style="width: 600px"
-                class="form-control mb-2 w-80"
-                name="pregunta"
-                id="pregunta"
-                placeholder="CHATEA CON EL {{ info['Nombre'].upper() }}!"
-              />
-              <button class="btn btn-success mx-1 w-20 h-25" type="submit" id="btnChat">
-                ➤
-              </button>
-            </div>
-          </form>
-
-            <script>
-              function ajax(){
-                const http = new XMLHttpRequest();
-                const url = 'http://localhost:5500/chatear/{{info["id"]}}';
-
-                http.onreadystatechange = function(){
-                  if(this.readyState == 4 && this.status == 200){
-                    console.log(this.responseText);
-                    document.getElementById("response").innerHTML = this.responseText;
-                  }
-                }
-
-                http.open("GET",url);
-                http.send();
-
-                document.getElementById("btnChat").addEventListener("click", function(){
-                  ajax();
-                })
-
-              }
-            </script>
-            
-        </div id="fondo">
-
-        <p class="text-center float-end">
-          <a
-            class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
-            href="#"
-            alt="boton"
-            >SUBIR ⇧</a
-          >
-        </p>
+          });
+        </script>
+        <h6 class="text-center">{{ info['Descripcion'].upper() }}</h6>
       </div>
-      <hr />
-      <footer class="text-center">
-        <p>
-          DinoChat creado con
-          <a
-            href="https://chat.openai.com/"
-            target="_blank"
-            class="text-body-secondary"
-            >ChatGPT</a
-          >, por
-          <a
-            href="https://www.linkedin.com/in/dylanpavon-/"
-            target="_blank"
-            class="text-body-secondary"
-            >Dylan Pavón</a
-          >.
-        </p>
-      </footer>
-    </div>
-    <script>
-      document.getElementById('chatForm').addEventListener('submit', function(event) {
-        event.preventDefault();
-        const pregunta = document.getElementById('pregunta').value;
 
-        document.getElementById('loading').style.display = 'inline-block';
-        document.getElementById('pregunta').value = ''; // Limpiar el campo de entrada
-    
-        fetch('/chatear/{{info["id"]}}', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({ pregunta: pregunta })
-        })
-        .then(response => {
-            if (!response.ok) {
-                return response.json().then(errorData => {
-                    throw new Error(errorData.error || 'Error desconocido');
-                });
+      <!--Este div contiene el chat ↓↓↓ -->
+      <div class="card overflow-auto text-chat" id="response">
+        <div class="card-body" id="chatCard">
+          {% for c in chat %}
+          {% if c['role'] != 'system' %}
+          <p>{% if c.role == 'user' %}
+            😃➜ {{ c.content }}
+            {% elif c.role == 'assistant' %}
+            🦖🦕➜ {{ c.content }}
+            {% endif %}</p>
+          {% endif %}
+          {% endfor %}
+        </div>
+        <div class="text-center" id="loading" style="display: none;"></div>
+
+        <form action="/chatear/{{info['id']}}" method="POST" id="chatForm">
+          <div class="d-flex mx-1" id="inputChat">
+            <input type="text" style="width: 600px" class="form-control mb-2 w-80" name="pregunta" id="pregunta"
+              placeholder="CHATEA CON EL {{ info['Nombre'].upper() }}!" />
+            <button class="btn btn-success mx-1 w-20 h-25" type="submit" id="btnChat">
+              ➤
+            </button>
+          </div>
+        </form>
+
+        <script>
+          function ajax() {
+            const http = new XMLHttpRequest();
+            const url = 'http://localhost:5500/chatear/{{info["id"]}}';
+
+            http.onreadystatechange = function () {
+              if (this.readyState == 4 && this.status == 200) {
+                console.log(this.responseText);
+                document.getElementById("response").innerHTML = this.responseText;
+              }
             }
-            return response.json();
+
+            http.open("GET", url);
+            http.send();
+
+            document.getElementById("btnChat").addEventListener("click", function () {
+              ajax();
+            })
+
+          }
+        </script>
+
+      </div id="fondo">
+
+      <p class="text-center float-end">
+        <a class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="#"
+          alt="boton">SUBIR ⇧</a>
+      </p>
+    </div>
+    <hr />
+    <footer class="text-center">
+      <p>
+        DinoChat creado con
+        <a href="https://chat.openai.com/" target="_blank" class="text-body-secondary">ChatGPT</a>, por
+        <a href="https://www.linkedin.com/in/dylanpavon-/" target="_blank" class="text-body-secondary">Dylan Pavón</a>.
+      </p>
+    </footer>
+  </div>
+  <script>
+    document.getElementById('chatForm').addEventListener('submit', function (event) {
+      event.preventDefault();
+      const pregunta = document.getElementById('pregunta').value;
+
+      document.getElementById('loading').style.display = 'inline-block';
+      document.getElementById('pregunta').value = ''; // Limpiar el campo de entrada
+
+      fetch('/chatear/{{info["id"]}}', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ pregunta: pregunta })
+      })
+        .then(response => {
+          if (!response.ok) {
+            return response.json().then(errorData => {
+              throw new Error(errorData.error || 'Error desconocido');
+            });
+          }
+          return response.json();
         })
         .then(data => {
 
-            document.getElementById('loading').style.display = 'none';
+          document.getElementById('loading').style.display = 'none';
 
-            const chatCard = document.getElementById('chatCard');
-            const chatDiv = document.getElementById('response');
-            const userMessage = document.createElement('p');
-            userMessage.textContent = '😃➜ ' + data.pregunta;
-            chatCard.appendChild(userMessage);
-    
-            const assistantMessage = document.createElement('p');
-            assistantMessage.textContent = '🦖🦕➜ ' + data.respuesta;
-            chatCard.appendChild(assistantMessage);
+          const chatCard = document.getElementById('chatCard');
+          const chatDiv = document.getElementById('response');
+          const userMessage = document.createElement('p');
+          userMessage.textContent = '😃➜ ' + data.pregunta;
+          chatCard.appendChild(userMessage);
 
-            // Crear un botón de reproducción
-            const playButton = document.createElement('button');
-            playButton.textContent = '🔊';
-            chatCard.appendChild(playButton);
+          const assistantMessage = document.createElement('p');
+          assistantMessage.textContent = '🦖🦕➜ ' + data.respuesta;
+          chatCard.appendChild(assistantMessage);
 
-            // Crear un objeto de audio
-            const audioData = data.audio_data;
-            const audio = new Audio('data:audio/mpeg;base64,' + audioData);
+          // Crear un botón de reproducción
+          const playButton = document.createElement('button');
+          playButton.textContent = '🔊';
+          chatCard.appendChild(playButton);
 
-            // Añadir evento para reproducir el audio cuando se haga clic en el botón
-            playButton.addEventListener('click', function() {
-              if (audio.paused) {
-                audio.play();
-                playButton.textContent = '⏸️';} 
-              else {
-                audio.pause();
-                playButton.textContent = '🔊';}
-            });
+          // Crear un objeto de audio
+          const audioData = data.audio_data;
+          const audio = new Audio('data:audio/mpeg;base64,' + audioData);
 
-            chatDiv.appendChild(chatCard);
-            chatDiv.appendChild(document.getElementById('loading'));
-            chatDiv.appendChild(document.getElementById('chatForm'));
+          // Añadir evento para reproducir el audio cuando se haga clic en el botón
+          playButton.addEventListener('click', function () {
+            if (audio.paused) {
+              audio.play();
+              playButton.textContent = '⏸️';
+            }
+            else {
+              audio.pause();
+              playButton.textContent = '🔊';
+            }
+          });
+          audio.addEventListener('ended', function () {
+            playButton.textContent = '🔊'; // Cambia a icono de reproducción cuando finaliza el audio
+          });
+
+          chatDiv.appendChild(chatCard);
+          chatDiv.appendChild(document.getElementById('loading'));
+          chatDiv.appendChild(document.getElementById('chatForm'));
         })
         .catch(error => {
-            console.error('Error:', error);
-            document.getElementById('loading').style.display = 'none';
-            alert('Ocurrió un error: ' + error.message);
+          console.error('Error:', error);
+          document.getElementById('loading').style.display = 'none';
+          alert('Ocurrió un error: ' + error.message);
         });
     });
-    
+
   </script>
   {% endif %}
-  </body>
+</body>
+
 </html>

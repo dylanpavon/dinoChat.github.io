@@ -7,6 +7,7 @@ from io import BytesIO
 from elevenlabs import VoiceSettings
 from elevenlabs.client import ElevenLabs
 import base64
+import random
 
 
 # Obtener la clave de API OPENAI y ELEVENLABS desde la variable de entorno
@@ -25,6 +26,11 @@ def cargar_datos():
     with open('Dinos.json', 'r', encoding='utf-8') as file:
         return json.load(file)   
 
+def cargar_voces():
+    with open('voces.json', 'r', encoding='utf-8') as file:
+        voz = random.choice(json.load(file))
+        nombre, clave = voz
+        return clave
 ################################################################################################
 # CLASE
 
@@ -118,19 +124,21 @@ def chatear(id):
         mensajes.append({"role": "assistant", "content": respuesta})# Agrega la respuesta a la conversación
 
         audio_stream = texto_a_audio(respuesta)
-        #audio_stream.seek(0)
-        audio_data = audio_stream.read()
-        audio_base64 = base64.b64encode(audio_data).decode('utf-8')
+        if audio_stream:
+            audio_data = audio_stream.read()
+            audio_base64 = base64.b64encode(audio_data).decode('utf-8')
 
-        return jsonify({"pregunta": pregunta, "respuesta": respuesta, "audio_data": audio_base64})
+            return jsonify({"pregunta": pregunta, "respuesta": respuesta, "audio_data": audio_base64})
+        else:
+            return jsonify({"pregunta": pregunta, "respuesta": respuesta})
             
     return jsonify({"error": "Método no permitido"}), 405
 
 
-def texto_a_audio(text: str) -> IO[bytes]:
-    # Perform the text-to-speech conversion
+def texto_a_audio(text: str, voz: str) -> IO[bytes]:
+    voz = cargar_voces()
     response = client_el.text_to_speech.convert(
-        voice_id="D38z5RcWu1voky8WS1ja", # Voz de Fin
+        voice_id= voz,
         output_format="mp3_22050_32",
         text=text,
         model_id="eleven_multilingual_v2",
@@ -143,17 +151,14 @@ def texto_a_audio(text: str) -> IO[bytes]:
     )
     # Create a BytesIO object to hold the audio data in memory
     audio_stream = BytesIO()
-
-    # Write each chunk of audio data to the stream
     for chunk in response:
         if chunk:
             audio_stream.write(chunk)
 
-    # Reset stream position to the beginning
-    audio_stream.seek(0)
-
-    # Return the stream for further use
-    return audio_stream
+    if audio_stream:
+        audio_stream.seek(0)
+        return audio_stream
+    return None
      
 
 if __name__ == "__main__":
