@@ -273,11 +273,12 @@
           chatCard.appendChild(playButton);
 
           // Crear un objeto de audio
-          const audioData = data.audio_data;
-          const audio = new Audio('data:audio/mpeg;base64,' + audioData);
+          if (data.audio_data){
+            const audioData = data.audio_data;
+            const audio = new Audio('data:audio/mpeg;base64,' + audioData);
 
           // Añadir evento para reproducir el audio cuando se haga clic en el botón
-          playButton.addEventListener('click', function () {
+            playButton.addEventListener('click', function () {
             if (audio.paused) {
               audio.play();
               playButton.textContent = '⏸️';
@@ -286,10 +287,11 @@
               audio.pause();
               playButton.textContent = '🔊';
             }
-          });
-          audio.addEventListener('ended', function () {
-            playButton.textContent = '🔊'; // Cambia a icono de reproducción cuando finaliza el audio
-          });
+            });
+            audio.addEventListener('ended', function () {
+              playButton.textContent = '🔊'; // Cambia a icono de reproducción cuando finaliza el audio
+            });
+          }
 
           chatDiv.appendChild(chatCard);
           chatDiv.appendChild(document.getElementById('loading'));
