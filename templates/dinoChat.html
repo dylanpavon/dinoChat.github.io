@@ -324,6 +324,9 @@
                 audio.pause();
                 playButton.textContent = '🔊';}
             });
+            if (audio.ended){
+              playButton.textContent = '🔊';
+            };
 
             chatDiv.appendChild(chatCard);
             chatDiv.appendChild(document.getElementById('loading'));
