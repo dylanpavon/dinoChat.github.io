@@ -7,12 +7,13 @@ from io import BytesIO
 from elevenlabs import VoiceSettings
 from elevenlabs.client import ElevenLabs
 import base64
+import random
 
 
 # Obtener la clave de API OPENAI y ELEVENLABS desde la variable de entorno
 ELEVENLABS_API_KEY = os.getenv("ELEVENLABS_API_KEY")
 client_el = ElevenLabs(
-    api_key=ELEVENLABS_API_KEY,
+    api_key= ELEVENLABS_API_KEY,
 )
 api_key = os.getenv("OPENAI_API_KEY")
 client= OpenAI()
@@ -25,6 +26,11 @@ def cargar_datos():
     with open('Dinos.json', 'r', encoding='utf-8') as file:
         return json.load(file)   
 
+def cargar_voces():
+    with open('voces.json', 'r', encoding='utf-8') as file:
+        voces = json.load(file)
+        nombre, clave = random.choice(list(voces.items()))
+        return clave
 ################################################################################################
 # CLASE
 
@@ -43,7 +49,9 @@ def generar_rol(nombre, descripcion):
              Te voy a hacer una pregunta respecto a ti (por ejemplo que comes, donde vives) 
              y me tenés que responder como si fueras el {nombre}.
              Puedes usar esta información como referencia: {descripcion}
-             No puedes excederte de los 150 tokens, ni hablar de temas que no estén relacionados al {nombre}"""
+             No puedes excederte de los 150 tokens, ni hablar de temas que no estén relacionados al {nombre}.
+             Debes tener mucho cuidado con los errores de ortografía y con los tiempos verbales. 
+             Trata de ser coherente en ese sentido."""
     return system_rol
 
 def generar_completion(mensajes):
@@ -55,6 +63,7 @@ def generar_completion(mensajes):
     return completion
 
 mensajes = []
+voz_seleccionada = None
 
 ##################################################################################
 # CONTROLADORES
@@ -103,12 +112,13 @@ def buscar_dino(salida):
 def chatear(id):   
     dinos = cargar_datos()
     dino = next((d for d in dinos if d['id'] == id), None)
-    global mensajes
+    global mensajes, voz_seleccionada
     
     if request.method == 'POST':
         data = request.get_json()
         pregunta = data.get('pregunta', '')
         if not mensajes:
+            voz_seleccionada = cargar_voces()
             system_rol = generar_rol(dino['Nombre'],dino['Descripcion'])
             mensajes = [{"role": "system", "content": system_rol}]
 
@@ -117,44 +127,39 @@ def chatear(id):
         respuesta = completion.choices[0].message.content.upper()
         mensajes.append({"role": "assistant", "content": respuesta})# Agrega la respuesta a la conversación
 
-        audio_stream = texto_a_audio(respuesta)
-        #audio_stream.seek(0)
-        audio_data = audio_stream.read()
-        audio_base64 = base64.b64encode(audio_data).decode('utf-8')
+        audio_stream = texto_a_audio(respuesta, voz_seleccionada)
+        if audio_stream:
+            audio_data = audio_stream.read()
+            audio_base64 = base64.b64encode(audio_data).decode('utf-8')
 
-        return jsonify({"pregunta": pregunta, "respuesta": respuesta, "audio_data": audio_base64})
+            return jsonify({"pregunta": pregunta, "respuesta": respuesta, "audio_data": audio_base64})
+        else:
+            return jsonify({"pregunta": pregunta, "respuesta": respuesta})
             
     return jsonify({"error": "Método no permitido"}), 405
 
 
-def texto_a_audio(text: str) -> IO[bytes]:
-    # Perform the text-to-speech conversion
+def texto_a_audio(text: str, voz) -> IO[bytes]:
     response = client_el.text_to_speech.convert(
-        voice_id="D38z5RcWu1voky8WS1ja", # Voz de Fin
+        voice_id= voz,
         output_format="mp3_22050_32",
         text=text,
         model_id="eleven_multilingual_v2",
             voice_settings=VoiceSettings(
-                stability=0.7,
-                similarity_boost=0.5,
-                style=0.5,
+                stability=0.3,
+                similarity_boost=0.7,
+                style=0.9,
                 use_speaker_boost=True,
             ),
     )
     # Create a BytesIO object to hold the audio data in memory
     audio_stream = BytesIO()
-
-    # Write each chunk of audio data to the stream
     for chunk in response:
         if chunk:
             audio_stream.write(chunk)
-
-    # Reset stream position to the beginning
+    
     audio_stream.seek(0)
-
-    # Return the stream for further use
     return audio_stream
-     
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0',port="5500", debug=True)   
