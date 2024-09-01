@@ -92,6 +92,7 @@ def dinoChat(id):
 def buscar_dino(salida):
     dinos = cargar_datos()
     global mensajes
+    
 
     if "id" in request.form:
          id_dino = int(request.form['id'])  # Obtiene el valor seleccionado en el formulario
@@ -101,8 +102,8 @@ def buscar_dino(salida):
         dino = next((d for d in dinos if d['Nombre'] == nombre), None)
         if dino:
             id = int(dino['id'])
-            system_rol = generar_rol(dino['Nombre'],dino['Descripcion'])
-            mensajes = [{"role": "system", "content": system_rol}]
+            #system_rol = generar_rol(dino['Nombre'],dino['Descripcion'])
+            #mensajes = [{"role": "system", "content": system_rol}]
             return redirect(url_for("dinoChat", id=id))
         else:
             flash(f'NO SE ENCONTRÓ EL DINOSAURIO {nombre} ☹ INTÉNTALO DE NUEVO!')
@@ -121,6 +122,7 @@ def chatear(id):
             voz_seleccionada = cargar_voces()
             system_rol = generar_rol(dino['Nombre'],dino['Descripcion'])
             mensajes = [{"role": "system", "content": system_rol}]
+            
 
         mensajes.append({"role": "user", "content": pregunta }) # Agrega la pregunta a la conversación
         completion = generar_completion(mensajes)
