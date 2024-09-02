@@ -288,16 +288,11 @@
               playButton.textContent = '🔊';
             }
             });
-<<<<<<< HEAD
-            if (audio.ended){
-              playButton.textContent = '🔊';
-            };
-=======
+
             audio.addEventListener('ended', function () {
               playButton.textContent = '🔊'; // Cambia a icono de reproducción cuando finaliza el audio
             });
           }
->>>>>>> b28dc5c9751a7f99ce57356641f9a6d896bd89e5
 
           chatDiv.appendChild(chatCard);
           chatDiv.appendChild(document.getElementById('loading'));
@@ -311,6 +306,7 @@
     });
 
   </script>
+  
   {% endif %}
 </body>
 
