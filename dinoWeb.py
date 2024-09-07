@@ -150,7 +150,7 @@ def texto_a_audio(text: str, voz) -> IO[bytes]:
             voice_settings=VoiceSettings(
                 stability=0.3,
                 similarity_boost=0.7,
-                style=0.9,
+                style=0.7,
                 use_speaker_boost=True,
             ),
     )

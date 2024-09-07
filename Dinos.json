@@ -4252,5 +4252,11 @@
 		"Nombre" : "Zupaysaurus",
 		"Descripcion" : "Este 'lagarto diabólico' fue uno de los primeros terópodos.",
 		"imagen" : "../static/Imagenes/Zupaysaurus.jpg"
+	},
+	{
+		"id" : 800,
+		"Nombre" : "Mosasaurus",
+		"Descripcion" : "Respiraban aire, tenían un hocico alargado de cocodrilo y eran nadadores rápidos gracias a sus cuatro aletas y su cola",
+		"imagen" : "../static/Imagenes/Mosasaurus.jpg"
 	}
 ]
