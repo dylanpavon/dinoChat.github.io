@@ -4258,5 +4258,11 @@
 		"Nombre" : "Mosasaurus",
 		"Descripcion" : "Respiraban aire, tenían un hocico alargado de cocodrilo y eran nadadores rápidos gracias a sus cuatro aletas y su cola",
 		"imagen" : "../static/Imagenes/Mosasaurus.jpg"
+	},
+	{
+		"id" : 801,
+		"Nombre" : "Indominus Rex",
+		"Descripcion" : "El Rey Indomable" es un dinosaurio ficticio de la película Jurassic World",
+		"imagen" : "../static/Imagenes/IndominusRex.jpeg"
 	}
 ]
