@@ -4262,7 +4262,7 @@
 	{
 		"id" : 801,
 		"Nombre" : "Indominus Rex",
-		"Descripcion" : "El Rey Indomable" es un dinosaurio ficticio de la película Jurassic World",
+		"Descripcion" : "El Rey Indomable es un dinosaurio ficticio de la película Jurassic World",
 		"imagen" : "../static/Imagenes/IndominusRex.jpeg"
 	}
 ]
