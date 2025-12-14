@@ -15,8 +15,7 @@ ELEVENLABS_API_KEY = os.getenv("ELEVENLABS_API_KEY")
 client_el = ElevenLabs(
     api_key= ELEVENLABS_API_KEY,
 )
-#api_key = os.getenv("OPENAI_API_KEY")
-api_key = "AIzaSyCHWM0s-PopwwCvdaYtW9VKCtUDkaE5VVg"
+api_key = os.getenv("GEMINI_API_KEY")
 genai.configure(api_key=api_key)
 app = Flask(__name__)
 
