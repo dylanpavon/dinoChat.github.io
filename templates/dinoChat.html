@@ -29,31 +29,12 @@
       <a href="/" class="volver-link">« Volver a la galería</a>
     </header>
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column" style="max-width: 42em;">
-      <main class="px-1">
-        <!--Buscador ↓↓↓-->
-        <form role="search" action="/" method="post" id="formBuscador" class="buscador-form">
-          <input class="form-control" type="text" placeholder="¿Qué dino buscás?" list="datalistOptions"
-            name="nombreDino" id="buscador" autocomplete="off" />
-          <datalist id="datalistOptions">
-            {% for d in dinos %}
-            <option value="{{ d['Nombre'] }}"></option>
-            {% endfor %}
-          </datalist>
-        </form>
-        <!--Mensajes de Alerta ↓↓↓-->
-        {% with messages = get_flashed_messages() %} {% if messages %} {% for m in messages %}
-        <div class="alert alert-warning alert-dismissible fade show" role="alert">
-          {{ m }}
-          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-        </div>
-        {% endfor %} {% endif %} {% endwith %}
-      </main>
       <!-- Acá se mostrará la información del dino seleccionado ↓↓↓ -->
       <div class="mt-3" id="infoDino">
         {% if info %}
         <div class="dino-info-card">
           <h3>{{ info['Nombre'] }}</h3>
-          <img id="imagenDino" src="{{info['imagen']}}" alt="{{info['Nombre']}}" />
+          <img id="imagenDino" class="zoomable" src="{{info['imagen']}}" alt="{{info['Nombre']}}" />
           <p>{{ info['Descripcion'] }}</p>
         </div>
 
@@ -91,42 +72,11 @@
     </div>
     <hr />
     <footer class="text-center">
-      <p>
-        DinoChat creado con
-        <a href="https://chat.openai.com/" target="_blank" class="text-body-secondary">ChatGPT</a>, por
-        <a href="https://www.linkedin.com/in/dylanpavon-/" target="_blank" class="text-body-secondary">Dylan Pavón</a>.
-      </p>
+      <p>DinoChat creado por el Akusaurio, para Bruni ♥</p>
     </footer>
   </div>
 
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const imagenDino = document.getElementById("imagenDino");
-      if (imagenDino) {
-        imagenDino.addEventListener("click", function () {
-          const zoomedContainer = document.createElement("div");
-          zoomedContainer.classList.add("zoomed-image-container");
-
-          const zoomedImage = document.createElement("img");
-          zoomedImage.classList.add("zoomed-image");
-          zoomedImage.src = imagenDino.src;
-          zoomedImage.alt = imagenDino.alt;
-
-          zoomedContainer.appendChild(zoomedImage);
-          document.body.appendChild(zoomedContainer);
-
-          zoomedContainer.addEventListener("click", function () {
-            zoomedContainer.remove();
-          });
-          document.addEventListener("keydown", function (event) {
-            if (event.key === "Escape") {
-              zoomedContainer.remove();
-            }
-          });
-        });
-      }
-    });
-  </script>
+  <script src="{{ url_for('static', filename='js/zoom.js') }}"></script>
 
   {% if info %}
   <script>

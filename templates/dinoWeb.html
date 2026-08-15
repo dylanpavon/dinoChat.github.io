@@ -40,13 +40,8 @@
     <main class="px-2 px-md-5">
       <!--Buscador ↓↓↓-->
       <form role="search" action="/" method="post" id="formBuscador" class="buscador-form">
-        <input class="form-control" type="text" placeholder="¿Qué dino buscás?" list="datalistOptions"
+        <input class="form-control" type="text" placeholder="¿Qué dino buscás?"
           name="nombreDino" id="buscador" autocomplete="off" />
-        <datalist id="datalistOptions">
-          {% for d in dinos %}
-          <option value="{{ d['Nombre'] }}"></option>
-          {% endfor %}
-        </datalist>
       </form>
       <!--Mensajes de Alerta ↓↓↓-->
       {% with messages = get_flashed_messages()%} {% if messages %} {% for m
@@ -57,14 +52,48 @@
       </div>
       {% endfor %} {% endif %} {% endwith %}
 
+      {% set destacados_ids = [258, 275, 191, 450] %}
+      {% set featured = dinos | selectattr('id', 'in', destacados_ids) | list %}
+      {% set resto = dinos | rejectattr('id', 'in', destacados_ids) | list %}
+      {% set total_fillers = featured | length * 2 %}
+
+      <!--Destacados ↓↓↓-->
+      <div class="destacados-fila">
+        {% for f in featured %}
+        {% set idx = loop.index0 %}
+        <div class="destacado-grupo{% if idx % 2 == 1 %} destacado-grupo--invertido{% endif %}">
+          <div class="dino-card dino-card--destacada" data-nombre="{{ f['Nombre'] }}">
+            <div class="dino-card-img-wrap">
+              <img class="zoomable" src="{{ f['imagen'] }}" alt="{{ f['Nombre'] }}" loading="lazy" />
+            </div>
+            <div class="dino-card-body">
+              <h3>{{ f['Nombre'] }}</h3>
+              <a class="btn-aventura" href="/mostrar/{{ f['id'] }}">Conversar »</a>
+            </div>
+          </div>
+          <div class="destacado-fillers">
+            {% for r in resto[(idx * 2):(idx * 2 + 2)] %}
+            <div class="dino-card" data-nombre="{{ r['Nombre'] }}">
+              <div class="dino-card-img-wrap">
+                <img class="zoomable" src="{{ r['imagen'] }}" alt="{{ r['Nombre'] }}" loading="lazy" />
+              </div>
+              <div class="dino-card-body">
+                <h3>{{ r['Nombre'] }}</h3>
+                <a class="btn-aventura" href="/mostrar/{{ r['id'] }}">Conversar »</a>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+
       <!--Galería de dinosaurios ↓↓↓-->
       <div class="galeria" id="galeria">
-        {% set destacados = [258, 275, 191, 450] %}
-        {% for d in dinos %}
-        <div class="dino-card{% if d['id'] in destacados %} dino-card--destacada{% endif %}"
-          data-nombre="{{ d['Nombre'] }}">
+        {% for d in resto[total_fillers:] %}
+        <div class="dino-card" data-nombre="{{ d['Nombre'] }}">
           <div class="dino-card-img-wrap">
-            <img src="{{ d['imagen'] }}" alt="{{ d['Nombre'] }}" loading="lazy" />
+            <img class="zoomable" src="{{ d['imagen'] }}" alt="{{ d['Nombre'] }}" loading="lazy" />
           </div>
           <div class="dino-card-body">
             <h3>{{ d['Nombre'] }}</h3>
@@ -85,15 +114,12 @@
           <a class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="#"
             alt="boton">Subir ⇧</a>
         </p>
-        <p>
-          DinoChat creado con
-          <a href="https://chat.openai.com/" class="text-body-secondary" target="_blank">ChatGPT</a>, por
-          <a href="https://www.linkedin.com/in/dylanpavon-/" class="text-body-secondary" target="_blank">Dylan Pavón</a>.
-        </p>
+        <p>DinoChat creado por el Akusaurio, para Bruni ♥</p>
       </footer>
     </div>
   </div>
   <script src="{{ url_for('static', filename='js/gallery.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/zoom.js') }}"></script>
   <script>
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('/static/js/service-worker.js')

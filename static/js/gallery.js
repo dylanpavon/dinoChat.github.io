@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const galeria = document.getElementById("galeria");
   if (!buscador || !galeria) return;
 
-  const tarjetas = Array.from(galeria.querySelectorAll(".dino-card"));
+  const tarjetas = Array.from(document.querySelectorAll(".dino-card"));
   const vacio = document.getElementById("galeriaVacio");
 
   buscador.addEventListener("input", function () {
