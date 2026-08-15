@@ -1,0 +1,453 @@
+/* ==========================================================================
+   DinoChat — Sistema de diseño "Aventura / Jurásico"
+   ========================================================================== */
+
+:root {
+  /* Paleta */
+  --selva: #2f6b3a;
+  --selva-oscuro: #1f4a28;
+  --selva-claro: #eaf5e3;
+  --tierra: #8a5a34;
+  --tierra-oscuro: #5c3b20;
+  --ambar: #f5a623;
+  --ambar-oscuro: #d98c0a;
+  --crema: #fdf6ea;
+  --crema-oscuro: #f3e6cc;
+  --texto: #2b2013;
+  --texto-claro: #6b5b45;
+  --blanco: #ffffff;
+  --sombra: rgba(43, 32, 19, 0.18);
+  --burbuja-user: #dff0d8;
+  --burbuja-dino: #fff1d6;
+
+  /* Tipografía */
+  --fuente-titulo: "Anton", sans-serif;
+  --fuente-texto: "Baloo 2", sans-serif;
+
+  --radio: 1.25rem;
+  --radio-chico: 0.75rem;
+}
+
+/* ---- Base ---- */
+
+body {
+  font-family: var(--fuente-texto);
+  color: var(--texto);
+  background-color: var(--selva-claro);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140' viewBox='0 0 140 140'%3E%3Cg fill='%232f6b3a' fill-opacity='0.08'%3E%3Cpath d='M70 10c14 0 20 18 14 30-4 8-14 10-14 22 0-12-10-14-14-22-6-12 0-30 14-30z'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 140px;
+  font-size: 1.05rem;
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6,
+.titulo-aventura {
+  font-family: var(--fuente-titulo);
+  color: var(--selva-oscuro);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+a {
+  color: var(--selva-oscuro);
+}
+
+.subtitulo {
+  color: var(--texto-claro);
+  font-size: 1.1rem;
+}
+
+/* ---- Encabezado ---- */
+
+.dino-header {
+  text-align: center;
+  padding: 0.5rem 0 1rem;
+}
+
+.dino-header img.logo {
+  filter: drop-shadow(0 4px 6px var(--sombra));
+}
+
+.volver-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--fuente-texto);
+  font-weight: 700;
+  color: var(--selva-oscuro);
+  text-decoration: none;
+  background: var(--crema);
+  border: 2px solid var(--selva);
+  border-radius: 999px;
+  padding: 0.4rem 1rem;
+  margin-bottom: 1rem;
+}
+
+.volver-link:hover {
+  background: var(--selva);
+  color: var(--blanco);
+}
+
+/* ---- Buscador ---- */
+
+.buscador-form {
+  max-width: 32rem;
+  margin: 0 auto 1.5rem;
+}
+
+.buscador-form .form-control {
+  font-family: var(--fuente-texto);
+  font-size: 1.15rem;
+  border: 2px solid var(--tierra);
+  border-radius: var(--radio-chico);
+  padding: 0.75rem 1rem;
+}
+
+.buscador-form .form-control:focus {
+  border-color: var(--selva);
+  box-shadow: 0 0 0 0.2rem rgba(47, 107, 58, 0.25);
+}
+
+.btn-aventura {
+  font-family: var(--fuente-texto);
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--blanco);
+  background: var(--ambar);
+  border: none;
+  border-radius: 999px;
+  padding: 0.6rem 1.75rem;
+  box-shadow: 0 4px 0 var(--ambar-oscuro);
+  transition: transform 0.08s ease;
+}
+
+.btn-aventura:hover,
+.btn-aventura:focus {
+  background: var(--ambar);
+  color: var(--blanco);
+  transform: translateY(1px);
+  box-shadow: 0 3px 0 var(--ambar-oscuro);
+}
+
+.btn-aventura:active {
+  transform: translateY(3px);
+  box-shadow: 0 1px 0 var(--ambar-oscuro);
+}
+
+.btn-aventura-secundario {
+  background: var(--selva);
+  box-shadow: 0 4px 0 var(--selva-oscuro);
+}
+
+.btn-aventura-secundario:hover,
+.btn-aventura-secundario:focus {
+  background: var(--selva);
+  box-shadow: 0 3px 0 var(--selva-oscuro);
+}
+
+.btn-aventura-secundario:active {
+  box-shadow: 0 1px 0 var(--selva-oscuro);
+}
+
+/* ---- Galería de dinosaurios ---- */
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr));
+  gap: 1.25rem;
+  margin: 1.5rem 0 3rem;
+}
+
+.dino-card {
+  background: var(--crema);
+  border-radius: var(--radio);
+  overflow: hidden;
+  box-shadow: 0 4px 10px var(--sombra);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.dino-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px var(--sombra);
+}
+
+.dino-card--destacada {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.dino-card .dino-card-img-wrap {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+}
+
+.dino-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.dino-card .dino-card-body {
+  padding: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.dino-card h3 {
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.dino-card--destacada h3 {
+  font-size: 1.6rem;
+}
+
+.dino-card .btn-aventura {
+  font-size: 0.95rem;
+  padding: 0.5rem 1.25rem;
+}
+
+.galeria-oculto {
+  display: none !important;
+}
+
+.galeria-vacio {
+  text-align: center;
+  font-size: 1.2rem;
+  color: var(--texto-claro);
+  padding: 2rem;
+}
+
+/* ---- Info del dino en el chat ---- */
+
+.dino-info-card {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.dino-info-card img {
+  width: 100%;
+  max-width: 420px;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  border-radius: var(--radio);
+  box-shadow: 0 6px 14px var(--sombra);
+  cursor: zoom-in;
+}
+
+.dino-info-card p {
+  max-width: 40rem;
+  margin: 0.75rem auto 0;
+  color: var(--texto);
+}
+
+.zoomed-image-container {
+  position: fixed;
+  inset: 0;
+  z-index: 1050;
+  overflow: auto;
+  background-color: rgba(31, 74, 40, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.zoomed-image {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: var(--radio);
+}
+
+/* ---- Chat ---- */
+
+.chat-card {
+  background: var(--crema);
+  border-radius: var(--radio);
+  box-shadow: 0 4px 10px var(--sombra);
+  padding: 1rem;
+}
+
+.chat-mensajes {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  max-height: 24rem;
+  overflow-y: auto;
+  padding: 0.25rem;
+}
+
+.mensaje {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.5rem;
+  max-width: 85%;
+}
+
+.mensaje-usuario {
+  align-self: flex-end;
+  flex-direction: row-reverse;
+}
+
+.mensaje-dino {
+  align-self: flex-start;
+}
+
+.avatar {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  background: var(--selva-claro);
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.burbuja {
+  border-radius: var(--radio-chico);
+  padding: 0.6rem 1rem;
+  font-size: 1.05rem;
+}
+
+.mensaje-usuario .burbuja {
+  background: var(--burbuja-user);
+  border-bottom-right-radius: 0.2rem;
+}
+
+.mensaje-dino .burbuja {
+  background: var(--burbuja-dino);
+  border-bottom-left-radius: 0.2rem;
+}
+
+.mensaje-audio {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  border: none;
+  background: var(--ambar);
+  color: var(--blanco);
+  font-size: 1.1rem;
+  box-shadow: 0 3px 0 var(--ambar-oscuro);
+  margin-top: 0.35rem;
+}
+
+.mensaje-audio:active {
+  box-shadow: 0 1px 0 var(--ambar-oscuro);
+  transform: translateY(2px);
+}
+
+/* ---- Indicador de carga: huellas ---- */
+
+.huellas-cargando {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.25rem;
+  font-size: 1.3rem;
+}
+
+.huellas-cargando span {
+  opacity: 0;
+  animation: huella-pop 1.2s infinite;
+}
+
+.huellas-cargando span:nth-child(2) { animation-delay: 0.2s; }
+.huellas-cargando span:nth-child(3) { animation-delay: 0.4s; }
+.huellas-cargando span:nth-child(4) { animation-delay: 0.6s; }
+
+@keyframes huella-pop {
+  0% { opacity: 0; transform: translateY(4px); }
+  30% { opacity: 1; transform: translateY(0); }
+  70% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+/* ---- Input de chat ---- */
+
+.chat-input-row {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+.chat-input-row input {
+  flex: 1;
+  font-family: var(--fuente-texto);
+  font-size: 1.1rem;
+  border: 2px solid var(--tierra);
+  border-radius: 999px;
+  padding: 0.6rem 1.1rem;
+}
+
+.chat-input-row input:focus {
+  border-color: var(--selva);
+  box-shadow: 0 0 0 0.2rem rgba(47, 107, 58, 0.25);
+}
+
+.chat-input-row button {
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 50%;
+  border: none;
+  background: var(--selva);
+  color: var(--blanco);
+  font-size: 1.3rem;
+  box-shadow: 0 4px 0 var(--selva-oscuro);
+  flex-shrink: 0;
+}
+
+.chat-input-row button:active {
+  box-shadow: 0 1px 0 var(--selva-oscuro);
+  transform: translateY(3px);
+}
+
+/* ---- Alertas ---- */
+
+.alert {
+  border-radius: var(--radio-chico);
+  font-family: var(--fuente-texto);
+}
+
+/* ---- Footer ---- */
+
+footer {
+  color: var(--texto-claro);
+  font-size: 0.9rem;
+}
+
+/* ---- Responsive ---- */
+
+@media (max-width: 576px) {
+  .galeria {
+    grid-template-columns: repeat(auto-fill, minmax(8.5rem, 1fr));
+    gap: 0.85rem;
+  }
+
+  .dino-card--destacada {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+
+  .chat-mensajes {
+    max-height: 18rem;
+  }
+}
