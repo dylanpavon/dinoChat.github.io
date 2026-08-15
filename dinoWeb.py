@@ -128,7 +128,12 @@ def chatear(id):
         respuesta = completion.choices[0].message.content.upper()
         mensajes.append({"role": "assistant", "content": respuesta})# Agrega la respuesta a la conversación
 
-        audio_stream = texto_a_audio(respuesta, voz_seleccionada)
+        try:
+            audio_stream = texto_a_audio(respuesta, voz_seleccionada)
+        except Exception as e:
+            print(f"Error generando audio con ElevenLabs: {e}")
+            audio_stream = None
+
         if audio_stream:
             audio_data = audio_stream.read()
             audio_base64 = base64.b64encode(audio_data).decode('utf-8')
