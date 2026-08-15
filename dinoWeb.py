@@ -1,4 +1,4 @@
-import google.generativeai as genai
+from groq import Groq
 import os
 from flask import Flask, render_template, request, redirect, url_for, flash, jsonify
 import json
@@ -10,13 +10,13 @@ import base64
 import random
 
 
-# Obtener la clave de API GEMINI y ELEVENLABS desde la variable de entorno
+# Obtener la clave de API GROQ y ELEVENLABS desde la variable de entorno
 ELEVENLABS_API_KEY = os.getenv("ELEVENLABS_API_KEY")
 client_el = ElevenLabs(
     api_key= ELEVENLABS_API_KEY,
 )
-api_key = os.getenv("GEMINI_API_KEY")
-genai.configure(api_key=api_key)
+GROQ_API_KEY = os.getenv("GROQ_API_KEY")
+client_groq = Groq(api_key=GROQ_API_KEY)
 app = Flask(__name__)
 
 app.secret_key= 'key'
@@ -40,8 +40,8 @@ class Dino:
         self.id = id
 
         
-#####################################################################       
-# CONDICIONES GEMINI
+#####################################################################
+# CONDICIONES GROQ
 def generar_rol(nombre, descripcion):
     system_rol = f"""Hace de cuenta que sos un dinosaurio {nombre} y 
              estás interactuando con niños, de 6 a 10 años, usuarios de una web de información de dinosaurios.
@@ -54,19 +54,11 @@ def generar_rol(nombre, descripcion):
     return system_rol
 
 def generar_completion(mensajes):
-    system_instruction = None
-    contents = []
-    
-    for m in mensajes:
-        if m['role'] == 'system':
-            system_instruction = m['content']
-        elif m['role'] == 'user':
-            contents.append({'role': 'user', 'parts': [m['content']]})
-        elif m['role'] == 'assistant':
-            contents.append({'role': 'model', 'parts': [m['content']]})
-            
-    model = genai.GenerativeModel('gemini-2.5-flash', system_instruction=system_instruction)
-    response = model.generate_content(contents)
+    response = client_groq.chat.completions.create(
+        model="llama-3.3-70b-versatile",
+        messages=mensajes,
+        max_tokens=150,
+    )
     return response
 
 mensajes = []
@@ -133,7 +125,7 @@ def chatear(id):
 
         mensajes.append({"role": "user", "content": pregunta }) # Agrega la pregunta a la conversación
         completion = generar_completion(mensajes)
-        respuesta = completion.text.upper()
+        respuesta = completion.choices[0].message.content.upper()
         mensajes.append({"role": "assistant", "content": respuesta})# Agrega la respuesta a la conversación
 
         audio_stream = texto_a_audio(respuesta, voz_seleccionada)
