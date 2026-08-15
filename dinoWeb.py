@@ -62,7 +62,7 @@ def generar_completion(mensajes):
     return response
 
 mensajes = []
-voz_seleccionada = "D38z5RcWu1voky8WS1ja"
+voz_seleccionada = "pNInz6obpgDQGcFmaJgB"
 
 ##################################################################################
 # CONTROLADORES
