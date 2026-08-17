@@ -52,7 +52,6 @@
       </div>
       {% endfor %} {% endif %} {% endwith %}
 
-      {% set destacados_ids = [258, 275, 191, 450] %}
       {% set featured = dinos | selectattr('id', 'in', destacados_ids) | list %}
       {% set resto = dinos | rejectattr('id', 'in', destacados_ids) | list %}
       {% set total_fillers = featured | length * 2 %}

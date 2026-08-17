@@ -25,6 +25,11 @@ def cargar_datos():
     with open('Dinos.json', 'r', encoding='utf-8') as file:
         return json.load(file)   
 
+def elegir_destacados(dinos, cantidad=4):
+    con_imagen = [d for d in dinos if os.path.isfile(d['imagen'].replace('../', '', 1))]
+    universo = con_imagen if con_imagen else dinos
+    return random.sample(universo, min(cantidad, len(universo)))
+
 def cargar_voces():
     with open('voces.json', 'r', encoding='utf-8') as file:
         voces = json.load(file)
@@ -76,7 +81,8 @@ def dinoWeb():
     respuesta = buscar_dino(salida)
     if respuesta:
         return respuesta
-    return render_template(salida,dinos=dinos)
+    destacados_ids = [d['id'] for d in elegir_destacados(dinos)]
+    return render_template(salida, dinos=dinos, destacados_ids=destacados_ids)
         
 @app.route('/mostrar/<int:id>', methods=['GET'])
 def dinoChat(id):
@@ -107,6 +113,9 @@ def buscar_dino(salida):
             return redirect(url_for("dinoChat", id=id))
         else:
             flash(f'NO SE ENCONTRÓ EL DINOSAURIO {nombre} ☹ INTÉNTALO DE NUEVO!')
+            if salida == "dinoWeb.html":
+                destacados_ids = [d['id'] for d in elegir_destacados(dinos)]
+                return render_template(salida, dinos=dinos, destacados_ids=destacados_ids)
             return render_template(salida)
 
 @app.route('/chatear/<int:id>', methods=['GET','POST'])
