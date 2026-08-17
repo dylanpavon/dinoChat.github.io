@@ -55,9 +55,10 @@ def generar_rol(nombre, descripcion):
 
 def generar_completion(mensajes):
     response = client_groq.chat.completions.create(
-        model="llama-3.3-70b-versatile",
+        model="openai/gpt-oss-120b",
         messages=mensajes,
-        max_tokens=150,
+        max_tokens=400,
+        reasoning_effort="low",
     )
     return response
 
